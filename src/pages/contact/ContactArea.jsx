@@ -8,7 +8,7 @@ function ContactArea() {
           <div className="row">
             <div className="col-lg-6">
               <div id="contact-map">
-              <iframe src="https://maps.google.com/maps?width=1000&amp;height=700&amp;hl=en&amp;q=upes&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0"></iframe>
+              <iframe src="https://maps.google.com/maps?width=100&amp;height=700&amp;hl=en&amp;q=upes&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" height={500} width={600} frameborder="0"></iframe>
               </div>
             </div>
             <div className="col-lg-6 pl-45">
@@ -19,7 +19,6 @@ function ContactArea() {
                 <ul>
                   <li><i className="fas fa-map-marker-alt" />Bidholi Campus, UPES, Dehradun, India</li>
                   <li><i className="fas fa-envelope" />upesopen@ddn.upes.ac.in</li>
-                  <li><i className="fas fa-number" />+91-9105558877</li>
                 </ul>
               </div>
               <div className="contact-form">

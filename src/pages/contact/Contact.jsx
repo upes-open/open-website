@@ -10,7 +10,8 @@ function Contact() {
 	<>
 	<Header/>
 	<main>
-	<Breadcrumb/>
+		<br /><br /><br /><br /><br />
+	{/* <Breadcrumb/> */}
 	<ContactArea/>
 	</main>
 	<Footer/>

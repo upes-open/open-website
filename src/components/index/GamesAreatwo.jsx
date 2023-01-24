@@ -19,7 +19,7 @@ function GamesAreatwo() {
                         </div>
                         <div className="just-gamers-list-content fix">
                           <h5>Aware</h5>
-                          <p>See how well critics rating new video game release with 100 players</p>
+                          <p>We aim at spreading awareness about the advantage of using Open Source softwares over conventional proprietary softwares.</p>
                         </div>
                       </li>
                       <li>
@@ -28,7 +28,7 @@ function GamesAreatwo() {
                         </div>
                         <div className="just-gamers-list-content fix">
                           <h5>Adopt</h5>
-                          <p>Village and the subline of her own road, the Line Lane. Pityful a rethoric question</p>
+                          <p>Spreading awareness is futile until and unless we motivate people to adopt the prevailing Open Source softwares in their work environment.</p>
                         </div>
                       </li>
                       <li>
@@ -37,7 +37,7 @@ function GamesAreatwo() {
                         </div>
                         <div className="just-gamers-list-content fix">
                           <h5>Contribute</h5>
-                          <p>Village and the subline of her own road, the Line Lane. Pityful a rethoric question</p>
+                          <p>The whole concept of Open Source revolves around community which uses it and contributing to the community is always a matter of prestige.</p>
                         </div>
                       </li>
                     </ul>

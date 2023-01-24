@@ -7,7 +7,7 @@ function FeaturesArea() {
           <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-8">
               <div className="section-title title-style-two text-center mb-60">
-                <span>what we give players</span>
+                <span>We work in two verticals</span>
                 <h2>Our <span>Verticals</span></h2>
               </div>
             </div>
@@ -18,7 +18,7 @@ function FeaturesArea() {
                 <div className="features-head mb-35">
                   <div className="product-tag"><a href="/#">Collaboration</a></div>
                   <h4>Brain of our community</h4>
-                  <p>Consecur adipcig eiusod tempor the inci did dolore mana is aliqsua Unimd minim thats tempor dolore adipcig</p>
+                  <p>Under the Collaboration vertical, we have student developers from the School of Computer Science who contribute to real-world projects. This vertical gives you the opportunity to acquire various skills in version control systems and open-source development and contribute to a large number of projects involving technologies like web, mobile development, blockchain, cloud computing, artificial intelligence and more.</p>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@ function FeaturesArea() {
                 <div className="features-head mb-35">
                   <div className="product-tag"><a href="/#">Engagment</a></div>
                   <h4>Heart of our community</h4>
-                  <p>Consecur adipcig eiusod tempor the inci did dolore mana is aliqsua Unimd minim thats tempor dolore adipcig</p>
+                  <p>Under the engagement vertical, we organise various workshops, seminars, competitions, hands-on sessions, and fun activities to increase the participation of students in open source and generate interest among open source enthusiasts to work more and more in this field. This vertical consists of various teams, including Design, Editorial, Social Media and PR. Students from all schools can contribute to this vertical based on their skill set and area of interest.</p>
                 </div>
               </div>
             </div>

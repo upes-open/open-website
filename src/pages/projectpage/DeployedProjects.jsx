@@ -60,8 +60,9 @@ function NewGamesArea() {
                   swipeToSlide={true}
                   focusOnSelect={true}
                   ref={slider => (slider2 = slider)} slidesToShow={3} vertical={true} arrows={false} >
+                    {/* here */}
                     <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav01.jpg" alt="" />
+                      <img src="assets/img/images/release_game_nav02.jpg" alt="" />
                     </div>
                     <div className="released-game-nav-item">
                       <img src="assets/img/images/release_game_nav02.jpg" alt="" />

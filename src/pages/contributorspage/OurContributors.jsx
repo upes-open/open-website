@@ -1,33 +1,69 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react';
 import Slider from "react-slick";
+import axios from "axios";
 
 const ShopArea = () => {
+
+  const [index, setIndex] = useState(0);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const fetch = async () => {
+    const fetchResult = await axios.get(
+      "https://api.github.com/users/upes-open/followers"
+    );
+    const fetchData = fetchResult.data;
+    console.log(fetchData);
+    // console.log(fetchData[0].name);
+    // fetchData = Object.keys(fetchData);
+
+    setData(fetchData);
+    setTimeout(() => {
+      setLoading(false);
+    }, 500);
+  };
+
+  useEffect(() => {
+    fetch();
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000 // every 3 seconds
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
+
+
+  // const [user, setUser] = useState([])
+
+  // useEffect(()=>{
+  //     axios.get("https://api.github.com/users/upes-open/followers")
+  //     .then((res)=>{setUser(res.data)})
+  // },[])
 
   const settings= {
 
   dots: false,
   infinite: true,
-  speed: 1000,
-  autoplay: false,
+  speed: 10000,
+  autoplay: true,
   arrows: false,
-  // prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-  // nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-  slidesToShow: 4,
+  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+  slidesToShow: 6,
   slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 10,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         infinite: true,
       }
     },
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToShow: 7,
+        slidesToScroll: 4
       }
     },
     {
@@ -35,7 +71,7 @@ const ShopArea = () => {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
       }
     },
     {
@@ -43,7 +79,7 @@ const ShopArea = () => {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
       }
     },
 	{
@@ -63,84 +99,22 @@ const ShopArea = () => {
         </div>
       </div>
       <Slider className="row product-active"{...settings}>
+      {/* <div className='row justify-content-center'> */}
+      {data.map((result) => (
         <div className="col-xl">
           <div className="shop-item">
             <div className="product-thumb">
-              <a href="/#"><img src="assets/img/product/s_product_img01.jpg" alt="" /></a>
+              <a href="/#"><img src={result.avatar_url} alt="" /></a>
             </div>
             <div className="product-content">
-              <div className="product-tag"><a href="/#">@ragharwal</a></div>
-              <h4><a href="/#">Raghav Agarwal</a></h4>
+              <div className="product-tag"><a href={result.html_url}>{result.login}</a></div>
+              {/* <h4><a href="/#">Raghav Agarwal</a></h4> */}
             </div>
           </div>
         </div>
-        <div className="col-xl">
-          <div className="shop-item">
-            <div className="product-thumb">
-              <a href="/#"><img src="assets/img/product/s_product_img02.jpg" alt="" /></a>
-            </div>
-            <div className="product-content">
-              <div className="product-tag"><a href="/#">x-box</a></div>
-              <h4><a href="/#">Gears 5 Xbox Controller</a></h4>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl">
-          <div className="shop-item">
-            <div className="product-thumb">
-              <a href="/#"><img src="assets/img/product/s_product_img03.jpg" alt="" /></a>
-            </div>
-            <div className="product-content">
-              <div className="product-tag"><a href="/#">graphics</a></div>
-              <h4><a href="/#">GeForce RTX 2070</a></h4>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl">
-          <div className="shop-item">
-            <div className="product-thumb">
-              <a href="/#"><img src="assets/img/product/s_product_img04.jpg" alt="" /></a>
-            </div>
-            <div className="product-content">
-              <div className="product-tag"><a href="/#">VR-Box</a></div>
-              <h4><a href="/#">Virtual Reality Smiled</a></h4>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl">
-          <div className="shop-item">
-            <div className="product-thumb">
-              <a href="/#"><img src="assets/img/product/s_product_img04.jpg" alt="" /></a>
-            </div>
-            <div className="product-content">
-              <div className="product-tag"><a href="/#">VR-Box</a></div>
-              <h4><a href="/#">Virtual Reality Smiled</a></h4>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl">
-          <div className="shop-item">
-            <div className="product-thumb">
-              <a href="/#"><img src="assets/img/product/s_product_img04.jpg" alt="" /></a>
-            </div>
-            <div className="product-content">
-              <div className="product-tag"><a href="/#">VR-Box</a></div>
-              <h4><a href="/#">Virtual Reality Smiled</a></h4>
-            </div>
-          </div>
-        </div>
-        <div className="col-xl">
-          <div className="shop-item">
-            <div className="product-thumb">
-              <a href="/#"><img src="assets/img/product/s_product_img04.jpg" alt="" /></a>
-            </div>
-            <div className="product-content">
-              <div className="product-tag"><a href="/#">VR-Box</a></div>
-              <h4><a href="/#">Virtual Reality Smiled</a></h4>
-            </div>
-          </div>
-        </div>
+      ))}
       </Slider>
+      {/* </div> */}
     </div>
   </section>
   )
