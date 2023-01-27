@@ -38,7 +38,7 @@ function UpcomingEvent() {
             </div>
           </div>
         </div>
-        <div className="inner-about-shape"><img src="assets/img/images/medale_shape.png" alt="" /></div>
+        {/* <div className="inner-about-shape"><img src="assets/img/images/medale_shape.png" alt="" /></div> */}
       </section>
   )
 }
