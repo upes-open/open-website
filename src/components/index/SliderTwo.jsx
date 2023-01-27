@@ -3,9 +3,6 @@ import Slider from 'react-slick';
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
-import banner from '../../assets/img/banners/1.png';
-
-
 
 function SliderTwo() {
   const settings = {
