@@ -9,30 +9,24 @@ export const TeamData = [
     {
         name: "Snigdha Parasar",
         designation: "Vice-President",
-        imageURL: "https://i.postimg.cc/hj2wt1bp/raghav.png",
-        LinkedIn: "https://www.linkedin.com/in/priyal-gupta-b86a01193/",
-        GitHub: "https://github.com/Priyal804",
+        imageURL:
+      "https://i.postimg.cc/G284TTYV/snigdha.png",
+    LinkedIn: "https://www.linkedin.com/in/snigdha-parashar-022aaa23b/",
+    GitHub: "https://github.com/snigdha510",
     },
     {
         name: "Ayushmaan Jha",
         designation: "Treasuer",
-        imageURL: "https://i.postimg.cc/hj2wt1bp/raghav.png",
-        LinkedIn: "https://www.linkedin.com/in/sarthak-tiwari-0398071b9/",
-        GitHub: "https://github.com/sarthackk",
+        imageURL:
+      "https://i.postimg.cc/66j09WsJ/Ayushmaan-Jha-1.png",
+    LinkedIn: "https://www.linkedin.com/in/ayushmaan-jha-90191a258/",
+    GitHub: "https://github.com/Ayushmaan-8",
     },
-    {
-    name: "Sarthak Tiwari",
-    designation: "Engagement Manager",
-    imageURL:
-      "https://www.linkpicture.com/q/sarthak.jpg",
-    LinkedIn: "https://www.linkedin.com/in/sarthak-tiwari-0398071b9/",
-    GitHub: "https://github.com/sarthackk",
-  },
   {
     name: "Vedant Saraf",
     designation: "Collaboration Manager",
     imageURL:
-      "https://i.postimg.cc/zBrPQK7Y/vedant.png",
+      "https://i.postimg.cc/vTC3QDG7/vedant.png",
     LinkedIn: "https://www.linkedin.com/in/vedant-saraf-8a71b31b4/",
     GitHub: "https://github.com/vedantsaraf2002",
   },
@@ -40,22 +34,14 @@ export const TeamData = [
     name: "Nandini Nanda",
     designation: "Editorial Lead",
     imageURL:
-      "https://www.linkpicture.com/q/nandini.jpg",
+      "https://i.postimg.cc/wT0Dc7Cw/nandini.png",
     LinkedIn: "https://www.linkedin.com/in/nandini-nanda-835761205/",
     GitHub: "https://github.com/NandiniNanda",
   },
   {
-    name: "Sona Tyagi",
-    designation: "Associate Editorial Lead",
-    imageURL:
-      "https://i.postimg.cc/Jth8rcCx/sona.jpg",
-    LinkedIn: "https://www.linkedin.com/in/sona-tyagi-a83644234",
-    GitHub: 0,
-  },
-  {
     name: "Bharti Bhathotia",
-    designation: "PR and Event Lead",
-    imageURL: "https://i.postimg.cc/H8j16H9R/bharti.jpg",
+    designation: "PR and Events Lead",
+    imageURL: "https://i.postimg.cc/4x2MM495/bdd3537c-12e2-4d51-9fbe-eee718a4cb30-removebg-preview.png",
     LinkedIn: 0,
     GitHub: 0,
   },
@@ -71,7 +57,7 @@ export const TeamData = [
     name: "Amrita Dimri",
     designation: "Design Lead",
     imageURL:
-      "https://i.postimg.cc/x8dRVfHd/amrita.png",
+      "https://i.postimg.cc/SNjM9QmN/amrita-removebg-preview.png",
     LinkedIn: "https://www.linkedin.com/in/amrita-dimri-a26438234",
     GitHub: "https://github.com/Chaos07Child/Chaos07Child",
   },
@@ -87,13 +73,13 @@ export const TeamData = [
     name: "Medhavi Singh",
     designation: "Project Lead",
     imageURL:
-      "https://i.postimg.cc/sgZM6h1c/medhavi.png",
+      "https://i.postimg.cc/P5DJCDQZ/Medhavi-removebg-preview.png",
     LinkedIn: "https://www.linkedin.com/in/medhavi-singh-8752091ba/",
     GitHub: "https://github.com/Med16-11",
   },
   {
     name: "Ashutosh Kapoor",
-    designation: "External Collaboration Lead",
+    designation: "Ext. Collab. Lead",
     imageURL:
       "https://i.postimg.cc/52c4tkNB/Ashutosh-2.png",
     LinkedIn: "https://www.linkedin.com/in/kapoor0905/",
@@ -114,14 +100,6 @@ export const TeamData = [
       "https://i.postimg.cc/W1Pdy4rc/pawan.png",
     LinkedIn: "https://www.linkedin.com/in/pawan-bajaj-7420121b8",
     GitHub: "https://github.com/pavvann",
-  },
-  {
-    name: "Aditya Punetha",
-    designation: "Lead Student Developer",
-    imageURL:
-      "https://www.linkpicture.com/q/aditya_2.jpg",
-    LinkedIn: "https://www.linkedin.com/in/aditya-punetha/",
-    GitHub: "https://github.com/AdityaPunetha",
   },
   {
     name: "Manan Gupta",
