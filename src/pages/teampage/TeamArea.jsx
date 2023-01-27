@@ -1,5 +1,6 @@
 import React from 'react'
 import { TeamData } from '../../data/TeamData';
+import {EventsGlimpse} from '../../data/EventsGlimpse';
 
 function TeamArea() {
   return (
