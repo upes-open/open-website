@@ -70,7 +70,6 @@ export default function Header() {
                 <div className="col-lg-6 d-none d-lg-block">
                   <div className="header-top-offer">
                     <p>Aware. Adopt. Contribute.</p>
-                    <span className="coming-time" data-countdown="2022/3/15" />
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -87,7 +86,7 @@ export default function Header() {
                       <ul>
                         <li>
                           <div className="header-top-mail">
-                            <p><span>|</span><i className="far fa-envelope" /><Link to="/mailto:info@gmail.com">info@gecoinfo.com</Link></p>
+                            <p><span>|</span><i className="far fa-envelope" /><Link to="/mailto:info@gmail.com">opencommunity@ddn.upes.ac.in</Link></p>
                           </div>
                         </li>
                       </ul>

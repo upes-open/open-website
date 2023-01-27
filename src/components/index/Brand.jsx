@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick';
 
+import upes from '../../assets/img/sponsors/upes.png';
+
 function Brand() {
    const settings = {
     dots: false,
@@ -43,7 +45,7 @@ function Brand() {
               <Slider className="row s-brand-active" {...settings}>
                 <div className="col-12">
                   <div className="t-brand-item">
-                    <img src="assets/img/brand/t_brand_logo01.png" alt="" />
+                    <img src={upes} alt="" />
                   </div>
                 </div>
                 <div className="col-12">

@@ -7,6 +7,13 @@ export const TeamData = [
         LinkedIn: "https://www.linkedin.com/in/ragharwal/",
     },
     {
+        name: "Sagar Gupta",
+        designation: "President",
+        imageURL: "https://i.postimg.cc/hj2wt1bp/raghav.png",
+        GitHub: "https://github.com/ragharwal",
+        LinkedIn: "https://www.linkedin.com/in/ragharwal/",
+    },
+    {
         name: "Snigdha Parasar",
         designation: "Vice-President",
         imageURL: "https://i.postimg.cc/hj2wt1bp/raghav.png",
