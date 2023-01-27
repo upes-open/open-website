@@ -62,16 +62,16 @@ function NewGamesArea() {
                   ref={slider => (slider2 = slider)} slidesToShow={3} vertical={true} arrows={false} >
                     {/* here */}
                     <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav02.jpg" alt="" />
+                      <img src="https://i.postimg.cc/hj2wt1bp/raghav.png" alt="" />
                     </div>
                     <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav02.jpg" alt="" />
+                      <img src="https://i.postimg.cc/hj2wt1bp/raghav.png" alt="" />
                     </div>
                     <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav03.jpg" alt="" />
+                      <img src="https://i.postimg.cc/hj2wt1bp/raghav.png" alt="" />
                     </div>
                     <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav02.jpg" alt="" />
+                      <img src="https://i.postimg.cc/hj2wt1bp/raghav.png" alt="" />
                     </div>
                   </Slider>
                 </div>

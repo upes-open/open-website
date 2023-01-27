@@ -745,7 +745,7 @@ ul.minicart .cart-price .new {
 .menu-style-two {
 	padding: 28px 30px !important;
 	border-radius: 0 0 14px 14px !important;
-	background-image: url(../img/bg/header_bg.jpg) !important;
+	background-image: url(../img/header/3.png) !important;
 	background-position: right center !important;
 	background-size: cover !important;
 	position: relative !important;
@@ -770,7 +770,7 @@ ul.minicart .cart-price .new {
 	transition: .3s linear;
 }
 .s-header-top-area {
-	background: #131014;
+	background: #000;
 }
 .navbar-wrap ul li > .submenu {
 	position: absolute;
@@ -835,7 +835,7 @@ ul.minicart .cart-price .new {
     top: 0;
     width: 100%;
     z-index: 99;
-    background-image: url(../img/bg/header_bg.jpg);
+    background-image: url(../img/header/3.png);
     -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
@@ -1002,10 +1002,10 @@ ul.minicart .cart-price .new {
 	top: 0;
 }
 .third-header-bg .sticky-menu {
-    background-image: url(../img/bg/h3_header_bg.jpg);
+    background-image: url(../img/header/3.png);
 }
 .header-style-four .header-top-area {
-    background-image: url(../img/bg/fourth_header_top_bg.jpg);
+    background-image: url(../img/header/3.png);
     background-position: center;
     background-size: cover;
     padding: 22px 0;
@@ -1260,7 +1260,7 @@ ul.minicart .cart-price .new {
 
 /* 5. Slider */
 .slider-bg {
-	background-image: url(../img/slider/slider_bg.jpg);
+	background-image: url(../img/banners/1.jpg);
 	background-position: center;
 	background-size: cover;
 	padding: 260px 0;
@@ -1321,7 +1321,7 @@ ul.minicart .cart-price .new {
 	line-height: 1.6;
 }
 .slider-style-two {
-	background-image: url(../img/slider/slider_bg02.jpg);
+	background-image: url(../img/banners/6.png);
 	padding: 290px 0 190px;
 	position: relative;
 	z-index: 1;
@@ -1500,7 +1500,7 @@ ul.minicart .cart-price .new {
     z-index: 1;
 }
 .home-four-slider .slider-bg {
-    background-image: url(../img/slider/fourth_banner_bg.jpg);
+    background-image: url(../img/banners/1.jpg);
     background-position: center;
     background-size: cover;
     padding: 205px 0 205px;
@@ -2682,7 +2682,7 @@ ul.minicart .cart-price .new {
 	font-size: 15px;
 }
 .team-bg {
-    background-image: url(../img/bg/third_team_bg.jpg);
+    background-image: url(../img/banners/11.png);
     background-position: bottom center;
     background-size: cover;
     padding: 110px 0 90px;
@@ -2828,7 +2828,7 @@ ul.minicart .cart-price .new {
 
 /* 14. Just-gamers */
 .just-gamers-bg {
-	background-image: url(../img/bg/just_gamer_bg.jpg);
+	background-image: url(../img/banners/8.png);
 	position: relative;
 	background-position: center;
 	background-size: cover;
@@ -6892,7 +6892,7 @@ ul.minicart .cart-price .new {
 	max-height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-	background: #1c1421;
+	background: #002d2b;
 	padding: 0px 0px;
 	z-index: 5;
 	box-shadow: -9px 0 14px 0px rgb(0 0 0 / 6%);

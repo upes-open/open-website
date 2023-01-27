@@ -4,7 +4,6 @@ import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
 
-
 function SliderTwo() {
   const settings = {
     dots: false,
@@ -83,14 +82,14 @@ function SliderTwo() {
                   </div>
                 </div>
                 <Slide right delay={.4000}>
-                <div className="slider-img"><img src="assets/img/slider/slider_img01.png" alt="" /></div>
+                {/* <div className="slider-img"><img src="assets/img/slider/slider_img01.png" alt="" /></div> */}
                 </Slide>
                <Slide left delay={.4000}>
-               <div className="slider-img slider-img2 wow slideInRightS"><img src="assets/img/slider/slider_img02.png" alt="" /></div>
+               {/* <div className="slider-img slider-img2 wow slideInRightS"><img src="assets/img/slider/slider_img02.png" alt="" /></div> */}
                </Slide>
                 <div className="slider-circle-shape"><img src="assets/img/slider/slider_circle.png" alt="" className="rotateme" /></div>
               </div>
-              <div className="single-slider slider-bg slider-style-two" style={{backgroundImage: 'url(assets/img/slider/slider_bg.jpg)'}}>
+              {/* <div className="single-slider slider-bg slider-style-two" style={{backgroundImage: {banner}}}>
                 <div className="container-fluid container-full-padding">
                   <div className="row">
                     <div className="col-xl-6 col-lg-7 col-md-11">
@@ -118,7 +117,7 @@ function SliderTwo() {
                 <div className="slider-img slider-img2"><img src="assets/img/slider/slider_img02.png" alt="" /></div>
                 </Slide>
                 <div className="slider-circle-shape"><img src="assets/img/slider/slider_circle.png" alt="" className="rotateme" /></div>
-              </div>
+              </div> */}
             </Slider>
           </section>
   )

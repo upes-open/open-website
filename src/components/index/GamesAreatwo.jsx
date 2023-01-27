@@ -1,4 +1,5 @@
 import React from 'react'
+import guy from '../../assets/img/9.png';
 function GamesAreatwo() {
 
   
@@ -45,12 +46,12 @@ function GamesAreatwo() {
                 </div>
                 <div className="col-xl-7 col-lg-6 d-none d-lg-block">
                   <div className="just-gamers-img">
-                    <img src="assets/img/images/just_gamers_img.png" alt="" className="just-gamers-character" />
+                    <img src={guy} alt="" className="just-gamers-character" />
                     <div className="just-gamers-circle-shape">
-                      <img src="assets/img/images/gamers_circle_line.png" alt="" />
-                      <img src="assets/img/images/gamers_circle_shape.png" alt="" className="rotateme" />
+                      {/* <img src="assets/img/images/gamers_circle_line.png" alt="" /> */}
+                      {/* <img src="assets/img/images/gamers_circle_shape.png" alt="" className="rotateme" /> */}
                     </div>
-                    <img src="assets/img/images/just_gamers_chart.png" alt="" className="gamers-chart-shape" />
+                    {/* <img src="assets/img/images/just_gamers_chart.png" alt="" className="gamers-chart-shape" /> */}
                   </div>
                 </div>
               </div>

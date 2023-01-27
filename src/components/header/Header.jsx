@@ -63,14 +63,13 @@ export default function Header() {
   
   return (
 	 <header> 
-     <ScrollToTop smooth top="500" color="#000"/>
+     <ScrollToTop smooth top="500" color="#ffff"/>
           <div className="header-top-area s-header-top-area d-none d-lg-block">
             <div className="container-fluid s-container-full-padding">
               <div className="row align-items-center">
                 <div className="col-lg-6 d-none d-lg-block">
                   <div className="header-top-offer">
                     <p>Aware. Adopt. Contribute.</p>
-                    <span className="coming-time" data-countdown="2022/3/15" />
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -87,7 +86,7 @@ export default function Header() {
                       <ul>
                         <li>
                           <div className="header-top-mail">
-                            <p><span>|</span><i className="far fa-envelope" /><Link to="/mailto:info@gmail.com">info@gecoinfo.com</Link></p>
+                            <p><span>|</span><i className="far fa-envelope" /><Link to="/mailto:info@gmail.com">opencommunity@ddn.upes.ac.in</Link></p>
                           </div>
                         </li>
                       </ul>
@@ -140,7 +139,7 @@ export default function Header() {
                  <div className="mobile-menu">
                   <nav className="menu-box">
                     <div className="close-btn"><i className="fas fa-times" /></div>
-                    <div className="nav-logo"><Link to="/"><img src="assets/img/logo/logo.png" alt="" title='true' /></Link>
+                    <div className="nav-logo"><Link to="/"><img src={logo} alt="" title='true' /></Link>
                     </div>
                     <div className="menu-outer">
                   

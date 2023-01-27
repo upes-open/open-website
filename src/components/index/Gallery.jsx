@@ -1,8 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick';
 
-import { GalleryData } from '../../data/GalleryData';
-
+import { EventsGlimpse} from '../../data/EventsGlimpse';
 
 
 const BannerArea = () => {
@@ -63,23 +62,23 @@ const BannerArea = () => {
               <h2 className="title-one">Glimpse</h2>
               <h3 className="title-two">of our <span>events</span></h3>
             </div>
-            <Slider className="banner-magazine-active" {...settings}>
-              {GalleryData.map((item) => (
-                <div className="banner-magazine-item red">
-                  <div className="banner-magazine-thumb">
-                    <div className="tags"><a href="/#">{item.type}</a></div>
-                    <img src={item.imageURL} alt="" />
-                  </div>
-                  <div className="banner-magazine-content">
-                    <span className="date">{item.date}</span>
-                    <h5 className="title"><a href="/#">{item.name}</a></h5>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
+          <Slider className="banner-magazine-active" {...settings}>
+            {EventsGlimpse.map((item) => (
+                    <div className="banner-magazine-item red">
+                    <div className="banner-magazine-thumb">
+                        <div className="tags"><a href="/#">{item.Type}</a></div>
+                        <img src={item.imageURL} alt="" />
+                    </div>
+                    <div className="banner-magazine-content">
+                        <span className="date">{item.Date}</span>
+                        <h5 className="title"><a href="/#">{item.name}</a></h5>
+                    </div>
+                    </div>
+            ))}
+          </Slider>
         </div>
       </div>
+    </div>
     </section>
   )
 }
