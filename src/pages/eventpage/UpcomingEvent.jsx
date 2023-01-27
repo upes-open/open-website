@@ -19,9 +19,9 @@ function UpcomingEvent() {
           <div className="row align-items-center">
             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
               <div className="inner-about-img">
-                <img src="assets/img/images/inner_about_img01.png" className="wow fadeInRight" data-wow-delay=".3s" alt="" />
-                <img src="assets/img/images/inner_about_img02.png" className="wow fadeInLeft" data-wow-delay=".6s" alt="" />
-                <img src="assets/img/images/inner_about_img03.png" className="wow fadeInUp" data-wow-delay=".6s" alt="" />
+                <img width="600px" height="450px" src="https://i.postimg.cc/pL2cJGBk/15106-C4-D-0225-40-F9-8-E7-E-C126630-D6-DAC.png" className="wow fadeInRight" data-wow-delay=".3s" alt="" />
+                {/* <img src="https://i.postimg.cc/PqKjMvZv/2-BDF9713-7-E73-45-DC-8-DFC-301-F39382506-1.png" className="wow fadeInLeft" data-wow-delay=".6s" alt="" /> */}
+                {/* <img src="https://i.postimg.cc/gJR1TwLK/38-EA0514-335-A-4-A37-9405-6880-F0-A95-E26-1.png" className="wow fadeInUp" data-wow-delay=".6s" alt="" /> */}
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
