@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import Slider from 'react-slick';
 
 import { DeployedProjectsData } from '../../data/DeployedProjectsData';
+import { DeployProjectsImages } from '../../data/DeployProjectsImages';
 
 function NewGamesArea() {
  
@@ -25,8 +26,7 @@ function NewGamesArea() {
                 <div className="col-xl-6 col-lg-8">
                   <div className="section-title title-style-three text-center mb-20">
                     <h2>Deployed <span>Projects</span></h2>
-                    <p>Compete with 100 players on a remote island for winner takes showdown
-                      known issue where certain skin strategic</p>
+                    <p>These are the projects that are made by members of the Open Community</p>
                   </div>
                 </div>
               </div>
@@ -42,11 +42,12 @@ function NewGamesArea() {
                       <div className="released-game-item">
                         <div className="released-game-item-bg" />
                         <div className="released-game-img">
-                          <img height={200} src={data.imageURL} alt="" />
+                          <img height={400} src={data.imageURL} alt="" />
                         </div>
                         <div className="released-game-content">
                           <h4>OPEN <span>{data.name}</span></h4>
                           <p>{data.description}</p>
+                          <p>Technologies Used: {data.keywords}</p>
                           <Link to={data.link} className="btn btn-style-two">Know now</Link>
                         </div>
                       </div>
@@ -61,18 +62,11 @@ function NewGamesArea() {
                   focusOnSelect={true}
                   ref={slider => (slider2 = slider)} slidesToShow={3} vertical={true} arrows={false} >
                     {/* here */}
+                    {DeployProjectsImages.map((data) => (
                     <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav02.jpg" alt="" />
+                      <img src={data.imageURL} alt="" />
                     </div>
-                    <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav02.jpg" alt="" />
-                    </div>
-                    <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav03.jpg" alt="" />
-                    </div>
-                    <div className="released-game-nav-item">
-                      <img src="assets/img/images/release_game_nav02.jpg" alt="" />
-                    </div>
+                    ))}
                   </Slider>
                 </div>
               </div>
