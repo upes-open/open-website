@@ -1,4 +1,5 @@
 export const EventsData = [
+
     {
       name: "Uncovering RPA",
       description: "Uncovering RPA and UiPath is a one-day workshop with the ambition of introducing one of the trendiest technologies in the tech gala. Robotic Process Automation is a technology that helps in furnishing the businesses with “bots” or software robots that pluck out the mundane tasks from the system and mimic the actions of a human worker to finish them. This event will start from the basic introduction of RPA, including details of its functioning, its benefits and applications. Learning about the various fields where RPA functions as a blooming industry will help one understand the importance automation carries in the future.",
@@ -98,4 +99,3 @@ export const EventsData = [
       registeration: 0,
     },
   ];
-  
