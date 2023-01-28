@@ -4,7 +4,7 @@ import { EventsData } from '../../data/EventsData';
 
 function PastEvents() {
   return (
-	  <section className="upcoming-games-area upcoming-games-bg pt-40 pb-80">
+	  <section className="upcoming-opens-area upcoming-opens-bg pt-40 pb-80">
         <div className="container">
         <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-4">
@@ -18,19 +18,19 @@ function PastEvents() {
           <div className="row">
           {EventsData.map((data) => (     
             <div className="col-lg-4 col-md-6">
-              <div className="upcoming-game-item mb-40">
-                <div className="upcoming-game-head">
-                  <div className="uc-game-head-title">
+              <div className="upcoming-open-item mb-40">
+                <div className="upcoming-open-head">
+                  <div className="uc-open-head-title">
                     <span>{data.date}</span>
                     <h4><a href="/#">{data.name}</a></h4>
                   </div>
-                  <div className="uc-game-price">
+                  <div className="uc-open-price">
                     <h5>{data.type}</h5>
                   </div>
                 </div>
-                <div className="upcoming-game-thumb">
+                <div className="upcoming-open-thumb">
                   <img src={data.imageURL} alt="" />
-                  <div className="upcoming-game-cart">
+                  <div className="upcoming-open-cart">
                     <a href={data.registeration} className="btn transparent-btn">Know Now</a>
                   </div>
                 </div>

@@ -11,17 +11,17 @@ import dehashed_img_9 from "../../assets/img/events/dehashed/dehashed_img_8.jpg"
 
 function SingleArea() {
   return (
-    <section className="game-single-area pt-120 pb-120">
+    <section className="open-single-area pt-120 pb-120">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="game-single-content">
-              <div className="upcoming-game-head">
-                <div className="uc-game-head-title">
+            <div className="open-single-content">
+              <div className="upcoming-open-head">
+                <div className="uc-open-head-title">
                   <span>07-11-2022</span>
                   <h4>Dehashed</h4>
                 </div>
-                <div className="uc-game-price">
+                <div className="uc-open-price">
                   <h5>Offline Workshop</h5>
                 </div>
               </div>
@@ -47,7 +47,7 @@ function SingleArea() {
                 are also comprehended with their practical utility is like a
                 boon. Dehashed is just the place to retort all your questions.
               </p>
-              <div className="game-single-img">
+              <div className="open-single-img">
                 <div className="row">
                   <div className="col-sm-6">
                     <img src={dehashed_img_7} className="h-100" alt="" />
@@ -60,10 +60,10 @@ function SingleArea() {
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <div className="game-single-title mt-60 mb-30">
+                    <div className="open-single-title mt-60 mb-30">
                       <h4>Speaker details</h4>
                     </div>
-                    <div className="game-single-info mb-65">
+                    <div className="open-single-info mb-65">
                       <ul>
                         <li>
                           <span>Speaker :</span> Akash Panwar
@@ -83,10 +83,10 @@ function SingleArea() {
                     </div>
                   </div>
                   <div class="col">
-                    <div className="game-single-title mt-60 mb-30">
+                    <div className="open-single-title mt-60 mb-30">
                       <h4>Venue details</h4>
                     </div>
-                    <div className="game-single-info mb-65">
+                    <div className="open-single-info mb-65">
                       <ul>
                         <li>
                           <span>Venue :</span> UPES
@@ -100,7 +100,7 @@ function SingleArea() {
                 </div>
               </div>
 
-              <div className="game-single-title mb-30">
+              <div className="open-single-title mb-30">
                 <h4>
                   Read <span>More ...</span>
                 </h4>
@@ -129,10 +129,10 @@ function SingleArea() {
                 all and also paved a way for being open to learn more about the
                 newest technologies.
               </p>
-              <div className="game-single-title mt-30 mb-10">
+              <div className="open-single-title mt-30 mb-10">
                 <h4>Glimpses</h4>
               </div>
-              <div className="game-single-gallery">
+              <div className="open-single-gallery">
                 <div className="row">
                   <div className="col-lg-4 col-sm-6 mb-30">
                     <img src={dehashed_img_1} className="h-100" alt="" />
@@ -154,8 +154,8 @@ function SingleArea() {
                   </div>
                 </div>
               </div>
-              <div className="game-single-shape">
-                <img src="assets/img/images/game_section_shape.png" alt="" />
+              <div className="open-single-shape">
+                <img src="assets/img/images/open_section_shape.png" alt="" />
               </div>
             </div>
           </div>

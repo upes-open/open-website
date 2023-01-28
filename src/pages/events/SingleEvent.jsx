@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 
 // import Breadcrumb from '../upcoming/Breadcrumb';
 
-function GameSingle(props) {
+function OpenSingle(props) {
   return (
     <>
       <HeaderTwo />
@@ -14,4 +14,4 @@ function GameSingle(props) {
   );
 }
 
-export default GameSingle;
+export default OpenSingle;

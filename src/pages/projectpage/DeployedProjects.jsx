@@ -20,7 +20,7 @@ function DeployedProjects() {
   
   return (
   
-	<section className="released-games-area gray-bg pt-115 pb-70">
+	<section className="released-opens-area gray-bg pt-115 pb-70">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-xl-6 col-lg-8">
@@ -32,19 +32,19 @@ function DeployedProjects() {
               </div>
               <div className="row align-items-center">
                 <div className="col-xl-8 col-lg-12">
-                  <Slider className="released-game-active"
+                  <Slider className="released-open-active"
                   asNavFor={nav2}
                   ref={slider => (slider1 = slider)}
                   arrows={false}
                   >
                     {DeployedProjectsData.map((data) => (
-                    <div className="released-game-carousel">
-                      <div className="released-game-item">
-                        <div className="released-game-item-bg" />
-                        <div className="released-game-img">
+                    <div className="released-open-carousel">
+                      <div className="released-open-item">
+                        <div className="released-open-item-bg" />
+                        <div className="released-open-img">
                           <img height={400} src={data.imageURL} alt="" />
                         </div>
-                        <div className="released-game-content">
+                        <div className="released-open-content">
                           <h4>OPEN <span>{data.name}</span></h4>
                           <p>{data.description}</p>
                           <p>Technologies Used: {data.keywords}</p>
@@ -56,14 +56,14 @@ function DeployedProjects() {
                   </Slider>
                 </div>
                 <div className="col-xl-4 col-lg-12">
-                  <Slider className="released-game-nav" 
+                  <Slider className="released-open-nav" 
                   asNavFor={nav1}
                   swipeToSlide={true}
                   focusOnSelect={true}
                   ref={slider => (slider2 = slider)} slidesToShow={3} vertical={true} arrows={false} >
                     {/* here */}
                     {DeployProjectsImages.map((data) => (
-                    <div className="released-game-nav-item">
+                    <div className="released-open-nav-item">
                       <img src={data.imageURL} alt="" />
                     </div>
                     ))}

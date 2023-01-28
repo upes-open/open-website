@@ -16,7 +16,7 @@ function Footer() {
                   </div>
                   <div className="fw-text">
                     <p>The Legend of Zelda: Skyward Sword is an action-adventure gam developed
-                      publish game real. was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                      publish open real. was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
                     <div className="fw-social">
                       <ul>
                         <li><a href="/#"><i className="fab fa-facebook-f" /></a></li>

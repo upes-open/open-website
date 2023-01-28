@@ -9,17 +9,17 @@ import osoc_img_6 from "../../assets/img/events/osoc/osoc_img_6.jpg";
 
 function SingleArea() {
   return (
-    <section className="game-single-area pt-120 pb-120">
+    <section className="open-single-area pt-120 pb-120">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="game-single-content">
-              <div className="upcoming-game-head">
-                <div className="uc-game-head-title">
+            <div className="open-single-content">
+              <div className="upcoming-open-head">
+                <div className="uc-open-head-title">
                   <span>15-06-2022</span>
                   <h4>OPEN Summer Of Code</h4>
                 </div>
-                <div className="uc-game-price">
+                <div className="uc-open-price">
                   <h5>Offline Workshop</h5>
                 </div>
               </div>
@@ -39,7 +39,7 @@ function SingleArea() {
                 Furthermore, we would offer many mind-calming technical
                 activities each weekend.
               </p>
-              <div className="game-single-img">
+              <div className="open-single-img">
                 <div className="row">
                   <div className="col-sm-6">
                     <img src={osoc_img_1} className="h-100" alt="" />
@@ -52,10 +52,10 @@ function SingleArea() {
               <div class="container">
                 <div class="row">
                   <div class="col">
-                    <div className="game-single-title mt-60 mb-30">
+                    <div className="open-single-title mt-60 mb-30">
                       <h4>Speaker details</h4>
                     </div>
-                    <div className="game-single-info mb-65">
+                    <div className="open-single-info mb-65">
                       <ul>
                         <li>
                           <span>Speaker :</span> Akash Panwar
@@ -75,10 +75,10 @@ function SingleArea() {
                     </div>
                   </div>
                   <div class="col">
-                    <div className="game-single-title mt-60 mb-30">
+                    <div className="open-single-title mt-60 mb-30">
                       <h4>Venue details</h4>
                     </div>
-                    <div className="game-single-info mb-65">
+                    <div className="open-single-info mb-65">
                       <ul>
                         <li>
                           <span>Venue :</span> UPES
@@ -92,7 +92,7 @@ function SingleArea() {
                 </div>
               </div>
 
-              <div className="game-single-title mb-30">
+              <div className="open-single-title mb-30">
                 <h4>
                   Read <span>More ...</span>
                 </h4>
@@ -111,7 +111,7 @@ function SingleArea() {
                 members did a marvelous job guiding the contributors with
                 passion and dedication. Projects span a range of topics
                 including web development, software engineering, mobile
-                application development, game development, data science, machine
+                application development, open development, data science, machine
                 learning, artificial intelligence, open source infrastructure,
                 security, and more.
               </p>
@@ -129,16 +129,16 @@ function SingleArea() {
                 hubbub, guess the movie, to guess the song. The event was filled
                 with laughter, fun, and great conversations. People were able to
                 connect with each other, make new friends, and talk about their
-                interests. The games were especially popular and provided a
+                interests. The opens were especially popular and provided a
                 great opportunity for people to bond with each other. At the end
                 of the weekend, everyone was feeling energized and inspired. It
                 was a great way to spend a weekend, and it was definitely an
                 event that people will remember for a long time.
               </p>
-              <div className="game-single-title mt-30 mb-10">
+              <div className="open-single-title mt-30 mb-10">
                 <h4>Glimpses</h4>
               </div>
-              <div className="game-single-gallery">
+              <div className="open-single-gallery">
                 <div className="row">
                   <div className="col-lg-4 col-sm-6 mb-30">
                     <img src={osoc_img_1} className="h-100" alt="" />
@@ -160,8 +160,8 @@ function SingleArea() {
                   </div>
                 </div>
               </div>
-              <div className="game-single-shape">
-                <img src="assets/img/images/game_section_shape.png" alt="" />
+              <div className="open-single-shape">
+                <img src="assets/img/images/open_section_shape.png" alt="" />
               </div>
             </div>
           </div>

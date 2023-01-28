@@ -32,15 +32,15 @@
 	left: auto;
 	right: 0;
 }
-.game-gallery-area .slider-nav {
+.open-gallery-area .slider-nav {
 	max-width: 1080px;
 	position: unset;
 }
-.game-gallery-bg {
+.open-gallery-bg {
 	display: none;
 }
-.game-gallery-area.position-relative {
-	background-image: url(../img/bg/game_gallery_bg.png);
+.open-gallery-area.position-relative {
+	background-image: url(../img/bg/open_gallery_bg.png);
 	background-position: top center;
 	background-size: cover;
 	padding: 120px 0 120px;
@@ -97,7 +97,7 @@
 	width: 100%;
 	background-position: center;
 }
-.game-gallery-area .slider-nav {
+.open-gallery-area .slider-nav {
 	max-width: 900px;
 	position: unset;
 }
@@ -129,7 +129,7 @@
 .home-four-area-bg .bg {
     height: 1395px;
 }
-.new-released-game-area .featured-game-content h4 {
+.new-released-open-area .featured-open-content h4 {
 	font-size: 20px;
 }
 
@@ -228,27 +228,27 @@
 .slider-circle-shape img {
 	width: 600px;
 }
-.released-game-item {
+.released-open-item {
 	margin: 50px 10px;
 }
-.released-game-nav-item {
+.released-open-nav-item {
 	margin: 0 10px;
 }
-.released-games-area.gray-bg {
+.released-opens-area.gray-bg {
 	padding-bottom: 120px;
 }
-.gamers-chart-shape {
+.openrs-chart-shape {
 	display: none;
 }
-.just-gamers-img {
+.just-openrs-img {
 	right: -55px;
 }
-.just-gamers-bg::before {
+.just-openrs-bg::before {
 	left: auto;
 	right: 100px;
 	margin: unset;
 }
-.just-gamers-bg::after {
+.just-openrs-bg::after {
 	left: auto;
 	right: 136px;
 	margin: unset;
@@ -278,25 +278,25 @@
 .breadcrumb-content h2 {
 	font-size: 60px;
 }
-.upcoming-game-item {
+.upcoming-open-item {
 	padding: 25px 20px 30px;
 }
-.uc-game-head-title {
+.uc-open-head-title {
 	margin-right: 30px;
 }
-.uc-game-head-title h4 {
+.uc-open-head-title h4 {
 	font-size: 18px;
 }
-.uc-game-price h5 {
+.uc-open-price h5 {
 	padding: 6px 20px;
 }
 .breadcrumb-content.pl-80 {
 	padding-left: 0;
 }
-.game-overview-img {
+.open-overview-img {
 	margin-left: 0;
 }
-.game-overview-img img {
+.open-overview-img img {
 	width: 100%;
 }
 .overview-history-content {
@@ -360,7 +360,7 @@
 .community-widget {
 	padding: 35px 20px;
 }
-.sidebar-new-game-content h5 {
+.sidebar-new-open-content h5 {
 	font-size: 14px;
 }
 .contact-area .row [class*="col-"]:last-child.pl-45 {
@@ -396,11 +396,11 @@
 .live-match-team::before {
 	display: none;
 }
-.featured-game-area .container-full {
+.featured-open-area .container-full {
     padding-left: 15px;
     padding-right: 15px;
 }
-.latest-games-content {
+.latest-opens-content {
     padding: 35px 25px;
 }
 .third-header-bg .navbar-wrap .logo img {
@@ -425,7 +425,7 @@
     font-size: 14px;
     margin-bottom: 0;
 }
-.game-gallery-area.position-relative {
+.open-gallery-area.position-relative {
     padding: 120px 0 80px;
 }
 .my-match-box-wrap {
@@ -611,11 +611,11 @@
 .slider-style-two .row {
 	justify-content: center;
 }
-.released-game-item {
+.released-open-item {
 	margin: 50px 0px;
 }
-.just-gamers-bg::before,
-.just-gamers-bg::after {
+.just-openrs-bg::before,
+.just-openrs-bg::after {
 	display: none;
 }
 .cta-img {
@@ -648,13 +648,13 @@
 .inner-about-padding {
 	padding-bottom: 174px;
 }
-.game-overview-img img {
+.open-overview-img img {
 	width: auto;
 }
-.game-overview-breadcrumb .breadcrumb-content .breadcrumb {
+.open-overview-breadcrumb .breadcrumb-content .breadcrumb {
 	justify-content: center;
 }
-.game-overview-img {
+.open-overview-img {
 	text-align: center;
 	margin-bottom: 50px;
 }
@@ -714,7 +714,7 @@
 .community-widget {
 	padding: 35px;
 }
-.sidebar-new-game-content h5 {
+.sidebar-new-open-content h5 {
 	font-size: 16px;
 }
 .header-four-wrap {
@@ -1039,29 +1039,29 @@ form.third-contact-form {
 .slider-style-two .slider-content p {
 	width: 100%;
 }
-.released-game-item {
+.released-open-item {
 	display: block;
 	padding: 30px 15px 30px;
 }
-.released-game-img {
+.released-open-img {
 	margin-right: 0;
 	margin-bottom: 20px;
 }
-.released-game-img img {
+.released-open-img img {
 	width: 100%;
 }
-.just-gamers-list ul li {
+.just-openrs-list ul li {
 	padding-right: 0;
 	text-align: center;
 }
-.just-gamers-list-icon {
+.just-openrs-list-icon {
 	float: unset;
 	margin: 0 auto 15px;
 }
-.just-gamers-bg .title-style-three {
+.just-openrs-bg .title-style-three {
 	text-align: center;
 }
-.just-gamers-bg .title-style-three::before {
+.just-openrs-bg .title-style-three::before {
 	right: 0;
 	margin: 0 auto;
 }
@@ -1098,13 +1098,13 @@ form.third-contact-form {
 .inner-about-area {
 	padding-top: 110px;
 }
-.game-single-content {
+.open-single-content {
 	padding: 40px 20px;
 }
-.game-single-info ul li span {
+.open-single-info ul li span {
 	margin-right: 15px;
 }
-.game-overview-img img {
+.open-overview-img img {
 	width: 100%;
 }
 .overview-history-img img {
@@ -1201,7 +1201,7 @@ form.third-contact-form {
 .community-widget {
 	padding: 35px 20px;
 }
-.sidebar-new-game-content h5 {
+.sidebar-new-open-content h5 {
 	font-size: 14px;
 }
 .live-match-wrap .popup-video img {
@@ -1246,13 +1246,13 @@ form.third-contact-form {
 .third-section-title h2 {
     font-size: 30px;
 }
-.game-gallery-active .slick-slide {
+.open-gallery-active .slick-slide {
     margin-top: 0;
 }
-.game-gallery-item {
+.open-gallery-item {
     padding: 0 15px;
 }
-.game-gallery-area.position-relative {
+.open-gallery-area.position-relative {
     padding: 120px 0 120px;
 }
 .my-match-box-wrap {
@@ -1351,23 +1351,23 @@ form.third-contact-form {
 .slider-style-two .slider-content p {
 	width: 95%;
 }
-.released-game-item {
+.released-open-item {
 	padding: 30px 30px 30px;
 	margin: 50px 10px;
 	overflow: hidden;
 }
-.just-gamers-list ul li {
+.just-openrs-list ul li {
 	padding: 0 60px;
 }
-.featured-game-content {
+.featured-open-content {
 	left: 20px;
 	bottom: 25px;
 	right: 20px;
 }
-.featured-game-content h4 {
+.featured-open-content h4 {
 	font-size: 20px;
 }
-.featured-game-overlay-content {
+.featured-open-overlay-content {
 	left: 50%;
 	right: auto;
 	bottom: auto;
@@ -1390,19 +1390,19 @@ form.third-contact-form {
 .breadcrumb-content h2 {
 	font-size: 44px;
 }
-.upcoming-game-item {
+.upcoming-open-item {
 	padding: 30px 25px 35px;
 }
-.uc-game-head-title h4 {
+.uc-open-head-title h4 {
 	font-size: 22px;
 }
-.uc-game-price h5 {
+.uc-open-price h5 {
 	padding: 6px 25px;
 }
-.game-overview-img img {
+.open-overview-img img {
 	width: auto;
 }
-.game-single-content {
+.open-single-content {
 	padding: 40px 30px;
 }
 .blog-sidebar {
@@ -1434,7 +1434,7 @@ form.third-contact-form {
 .community-widget {
 	padding: 35px;
 }
-.sidebar-new-game-content h5 {
+.sidebar-new-open-content h5 {
 	font-size: 16px;
 }
 .home-four-area-bg .bg {
@@ -1500,20 +1500,20 @@ form.third-contact-form {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1199.98px) {
-.gameplay-content {
+.openplay-content {
     margin-right: 30px;
 }
-.gameplay-content .title {
+.openplay-content .title {
     font-size: 16px;
 }
-.treand-gameplay-overlay {
+.treand-openplay-overlay {
     right: 15px;
     bottom: 15px;
 }
 .episodes-wrapper {
     padding: 40px 20px 40px;
 }
-.game-episodes-item .content .title {
+.open-episodes-item .content .title {
     font-size: 16px;
 }
 .video-blog-content .title {
@@ -1542,7 +1542,7 @@ form.third-contact-form {
 .world-news-item .banner-magazine-content {
     width: auto;
 }
-.latest-game-news-item .lgn-thumb {
+.latest-open-news-item .lgn-thumb {
     max-width: 260px;
     flex: 0 0 260px;
 }
@@ -1657,14 +1657,14 @@ form.third-contact-form {
 .world-news-area .banner-magazine-content .title {
     font-size: 20px;
 }
-.latest-game-news-item .lgn-thumb {
+.latest-open-news-item .lgn-thumb {
     max-width: 340px;
     flex: 0 0 340px;
 }
-.latest-game-news-area .pagination-wrap {
+.latest-open-news-area .pagination-wrap {
 	margin-top: 50px;
 }
-.latest-game-news-area .home-sidebar-news {
+.latest-open-news-area .home-sidebar-news {
     margin-top: 60px;
 }
 .h-seven-slider-content {
@@ -1721,10 +1721,10 @@ form.third-contact-form {
     line-height: 1.1;
     margin-bottom: 30px;
 }
-.gameplay-content .title {
+.openplay-content .title {
     font-size: 18px;
 }
-.gameplay-status {
+.openplay-status {
     margin-top: 13px;
 }
 .live-stream-item .thumb .popup-video {
@@ -1755,7 +1755,7 @@ form.third-contact-form {
 .episodes-wrapper {
     padding: 30px 20px 30px;
 }
-.game-episodes-item .content {
+.open-episodes-item .content {
     left: 20px;
     bottom: 20px;
     right: 20px;
@@ -1786,19 +1786,19 @@ form.third-contact-form {
 .banner-news-heading .social-link {
     margin-top: 10px;
 }
-.latest-game-news-item {
+.latest-open-news-item {
 	display: block;
 }
 .trending-news-item.horizontal-item .trend-news-content .title {
     font-size: 14px;
 }
-.latest-game-news-item .lgn-thumb {
+.latest-open-news-item .lgn-thumb {
     max-width: 100%;
     flex: 0 0 100%;
 	margin-right: 0;
 	margin-bottom: 25px;
 }
-.latest-game-news-item .trend-news-content .title {
+.latest-open-news-item .trend-news-content .title {
     padding-right: 0;
 }
 .banner-magazine-item {
@@ -1834,7 +1834,7 @@ form.third-contact-form {
     font-size: 20px;
     margin-bottom: 15px;
 }
-.game-shop-title .title {
+.open-shop-title .title {
     font-size: 30px;
 }
 .gs-category-active .col-5 {
@@ -1855,13 +1855,13 @@ form.third-contact-form {
     top: 30px;
     width: 55%;
 }
-.makes-gaming-chair .game-shop-title {
+.makes-gaming-chair .open-shop-title {
     text-align: center !important;
 }
-.makes-gaming-chair .game-shop-title::after {
+.makes-gaming-chair .open-shop-title::after {
     margin: 0 auto;
 }
-.makes-gaming-chair .game-shop-title p {
+.makes-gaming-chair .open-shop-title p {
     padding-right: 0;
 }
 
@@ -1875,10 +1875,10 @@ form.third-contact-form {
 .home-five-banner .banner-content .title-two {
     font-size: 45px;
 }
-.gameplay-status {
+.openplay-status {
     margin-top: 0;
 }
-.gameplay-thumb img {
+.openplay-thumb img {
     width: 100%;
 }
 .live-stream-item .thumb img {
@@ -1910,15 +1910,15 @@ form.third-contact-form {
     left: 30px;
     bottom: 30px;
 }
-.game-episodes-item .thumb img {
+.open-episodes-item .thumb img {
     width: 100%;
 }
-.game-episodes-item .content {
+.open-episodes-item .content {
     left: 25px;
     bottom: 25px;
     right: 25px;
 }
-.game-episodes-item .content .title {
+.open-episodes-item .content .title {
     font-size: 18px;
 }
 .video-blog-thumb img {
@@ -1938,7 +1938,7 @@ form.third-contact-form {
     width: 100%;
 }
 .business-news-post img,
-.latest-game-news-item .lgn-thumb img {
+.latest-open-news-item .lgn-thumb img {
     width: 100%;
 }
 .h-seven-slider-content p {

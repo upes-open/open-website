@@ -59,42 +59,42 @@ function TeamGallery() {
 		]
 	}
 	return (
-		<div className="game-gallery-area position-relative">
-			<div className="game-gallery-bg" />
+		<div className="open-gallery-area position-relative">
+			<div className="open-gallery-bg" />
 			<div className="container-fluid p-0 fix">
-				<Slider className="row game-gallery-active" {...settings}>
+				<Slider className="row open-gallery-active" {...settings}>
 					<div className="col-12">
-						<div className="game-gallery-item">
+						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px', width: '1100px', height: '550px' }} src={team_img_7} alt="" />
 						</div>
 					</div>
 					<div className="col-12">
-						<div className="game-gallery-item">
+						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px' }} src={team_img_1} alt="" />
 						</div>
 					</div>
 					<div className="col-12">
-						<div className="game-gallery-item">
+						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px' }} src={team_img_2} alt="" />
 						</div>
 					</div>
 					<div className="col-12">
-						<div className="game-gallery-item">
+						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px' }} src={team_img_3} alt="" />
 						</div>
 					</div>
 					<div className="col-12">
-						<div className="game-gallery-item">
+						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px' }} src={team_img_4} alt="" />
 						</div>
 					</div>
 					<div className="col-12">
-						<div className="game-gallery-item">
+						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px' }} src={team_img_5} alt="" />
 						</div>
 					</div>
 					<div className="col-12">
-						<div className="game-gallery-item">
+						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px' }} src={team_img_6} alt="" />
 						</div>
 					</div>
