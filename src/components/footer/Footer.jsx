@@ -15,8 +15,7 @@ function Footer() {
                     <Link to="/index-3"><img src={logo} height="80px" alt="" /></Link>
                   </div>
                   <div className="fw-text">
-                    <p>The Legend of Zelda: Skyward Sword is an action-adventure gam developed
-                      publish open real. was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                    <p>OPEN is an open source community under the University of Petroleum and Energy Studies, Dehradun, working with the aim of educating young minds about open source development practises and increasing their contributions in the world of open source.</p>
                     <div className="fw-social">
                       <ul>
                         <li><a href="/#"><i className="fab fa-facebook-f" /></a></li>

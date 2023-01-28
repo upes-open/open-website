@@ -63,16 +63,17 @@ function SingleArea() {
                     <div className="open-single-info mb-65">
                       <ul>
                         <li>
-                          <span>Speaker :</span> Akash Panwar
+                          <span>Speaker :</span> Vedant Saraf
                         </li>
                         <li>
-                          <span>Achievements :</span> Lorem, ipsum dolor sit
-                          amet consectetur adipisicing elit. Ducimus amet
-                          expedita dolorum explicabo.
+                          <span>Achievements :</span> <br />
+                          Incoming BA3 Intern @Barclays <br />
+                          Collaboration Manager @OPEN <br />
+                          LCO Community Manager  @inueron.ai
                         </li>
                         <li>
                           <span>LinkedIn :</span>{" "}
-                          <a href="https://www.linkedin.com/in/akash-panwar-27b0141bb/">
+                          <a href="https://www.linkedin.com/in/vedantsaraf2002/">
                             Click here
                           </a>
                         </li>

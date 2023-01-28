@@ -10,6 +10,7 @@ import Gallery from './Gallery';
 
 import DeployedProjects from '../../pages/projectpage/DeployedProjects'
 import UpcomingEvent from '../../pages/eventpage/UpcomingEvent'
+import OpenLearning from '../../pages/aboutuspage/OpenLearning'
 
 
 function Index() {
@@ -19,9 +20,10 @@ function Index() {
       <main>
         <Slider />
         <UpcomingEvent />
-        <OurPrincipals />
+        {/* <OurPrincipals /> */}
+        <OpenLearning />
         <DeployedProjects />
-        <TeamArea />
+        {/* <TeamArea /> */}
         <Gallery />
         <Brand />
       </main>
