@@ -18,34 +18,30 @@ function SingleArea() {
             <div className="game-single-content">
               <div className="upcoming-game-head">
                 <div className="uc-game-head-title">
-                  <span>23-01-2023</span>
-                  <h4>
-                    Uncovering <span>RPA</span> and <span>UiPath!</span>
-                  </h4>
+                  <span>18-01-2023</span>
+                  <h4>GIT Workshop</h4>
                 </div>
                 <div className="uc-game-price">
                   <h5>Offline Workshop</h5>
                 </div>
               </div>
               <p>
-                <span>Uncovering RPA and UiPath</span> is a one-day workshop
-                with the ambition of introducing one of the trendiest
-                technologies in the tech gala. Robotic Process Automation is a
-                technology that helps in furnishing the businesses with “bots”
-                or software robots that pluck out the mundane tasks from the
-                system and mimic the actions of a human worker to finish them.{" "}
+                <span>GIT</span> s an open source distributed version control
+                system that helps developers track changes in their code. In
+                this workshop, participants will learn how to install and use
+                GIT, how to create repositories, manage branches, and
+                collaborate on projects using GIT. They will also learn how to
+                use the command line interface and other advanced features. This
+                workshop is ideal for beginning developers who want to learn
+                about version control systems but also for experienced
+                developers who want to become more proficient in using GIT.{" "}
               </p>
               <p>
-                This is a rapidly evolving field which carries vast potential in
-                transforming the way we work by improving efficiency. This event
-                will start from the basic introduction of RPA, including details
-                of its functioning, its benefits and applications. Learning
-                about the various fields where RPA functions as a blooming
-                industry will help one understand the importance automation
-                carries in the future. Being equipped with the knowledge about
-                the automation world will help in being industry ready. This
-                workshop strives to go forward with the vision of making
-                everybody automation ready.
+                By attending this workshop, participants will walk away with a
+                better understanding of GIT and its use in software development
+                processes. They will be able to confidently use GIT in their own
+                project or team environments to facilitate collaboration,
+                version control, and open source development.
               </p>
               <div className="game-single-img">
                 <div className="row">
@@ -106,27 +102,38 @@ function SingleArea() {
                 </h4>
               </div>
               <p>
-                Uncovering RPA and UiPath stuck out as an evolutionary success.
-                This one-day long workshop aimed to make everyone automation
-                ready, inculcating this ideology among like minded students.
-                This workshop taught how RPA as a tool is changing the modern
-                world, how its application is making our lives easier. It also
-                focused on the importance it carries in the career world and how
-                being knowledgeable about it can boost one’s resume. This
-                workshop also helped in understanding the difference between a
-                RPA bot and a Robot. Installation of UiPath Studio was also done
-                followed by making RPA bots and a question/ answer session. This
-                event welcomed over 134 registrations with 32 students actually
-                attending the workshop. A quiz was also conducted to check the
-                understanding level of the participants. The attendees were also
-                taught to create a simple project that fetches data from a web
-                page and stores it in Excel sheets. This event would not have
-                been possible without the student convenor, the facilitators and
-                the speaker who channeled all their energy in making this
-                workshop unique and knowledgeable. The students who participated
-                in this workshop all showed their utmost dedication and
-                sincerity. This workshop surely made everyone curious about the
-                vastness automation carries.
+                The workshop on the introduction of GIT was a whooping triumph!
+                Our expert speaker, Ashutosh Kapoor did a fantabulous job
+                delivering the required knowledge in a beginner oriented manner.
+                This event mainly focused on the 1st and the 2nd year students
+                who are a part of the newly introduced open learning as well the
+                collaboration team. The organizing team's efficient management
+                contributed to the smooth sailing of the workshop. The attendees
+                received a thorough understanding of the fundamentals of GIT,
+                along with the technical skills required to use it effectively.
+                The workshop began with an overview of the basics of version
+                control and distributed version control systems. We looked at
+                how to create and manage a repository, how to add files and make
+                commits, how to collaborate with other users, and how to use
+                issues and pull requests.
+              </p>
+              <p>
+                We also looked at different branching strategies and discussed
+                when each strategy is most appropriate. Through hands-on
+                exercises, participants learned how to use git commands like
+                clone, commit, push, pull and checkout to successfully manage
+                their repositories. Throughout the workshop, attendees had
+                plenty of opportunities to discuss their projects and ask
+                questions related to their own implementations. They also
+                learned about various tools available for building automated
+                testing pipelines with GIT and how to integrate GIT into
+                continuous deployment processes. The workshop was exceedingly
+                successful in its goal to help developers become proficient in
+                GIT. We concluded our workshop by exploring some of the more
+                advanced features of GitHub. At the end of the workshop, most
+                participants were able to confidently work with GIT on their own
+                projects and were very enthusiastic about the possibilities of
+                using GIT for their future projects!
               </p>
               <div className="game-single-title mt-30 mb-10">
                 <h4>Glimpses</h4>

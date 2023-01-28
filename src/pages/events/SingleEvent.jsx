@@ -1,21 +1,17 @@
-import React from 'react'
-import HeaderTwo from '../../components/header/Header';
-import Footer from '../../components/footer/Footer';
-import RPA from './RPA';
+import React from "react";
+import HeaderTwo from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+
 // import Breadcrumb from '../upcoming/Breadcrumb';
 
-
-
-function GameSingle() {
+function GameSingle(props) {
   return (
-	<>
-	<HeaderTwo/>
-	<main>
-	<RPA/>
-	</main>
-	<Footer/>
-	</>
-  )
+    <>
+      <HeaderTwo />
+      <main>{props.children}</main>
+      <Footer />
+    </>
+  );
 }
 
-export default GameSingle
+export default GameSingle;
