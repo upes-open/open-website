@@ -1,13 +1,11 @@
 import React from "react";
 
-import rpa_img_1 from "../../assets/img/events/rpa/rpa_img_1.jpg";
-import rpa_img_2 from "../../assets/img/events/rpa/rpa_img_2.jpg";
-import rpa_img_3 from "../../assets/img/events/rpa/rpa_img_3.jpg";
-import rpa_img_4 from "../../assets/img/events/rpa/rpa_img_4.jpg";
-import rpa_img_5 from "../../assets/img/events/rpa/rpa_img_5.jpg";
-import rpa_img_6 from "../../assets/img/events/rpa/rpa_img_6.jpg";
-import rpa_img_7 from "../../assets/img/events/rpa/rpa_img_7.jpg";
-import rpa_img_9 from "../../assets/img/events/rpa/rpa_img_9.jpg";
+import osoc_img_1 from "../../assets/img/events/osoc/osoc_img_1.jpg";
+import osoc_img_2 from "../../assets/img/events/osoc/osoc_img_2.jpg";
+import osoc_img_3 from "../../assets/img/events/osoc/osoc_img_3.jpg";
+import osoc_img_4 from "../../assets/img/events/osoc/osoc_img_4.jpg";
+import osoc_img_5 from "../../assets/img/events/osoc/osoc_img_5.jpg";
+import osoc_img_6 from "../../assets/img/events/osoc/osoc_img_6.jpg";
 
 function SingleArea() {
   return (
@@ -44,10 +42,10 @@ function SingleArea() {
               <div className="game-single-img">
                 <div className="row">
                   <div className="col-sm-6">
-                    <img src={rpa_img_7} alt="" />
+                    <img src={osoc_img_1} className="h-100" alt="" />
                   </div>
                   <div className="col-sm-6">
-                    <img src={rpa_img_9} alt="" />
+                    <img src={osoc_img_2} className="h-100" alt="" />
                   </div>
                 </div>
               </div>
@@ -142,23 +140,23 @@ function SingleArea() {
               </div>
               <div className="game-single-gallery">
                 <div className="row">
-                  <div className="col-lg-4 col-sm-6">
-                    <img src={rpa_img_1} alt="" />
+                  <div className="col-lg-4 col-sm-6 mb-30">
+                    <img src={osoc_img_1} className="h-100" alt="" />
                   </div>
-                  <div className="col-lg-4 col-sm-6">
-                    <img src={rpa_img_2} alt="" />
+                  <div className="col-lg-4 col-sm-6 mb-30">
+                    <img src={osoc_img_2} className="h-100" alt="" />
                   </div>
-                  <div className="col-lg-4 col-sm-6">
-                    <img src={rpa_img_3} alt="" />
+                  <div className="col-lg-4 col-sm-6 mb-30">
+                    <img src={osoc_img_3} className="h-100" alt="" />
                   </div>
-                  <div className="col-lg-4 col-sm-6">
-                    <img src={rpa_img_4} alt="" />
+                  <div className="col-lg-4 col-sm-6 mb-30">
+                    <img src={osoc_img_4} className="h-100" alt="" />
                   </div>
-                  <div className="col-lg-4 col-sm-6">
-                    <img src={rpa_img_5} alt="" />
+                  <div className="col-lg-4 col-sm-6 mb-30">
+                    <img src={osoc_img_5} className="h-100" alt="" />
                   </div>
-                  <div className="col-lg-4 col-sm-6">
-                    <img src={rpa_img_6} alt="" />
+                  <div className="col-lg-4 col-sm-6 mb-30">
+                    <img src={osoc_img_6} className="h-100" alt="" />
                   </div>
                 </div>
               </div>
