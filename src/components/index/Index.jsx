@@ -4,10 +4,12 @@ import Header from '../header/Header';
 import SliderTwo from './SliderTwo';
 import NewGamesArea from './NewGamesArea'
 import GamesAreatwo from './GamesAreatwo'
-import UpcomingEvent from './UpcomingEvent'
+import UpcomingEvent from '../../pages/eventpage/UpcomingEvent'
 import Brand from './Brand';
 import TeamArea from './TeamArea';
 import Gallery from './Gallery';
+
+import DeployedProjects from '../../pages/projectpage/DeployedProjects'
 
 
 function IndexTwo(){
@@ -18,7 +20,7 @@ function IndexTwo(){
           <SliderTwo/>
           <UpcomingEvent/>
           <GamesAreatwo/>
-          <NewGamesArea/>
+          <DeployedProjects/>
          {/* <GamesArea/> */}
           {/* <CtaArea/> */}
           <TeamArea />
