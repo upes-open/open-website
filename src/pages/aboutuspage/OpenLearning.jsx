@@ -1,4 +1,5 @@
 import React from 'react'
+import learning from '../../assets/img/open-learning.png';
 
 function OpenLearning() {
   return (
@@ -20,7 +21,7 @@ function OpenLearning() {
                 </div>
                 <div className="col-lg-6">
                   <div className="third-about-img text-right position-relative">
-                    <img src="assets/img/images/third_about_img.png" className="main-img" alt="" />
+                    <img src={learning} style={{ borderRadius: '10px' }}  className="main-img" alt="" />
                     <img src="assets/img/images/third_about_img_shadow.png" className="shadow" alt="" />
                   </div>
                 </div>

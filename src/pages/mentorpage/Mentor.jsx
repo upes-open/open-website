@@ -1,21 +1,18 @@
 import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-// import Breadcrumb from './Breadcrumb';
+import MentorArea from '../mentorpage/MentorArea'
 
-import OurContributors from './OurContributors'
-
-function Contributors() {
+function Mentor() {
   return (
 	<>
 	<Header/>
 	<main>
-	{/* <Breadcrumb/> */}
-	<OurContributors/>	
+    <MentorArea/>
 	</main>
 	<Footer/>
 	</>
   )
 }
 
-export default Contributors
+export default Mentor

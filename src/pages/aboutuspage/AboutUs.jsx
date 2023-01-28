@@ -1,9 +1,10 @@
 import React from 'react';
 import AboutUsArea from './AboutUsArea';
 import OurVerticals from './OurVerticals';
-import OpenLearning from './OpenLearning';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
+
+import OurPrincipals from '../../pages/aboutuspage/OurPrincipals'
 
 
 function AboutUs() {
@@ -17,9 +18,8 @@ function AboutUs() {
           <br />
           <br />
           <AboutUsArea/>
+          <OurPrincipals/>
           <OurVerticals/>
-          <OpenLearning/>
-          {/* <Brand/> */}
         </main>
         <Footer/>
     </>

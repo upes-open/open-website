@@ -66,12 +66,12 @@ const BannerArea = () => {
             {EventsGlimpse.map((item) => (
                     <div className="banner-magazine-item red">
                     <div className="banner-magazine-thumb">
-                        <div className="tags"><a href="/#">{item.Type}</a></div>
+                        <div className="tags"><a href="/#">{item.Date}</a></div>
                         <img src={item.imageURL} alt="" />
                     </div>
                     <div className="banner-magazine-content">
-                        <span className="date">{item.Date}</span>
-                        <h5 className="title"><a href="/#">{item.name}</a></h5>
+                        {/* <span className="date">{item.Date}</span> */}
+                        <h5 className="title"><a href={item.link}>{item.name}</a></h5>
                     </div>
                     </div>
             ))}

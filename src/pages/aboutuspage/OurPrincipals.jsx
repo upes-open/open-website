@@ -1,6 +1,10 @@
 import React from 'react'
 import guy from '../../assets/img/9.png';
 
+import aware from '../../assets/img/principals/icon_aware.png';
+import adopt from '../../assets/img/principals/icon_adopt.png';
+import contribute from '../../assets/img/principals/icon_contribute.png';
+
 function OurPrincipals() {
   return (
 	 <section className="just-openrs-area just-openrs-bg pt-115 pb-120">
@@ -15,7 +19,7 @@ function OurPrincipals() {
                     <ul>
                       <li>
                         <div className="just-openrs-list-icon">
-                          <img src="assets/img/icon/openr_list_icon01.png" alt="" />
+                          <img src={aware} alt="" />
                         </div>
                         <div className="just-openrs-list-content fix">
                           <h5>Aware</h5>
@@ -24,7 +28,7 @@ function OurPrincipals() {
                       </li>
                       <li>
                         <div className="just-openrs-list-icon">
-                          <img src="assets/img/icon/openr_list_icon02.png" alt="" />
+                          <img src={adopt} alt="" />
                         </div>
                         <div className="just-openrs-list-content fix">
                           <h5>Adopt</h5>
@@ -33,7 +37,7 @@ function OurPrincipals() {
                       </li>
                       <li>
                         <div className="just-openrs-list-icon">
-                          <img src="assets/img/icon/openr_list_icon03.png" alt="" />
+                          <img src={contribute} alt="" />
                         </div>
                         <div className="just-openrs-list-content fix">
                           <h5>Contribute</h5>

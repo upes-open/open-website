@@ -126,8 +126,10 @@ export default function Header() {
                           <li><Link to="/event">Our Events</Link></li>
                           <li className='menu-item-has-children'><Link to="#">Our Team</Link>
                             <ul className="submenu">
+                            <li><Link to="/mentor">Mentors</Link></li>
                               <li><Link to="/team">Core Members</Link></li>
                               <li><Link to="/contributor">Contributors</Link></li>
+                              <li><Link to="/alumnus">alumnus</Link></li>
                             </ul>
                           </li>
                           <li><Link to="/contact">Contact Us</Link></li>

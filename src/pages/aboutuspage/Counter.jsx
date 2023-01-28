@@ -15,8 +15,8 @@ export default function Counter() {
                     <img src="assets/img/icon/fact_icon01.png" alt="" />
                   </div>
                   <div className="counter-item">
-                    <h2 className="counter"><span>< CountUp end={75} /></span></h2>
-                    <span>Amazing Feature</span>
+                    <h2 className="counter"><span>< CountUp end={7} /></span></h2>
+                    <span>Sponsors</span>
                   </div>
                 </div>
               </div>
@@ -26,19 +26,8 @@ export default function Counter() {
                     <img src="assets/img/icon/fact_icon02.png" alt="" />
                   </div>
                   <div className="counter-item">
-                    <h2 className="counter"><span> < CountUp end={200} /> </span></h2>
-                    <span>Amazing Feature</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="fact-item">
-                  <div className="fact-icon">
-                    <img src="assets/img/icon/fact_icon03.png" alt="" />
-                  </div>
-                  <div className="counter-item">
-                    <h2 className="counter"><span>< CountUp end={315} /></span></h2>
-                    <span>Amazing Feature</span>
+                    <h2 className="counter"><span> < CountUp end={35} /> </span></h2>
+                    <span>Projects</span>
                   </div>
                 </div>
               </div>
@@ -48,8 +37,19 @@ export default function Counter() {
                     <img src="assets/img/icon/fact_icon04.png" alt="" />
                   </div>
                   <div className="counter-item">
-                    <h2 className="counter"><span >< CountUp end={400} /></span></h2>
-                    <span>Amazing Feature</span>
+                    <h2 className="counter"><span >< CountUp end={45} /></span></h2>
+                    <span>Workshops</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-md-4 col-sm-6">
+                <div className="fact-item">
+                  <div className="fact-icon">
+                    <img src="assets/img/icon/fact_icon03.png" alt="" />
+                  </div>
+                  <div className="counter-item">
+                    <h2 className="counter"><span>< CountUp end={150} /></span></h2>
+                    <span>Team</span>
                   </div>
                 </div>
               </div>

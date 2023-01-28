@@ -30,10 +30,10 @@ function UpcomingEvent() {
               </div>
               <div className="inner-about-content">
                 <h5>OPEN's 4th Anniversary</h5>
-                <p>Compete with 100 players on a remote Lorem Ipsn gravida. Pro ain gravida nibh vel velit an auctor aliqueenean
-                  ollicitudin ain gravida nibh vel version an ipsum.</p>
-                <p>Lorem Ipsn gravida. Pro ain gravida nibh vevelit auctor aliqueenean ollicitudin ain gravida nibh vel version an ipsum.</p>
-                <a href="/#" className="btn btn-style-two">Know More</a>
+                <p>We are proud to announce that OPEN Community is celebrating its 4th anniversary on 1st February, 2023! Over the past four years, we have worked hard to create a close-knit community that fosters meaningful connections and provides opportunities for personal and professional growth. This anniversary marks a time for us to reflect on our journey, celebrate our achievements, and look forward to what the future holds for our community.</p>
+                <p> We would like to extend a heartfelt gratitude to all our members, alumni, and mentors for helping us reach this milestone. Here’s to many more years of growth and success!</p>
+                {/* <p>This celebration will be all about looking back at accomplishments of the community and replenishing the memories. This walk down the memory lane will help to embrace all the valuable connections made along the way. But the celebration won’t be all about reminiscing - It will also be an unforgettable eve,full of games & activities that will make this bond even more sturdy.</p> */}
+                {/* <a href="/" className="btn btn-style-two">Know More</a> */}
               </div>
             </div>
           </div>

@@ -4,6 +4,8 @@ import AboutUs from "./pages/aboutuspage/AboutUs";
 import Project from "./pages/projectpage/Project";
 import Event from "./pages/eventpage/Event";
 import Team from "./pages/teampage/Team";
+import Mentor from "./pages/mentorpage/Mentor";
+import Alumnus from "./pages/aluminipage/Alumini";
 import Contributor from "./pages/contributorspage/Contributors";
 import Contact from "./pages/contact/Contact";
 
@@ -15,6 +17,7 @@ import RPA from "./pages/events/RPA";
 import Dehashed from "./pages/events/Dehashed";
 import Flutter from "./pages/events/Flutter";
 import SummerOfCode from "./pages/events/SummerOfCode";
+
 
 // import Loader from "react-js-loader";
 
@@ -52,6 +55,12 @@ function App() {
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/team">
             <Team />
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/mentor">
+            <Mentor />
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/alumnus">
+            <Alumnus />
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/contributor">
             <Contributor />

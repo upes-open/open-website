@@ -2,6 +2,13 @@ import React from 'react'
 import Slider from 'react-slick';
 
 import upes from '../../assets/img/sponsors/upes.png';
+import stpi from '../../assets/img/sponsors/stpi.png';
+import certificate from '../../assets/img/sponsors/certificate.png';
+import teachmint from '../../assets/img/sponsors/teachmint.png';
+import xebia from '../../assets/img/sponsors/xebia.png';
+import ibm from '../../assets/img/sponsors/ibm.png';
+import linuxfoundation from '../../assets/img/sponsors/linux-foundation.png';
+
 
 function Brand() {
    const settings = {
@@ -50,27 +57,32 @@ function Brand() {
                 </div>
                 <div className="col-12">
                   <div className="t-brand-item">
-                    <img src="assets/img/brand/t_brand_logo02.png" alt="" />
+                    <img src={teachmint} alt="" />
                   </div>
                 </div>
                 <div className="col-12">
                   <div className="t-brand-item">
-                    <img src="assets/img/brand/t_brand_logo03.png" alt="" />
+                    <img src={linuxfoundation} alt="" />
                   </div>
                 </div>
                 <div className="col-12">
                   <div className="t-brand-item">
-                    <img src="assets/img/brand/t_brand_logo04.png" alt="" />
+                    <img src={xebia} alt="" />
                   </div>
                 </div>
                 <div className="col-12">
                   <div className="t-brand-item">
-                    <img src="assets/img/brand/t_brand_logo05.png" alt="" />
+                    <img src={ibm} alt="" />
                   </div>
                 </div>
                 <div className="col-12">
                   <div className="t-brand-item">
-                    <img src="assets/img/brand/t_brand_logo03.png" alt="" />
+                    <img src={certificate} alt="" />
+                  </div>
+                </div>
+                <div className="col-12">
+                  <div className="t-brand-item">
+                    <img src={stpi} alt="" />
                   </div>
                 </div>
               </Slider>

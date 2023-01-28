@@ -770,7 +770,7 @@ ul.minicart .cart-price .new {
 	transition: .3s linear;
 }
 .s-header-top-area {
-	background: #000;
+	background: #131418;
 }
 .navbar-wrap ul li > .submenu {
 	position: absolute;
@@ -1819,7 +1819,7 @@ ul.minicart .cart-price .new {
 	z-index: -1;
 }
 .third-about-bg {
-    background-image: url(../img/bg/third_about_bg.jpg);
+    background-image: url(../img/header/5.png);
     background-position: center;
 	background-size: cover;
 	position: relative;
@@ -2154,7 +2154,7 @@ ul.minicart .cart-price .new {
 }
 .released-open-content h4::before {
 	content: "";
-	background-image: url(../img/images/released_open_brush.png);
+	background-image: url(../img/images/released_game_brush.png);
 	position: absolute;
 	right: -50px;
 	top: 0;
@@ -2843,7 +2843,7 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	right: 0;
-	background-image: url(../img/images/openrs_bg_conve01.png);
+	background-image: url(../img/images/gamers_bg_conve01.png);
 	width: 467px;
 	height: 169px;
 	margin: 0 auto;
@@ -2856,7 +2856,7 @@ ul.minicart .cart-price .new {
 	position: absolute;
 	left: 0;
 	right: 0;
-	background-image: url(../img/images/openrs_bg_conve02.png);
+	background-image: url(../img/images/gamers_bg_conve02.png);
 	width: 420px;
 	height: 152px;
 	margin: 0 auto;
@@ -3155,7 +3155,7 @@ ul.minicart .cart-price .new {
 	visibility: hidden;
 }
 .home-four-shop-area {
-	background-image: url(../img/bg/home_four_shop_bg.jpg);
+	background-image: url(../img/banners/11.png);
 	background-position: center;
 	background-size: cover;
 }
@@ -4749,7 +4749,7 @@ ul.minicart .cart-price .new {
 	z-index: 1;
 }
 .third-footer-bg {
-	background-image: url(../img/bg/t_footer_bg.jpg);
+	background-image: url(../img/header/5.png);
 	padding-top: 90px;
 	padding-bottom: 40px;
 }
@@ -5676,7 +5676,7 @@ ul.minicart .cart-price .new {
 
 /* Banner */
 .home-six-banner {
-    background-image: url(../img/slider/magazine_banner_bg.jpg);
+    background-image: url(../img/banners/11.png);
     background-position: center;
     background-size: cover;
     padding: 105px 0 35px;

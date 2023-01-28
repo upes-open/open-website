@@ -1,21 +1,18 @@
 import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-// import Breadcrumb from './Breadcrumb';
+import AluminiArea from '../aluminipage/AluminiArea'
 
-import OurContributors from './OurContributors'
-
-function Contributors() {
+function Alumini() {
   return (
 	<>
 	<Header/>
 	<main>
-	{/* <Breadcrumb/> */}
-	<OurContributors/>	
+    <AluminiArea/>
 	</main>
 	<Footer/>
 	</>
   )
 }
 
-export default Contributors
+export default Alumini
