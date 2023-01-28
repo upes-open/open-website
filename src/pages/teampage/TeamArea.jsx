@@ -1,6 +1,5 @@
 import React from 'react'
 import { TeamData } from '../../data/TeamData';
-import {EventsGlimpse} from '../../data/EventsGlimpse';
 
 function TeamArea() {
   return (
@@ -9,7 +8,7 @@ function TeamArea() {
               <div className="row">
                 <div className="col-12">
                   <div className="third-section-title text-center mb-60">
-                    <h2>MEET <span>OUR</span> TEAM</h2>
+                    <h2>MEET <span>OUR</span> Assests</h2>
                   </div>
                 </div>
               </div>

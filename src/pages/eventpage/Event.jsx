@@ -5,7 +5,7 @@ import Breadcrumb from './Breadcrumb';
 import UpcomingEvent from './UpcomingEvent';
 import PastEvents from './PastEvents';
 
-function Upcoming() {
+function Event() {
   return (
 	<>
 	<Header/>
@@ -20,4 +20,4 @@ function Upcoming() {
   )
 }
 
-export default Upcoming
+export default Event

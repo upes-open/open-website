@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import { DeployedProjectsData } from '../../data/DeployedProjectsData';
 import { DeployProjectsImages } from '../../data/DeployProjectsImages';
 
-function NewGamesArea() {
+function DeployedProjects() {
  
   const [nav1, setNav1] = useState(null)
   const [nav2, setNav2] = useState(null)
@@ -75,4 +75,4 @@ function NewGamesArea() {
   )
 }
 
-export default NewGamesArea
+export default DeployedProjects

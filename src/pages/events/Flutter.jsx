@@ -6,7 +6,7 @@ import flutter_img_3 from "../../assets/img/events/flutter/flutter_img_3.jpg";
 import flutter_img_4 from "../../assets/img/events/flutter/flutter_img_4.jpg";
 import flutter_img_5 from "../../assets/img/events/flutter/flutter_img_5.jpg";
 import flutter_img_6 from "../../assets/img/events/flutter/flutter_img_6.jpg";
-import flutter_img_7 from "../../assets/img/events/flutter/flutter_img_7.jpg";
+import flutter_img_7 from "../../assets/img/events/flutter/flutter_img_7.JPG";
 import flutter_img_8 from "../../assets/img/events/flutter/flutter_img_8.jpg";
 
 function SingleArea() {
@@ -47,10 +47,10 @@ function SingleArea() {
               <div className="game-single-img">
                 <div className="row">
                   <div className="col-sm-6">
-                    <img src={flutter_img_7} alt="" />
+                    <img src={flutter_img_8} alt="" />
                   </div>
                   <div className="col-sm-6">
-                    <img src={flutter_img_8} alt="" />
+                    <img src={flutter_img_7} alt="" />
                   </div>
                 </div>
               </div>
@@ -81,15 +81,15 @@ function SingleArea() {
                   </div>
                   <div class="col">
                     <div className="game-single-title mt-60 mb-30">
-                      <h4>Venue details</h4>
+                      <h4>Event details</h4>
                     </div>
                     <div className="game-single-info mb-65">
                       <ul>
                         <li>
-                          <span>Venue :</span> UPES
+                          <span>Student Convener :</span> Mr. Raghav Agarwal
                         </li>
                         <li>
-                          <span>Number of attendees :</span> 187
+                          <span>Faculty Convener :</span> Dr. Gourav Bathla
                         </li>
                       </ul>
                     </div>

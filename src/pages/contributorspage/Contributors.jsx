@@ -5,7 +5,7 @@ import Breadcrumb from './Breadcrumb';
 
 import OurContributors from './OurContributors'
 
-function AboutUs() {
+function Contributors() {
   return (
 	<>
 	<Header/>
@@ -18,4 +18,4 @@ function AboutUs() {
   )
 }
 
-export default AboutUs
+export default Contributors

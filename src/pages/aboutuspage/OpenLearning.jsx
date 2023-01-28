@@ -18,8 +18,7 @@ function OpenLearning() {
                       <div className="inner">
                         <h2>Program</h2>
                         <h6 className="vertical-title">For Freshies</h6>
-                        <p>The Legend of Zelda: Skyward Sword is an action-adventure game developed and published by Nintendo for the Wii. The six
-                          teenth mainline entry in The Legend of Zelda series.</p>
+                        <p>OPEN learning is the one-stop destination of all the vibrant learners looking for the first step to excellence. OPEN learning not only lays the path by sharing tutorials, conducting workshops, but also walks along with you on that path by helping you create and contribute to the projects. </p>
                       </div>
                       <a href="/#" className="btn rotated-btn">Know Now</a>
                     </div>

@@ -2700,7 +2700,7 @@ ul.minicart .cart-price .new {
     margin-bottom: -150px;
 }
 .game-gallery-bg {
-    background-image: url(../img/bg/game_gallery_bg.png);
+    /* background-image: url(../img/bg/game_gallery_bg.png); */
     background-position: top center;
     background-size: cover;
     position: absolute;

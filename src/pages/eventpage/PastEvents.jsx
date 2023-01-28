@@ -2,7 +2,7 @@ import React from 'react'
 import { EventsData } from '../../data/EventsData';
 
 
-function UpcomingGames() {
+function PastEvents() {
   return (
 	  <section className="upcoming-games-area upcoming-games-bg pt-40 pb-80">
         <div className="container">
@@ -45,4 +45,4 @@ function UpcomingGames() {
   )
 }
 
-export default UpcomingGames
+export default PastEvents

@@ -1,5 +1,4 @@
 import React from 'react';
-import Brand from './Brand';
 import AboutUsArea from './AboutUsArea';
 import OurVerticals from './OurVerticals';
 import OpenLearning from './OpenLearning';
@@ -20,7 +19,7 @@ function AboutUs() {
           <AboutUsArea/>
           <OurVerticals/>
           <OpenLearning/>
-          <Brand/>
+          {/* <Brand/> */}
         </main>
         <Footer/>
     </>

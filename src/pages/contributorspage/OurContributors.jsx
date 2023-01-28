@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import Slider from "react-slick";
 import axios from "axios";
 
-const ShopArea = () => {
+const OurContributors = () => {
 
   const [index, setIndex] = useState(0);
   const [data, setData] = useState([]);
@@ -120,4 +120,4 @@ const ShopArea = () => {
   )
 }
 
-export default ShopArea
+export default OurContributors

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-function LatestMatch() {
+function LatestProjects() {
   const [index, setIndex] = useState(0);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -61,4 +61,4 @@ function LatestMatch() {
   )
 }
 
-export default LatestMatch
+export default LatestProjects

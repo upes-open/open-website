@@ -1,37 +1,33 @@
 import React from 'react';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
-import SliderTwo from './SliderTwo';
-import NewGamesArea from './NewGamesArea'
-import GamesAreatwo from './GamesAreatwo'
-import UpcomingEvent from '../../pages/eventpage/UpcomingEvent'
+import Slider from './Slider';
+import OurPrincipals from './OurPrincipals'
+
 import Brand from './Brand';
 import TeamArea from './TeamArea';
 import Gallery from './Gallery';
 
 import DeployedProjects from '../../pages/projectpage/DeployedProjects'
+import UpcomingEvent from '../../pages/eventpage/UpcomingEvent'
 
 
-function IndexTwo(){
-	return(
-        <>
-          <Header/>
-        <main>
-          <SliderTwo/>
-          <UpcomingEvent/>
-          <GamesAreatwo/>
-          <DeployedProjects/>
-         {/* <GamesArea/> */}
-          {/* <CtaArea/> */}
-          <TeamArea />
-          <Gallery />
-          <Brand />
-         {/* <ShopAreaTwo/> */}
-          {/* <BlogArea/> */}
-        </main>
-        <Footer/>
-        </>
-	)
+function Index() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Slider />
+        <UpcomingEvent />
+        <OurPrincipals />
+        <DeployedProjects />
+        <TeamArea />
+        <Gallery />
+        <Brand />
+      </main>
+      <Footer />
+    </>
+  )
 }
-	
-export default IndexTwo
+
+export default Index

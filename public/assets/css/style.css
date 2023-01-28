@@ -1171,8 +1171,11 @@ ul.minicart .cart-price .new {
 /* 4. Breadcrumb */
 .breadcrumb-bg {
 	background-image: url(https://i.postimg.cc/qMSHS8C0/grouppic.jpg);
-	padding-top: 275px;
+	padding-top: 555px;
 	padding-bottom: 170px;
+	padding-left: 170px;
+	padding-right: 170px;
+	/* background-size: auto; */
 	background-position: center;
 	background-size: cover;
 }
@@ -2750,7 +2753,7 @@ ul.minicart .cart-price .new {
     margin-bottom: -150px;
 }
 .game-gallery-bg {
-    background-image: url(../img/bg/game_gallery_bg.png);
+    /* background-image: url(../img/bg/game_gallery_bg.png); */
     background-position: top center;
     background-size: cover;
     position: absolute;

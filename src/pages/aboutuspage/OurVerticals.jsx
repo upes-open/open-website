@@ -1,6 +1,7 @@
 import React from 'react';
 import Counter from './Counter';
-function FeaturesArea() {
+
+function OurVerticals() {
   return (
 	  <section className="features-area features-bg pt-120 pb-70">
         <div className="container">
@@ -37,4 +38,4 @@ function FeaturesArea() {
       </section>
   )
 }
-export default FeaturesArea;
+export default OurVerticals;
