@@ -94,8 +94,8 @@ const OurContributors = () => {
       <div className="row justify-content-center">
         <div className="col-xl-6 col-lg-8">
           <div className="section-title home-four-title text-center mb-35">
-            <h2>Upcoming Student <span>Developers</span></h2>
-            <p>Compete with 100 players on a remote island for winner takes showdown known issue where certain skin strategic</p>
+            <h2>Our <span>Contributors</span></h2>
+            {/* <p>Compete with 100 players on a remote island for winner takes showdown known issue where certain skin strategic</p> */}
           </div>
         </div>
       </div>

@@ -36,8 +36,8 @@ function LatestProjects() {
             <div className="col-xl-6 col-lg-8">
               <div className="section-title title-style-three white-title text-center mb-70">
                 <h2>Our <span>Projects</span></h2>
-                <p>Compete with 100 players on a remote island for winner takes showdown
-                  known issue where certain skin strategic</p>
+                {/* <p>Compete with 100 players on a remote island for winner takes showdown
+                  known issue where certain skin strategic</p> */}
               </div>
             </div>
           </div>

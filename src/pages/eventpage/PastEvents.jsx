@@ -9,7 +9,7 @@ function PastEvents() {
         <div className="row justify-content-center">
             <div className="col-xl-6 col-lg-4">
               <div className="section-title title-style-three black-title text-center mb-70">
-                <h2>Passed <span>Events</span></h2>
+                <h2>Past <span>Events</span></h2>
                 <p>Relive the success story of our community with a glimpse of the past events that we've proudly hosted.</p>
               </div>
             </div>

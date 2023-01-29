@@ -59,7 +59,7 @@ function SingleArea() {
               </div>
               <div class="container">
                 <div class="row">
-                  <div class="col">
+                  {/* <div class="col">
                     <div className="open-single-title mt-60 mb-30">
                       <h4>Speaker details</h4>
                     </div>
@@ -81,18 +81,21 @@ function SingleArea() {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                   <div class="col">
                     <div className="open-single-title mt-60 mb-30">
-                      <h4>Venue details</h4>
+                      <h4>Event details</h4>
                     </div>
                     <div className="open-single-info mb-65">
-                      <ul>
+                    <ul>
                         <li>
-                          <span>Venue :</span> UPES
+                          <span>Participants :</span> 167
                         </li>
                         <li>
-                          <span>Number of attendees :</span> 187
+                          <a href="https://www.linkedin.com/in/ragharwal/"><span>Student Convener :</span> Mr. Raghav Agarwal</a>  
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/dr-gourav-bathla-b2155913/"><span>Faculty Convener :</span> Dr. Gourav Bathla</a>
                         </li>
                       </ul>
                     </div>
@@ -107,7 +110,7 @@ function SingleArea() {
               </div>
               <p>
                 Dehashed workshop endured monumental success in bringing over
-                550 registrations and more than 100 attendees who learned with
+                550 registrations and more than 150 attendees who learned with
                 zeal and made this workshop a fruitful success. All the 4
                 speakers did an outstanding job narrating their expertise that
                 made learning a fun ground. This workshop introduced blockchain

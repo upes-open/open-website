@@ -66,19 +66,23 @@ function SingleArea() {
                     <div className="open-single-info mb-65">
                       <ul>
                         <li>
-                          <span>Speaker :</span> Akash Panwar
+                          <a href="https://www.linkedin.com/in/medhavi-singh-8752091ba"><span>Speaker :</span> Medhavi Singh</a>
                         </li>
                         <li>
-                          <span>Achievements :</span> Lorem, ipsum dolor sit
-                          amet consectetur adipisicing elit. Ducimus amet
-                          expedita dolorum explicabo.
+                          <span>Achievements :</span> <br />
+                            AI intern @TRAIVIS UK
+                            <br />
+                            Harvard WECode 2022 scholar
+                            <br />
+                            UiPath Student Developer Champion
+
                         </li>
-                        <li>
+                        {/* <li>
                           <span>LinkedIn :</span>{" "}
                           <a href="https://www.linkedin.com/in/akash-panwar-27b0141bb/">
                             Click here
                           </a>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -87,12 +91,15 @@ function SingleArea() {
                       <h4>Venue details</h4>
                     </div>
                     <div className="open-single-info mb-65">
-                      <ul>
+                    <ul>
                         <li>
-                          <span>Venue :</span> UPES
+                          <span>Participants :</span> 155
                         </li>
                         <li>
-                          <span>Number of attendees :</span> 187
+                          <a href="https://www.linkedin.com/in/ragharwal/"><span>Student Convener :</span> Mr. Raghav Agarwal</a>  
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/dr-gourav-bathla-b2155913/"><span>Faculty Convener :</span> Dr. Gourav Bathla</a>
                         </li>
                       </ul>
                     </div>
@@ -116,7 +123,7 @@ function SingleArea() {
                 workshop also helped in understanding the difference between a
                 RPA bot and a Robot. Installation of UiPath Studio was also done
                 followed by making RPA bots and a question/ answer session. This
-                event welcomed over 134 registrations with 32 students actually
+                event welcomed over 200 registrations with 155 students actually
                 attending the workshop. A quiz was also conducted to check the
                 understanding level of the participants. The attendees were also
                 taught to create a simple project that fetches data from a web

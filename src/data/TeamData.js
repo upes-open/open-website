@@ -86,6 +86,14 @@ export const TeamData = [
     GitHub: "https://github.com/Kapoor-0905",
   },
   {
+    name: "Manan Gupta",
+    designation: "Lead Student Developer",
+    imageURL:
+      "https://i.postimg.cc/wxmDMMhn/manan.png",
+    LinkedIn: "https://www.linkedin.com/in/manan-gupta-0359a3205/",
+    GitHub: "https://github.com/manangupta19",
+  },
+  {
     name: "Saarini Ritesh",
     designation: "Lead Student Developer",
     imageURL:
@@ -100,14 +108,6 @@ export const TeamData = [
       "https://i.postimg.cc/W1Pdy4rc/pawan.png",
     LinkedIn: "https://www.linkedin.com/in/pawan-bajaj-7420121b8",
     GitHub: "https://github.com/pavvann",
-  },
-  {
-    name: "Manan Gupta",
-    designation: "Lead Student Developer",
-    imageURL:
-      "https://i.postimg.cc/wxmDMMhn/manan.png",
-    LinkedIn: "https://www.linkedin.com/in/manan-gupta-0359a3205/",
-    GitHub: "https://github.com/manangupta19",
   },
   {
     name: "Akanksha Gupta",

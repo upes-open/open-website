@@ -17,6 +17,7 @@ import RPA from "./pages/events/RPA";
 import Dehashed from "./pages/events/Dehashed";
 import Flutter from "./pages/events/Flutter";
 import SummerOfCode from "./pages/events/SummerOfCode";
+import Learning from "./pages/events/Learning";
 
 
 // import Loader from "react-js-loader";
@@ -81,6 +82,11 @@ function App() {
           <ScrollToTopRoute exact={true} path="/flutter">
             <SingleEvent>
               <Flutter />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/learning">
+            <SingleEvent>
+              <Learning />
             </SingleEvent>
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/osoc">

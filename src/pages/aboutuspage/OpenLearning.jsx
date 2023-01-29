@@ -15,7 +15,7 @@ function OpenLearning() {
                         <h6 className="vertical-title">For Freshies</h6>
                         <p>OPEN learning is the one-stop destination of all the vibrant learners looking for the first step to excellence. OPEN learning not only lays the path by sharing tutorials, conducting workshops, but also walks along with you on that path by helping you create and contribute to the projects. </p>
                       </div>
-                      <a href="/#" className="btn rotated-btn">Know Now</a>
+                      <a href="/learning" className="btn rotated-btn">Know Now</a>
                     </div>
                   </div>
                 </div>

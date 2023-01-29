@@ -76,10 +76,10 @@ export default function Header() {
                   <div className="header-top-right">
                     <div className="header-social">
                       <ul>
-                        <li><Link to="/#"><i className="fab fa-facebook-f" /></Link></li>
-                        <li><Link to="/#"><i className="fab fa-twitter" /></Link></li>
-                        {/* <li><Link to="/#"><i className="fab fa-pinterest-p" /></Link></li> */}
-                        <li><Link to="/#"><i className="fab fa-linkedin-in" /></Link></li>
+                        <li><a href="https://twitter.com/UpesOpen"><span className="fab fa-twitter" /></a></li>
+                        <li><a href="https://www.instagram.com/upesopen_/"><span className="fab fa-instagram" /></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCxdpyRSNdAKQ6R6Jpv_-nKQ"><span className="fab fa-youtube" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/open-community/mycompany/"><span className="fab fa-linkedin" /></a></li>
                       </ul>
                     </div>
                     <div className="header-top-action">
@@ -108,18 +108,6 @@ export default function Header() {
                       </div>
                       <div className="navbar-wrap push-menu d-none d-lg-flex">
                         <ul className="navigation">
-                          {/* <li className="show  menu-item-has-children"><Link to="/">Home</Link>
-                            <ul className="submenu">
-                              <li ><Link to="/">Home One</Link></li>
-                              <li><Link to="/index-2">Home Two</Link></li>
-                              <li><Link to="/index-3">Home Three</Link></li>
-                              <li ><Link to="/index-4">Home Four</Link></li>
-                              <li><Link to="/index-5">Home Five</Link></li>
-                              <li><Link to="/index-6">Home Six</Link></li>
-                              <li><Link to="/index-7">Home Seven</Link></li>
-                             
-                            </ul>
-                          </li> */}
                           <li><Link to="/">Home</Link></li>
                           <li><Link to="/about">About Us</Link></li>
                           <li><Link to="/project">Our Projects</Link></li>
@@ -148,12 +136,10 @@ export default function Header() {
                     </div>
                     <div className="social-links">
                       <ul className="clearfix">
-                        <li><a href="/#"><span className="fab fa-twitter" /></a></li>
-                        <li><a href="/#"><span className="fab fa-facebook-square" /></a></li>
-                        {/* <li><a href="/#"><span className="fab fa-pinterest-p" /></a></li> */}
-                        <li><a href="/#"><span className="fab fa-instagram" /></a></li>
-                        <li><a href="/#"><span className="fab fa-youtube" /></a></li>
-                        <li><a href="/#"><span className="fab fa-linkedin" /></a></li>
+                        <li><a href="https://twitter.com/UpesOpen"><span className="fab fa-twitter" /></a></li>
+                        <li><a href="https://www.instagram.com/upesopen_/"><span className="fab fa-instagram" /></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCxdpyRSNdAKQ6R6Jpv_-nKQ"><span className="fab fa-youtube" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/open-community/mycompany/"><span className="fab fa-linkedin" /></a></li>
                       </ul>
                     </div>
                   </nav>

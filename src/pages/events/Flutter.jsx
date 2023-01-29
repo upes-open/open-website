@@ -63,7 +63,7 @@ function SingleArea() {
                     <div className="open-single-info mb-65">
                       <ul>
                         <li>
-                          <span>Speaker :</span> Vedant Saraf
+                        <a href="https://www.linkedin.com/in/vedantsaraf2002/"><span>Speaker :</span> Vedant Saraf</a>
                         </li>
                         <li>
                           <span>Achievements :</span> <br />
@@ -71,12 +71,12 @@ function SingleArea() {
                           Collaboration Manager @OPEN <br />
                           LCO Community Manager  @inueron.ai
                         </li>
-                        <li>
+                        {/* <li>
                           <span>LinkedIn :</span>{" "}
                           <a href="https://www.linkedin.com/in/vedantsaraf2002/">
                             Click here
                           </a>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -87,10 +87,13 @@ function SingleArea() {
                     <div className="open-single-info mb-65">
                       <ul>
                         <li>
-                          <span>Student Convener :</span> Mr. Raghav Agarwal
+                          <span>Participants :</span> 257
                         </li>
                         <li>
-                          <span>Faculty Convener :</span> Dr. Gourav Bathla
+                          <a href="https://www.linkedin.com/in/ragharwal/"><span>Student Convener :</span> Mr. Raghav Agarwal</a>  
+                        </li>
+                        <li>
+                          <a href="https://www.linkedin.com/in/dr-gourav-bathla-b2155913/"><span>Faculty Convener :</span> Dr. Gourav Bathla</a>
                         </li>
                       </ul>
                     </div>
@@ -117,7 +120,7 @@ function SingleArea() {
                 the learners. The efficiency of the projects and quiz points
                 were seen as the basis for final prize distribution giving
                 everybody a fair chance to stand out. This offline workshop
-                registered over 400 candidates with 170 making it till the end.
+                registered over 600 candidates with 257 making it till the end.
                 The learners worked on projects like Tic tac toe open and
                 Netflix clone UI, both of the immensely popular prospects. This
                 event left an impression and eagerness among the participants to

@@ -8,7 +8,7 @@ function ContactArea() {
           <div className="row">
             <div className="col-lg-6">
               <div id="contact-map">
-              <iframe src="https://maps.google.com/maps?width=100&amp;height=700&amp;hl=en&amp;q=upes&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" height={500} width={600} frameborder="0"></iframe>
+              {/* <iframe src="https://maps.google.com/maps?width=100&amp;height=700&amp;hl=en&amp;q=upes&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" height={300} width={400} frameborder="0"></iframe> */}
               </div>
             </div>
             <div className="col-lg-6 pl-45">

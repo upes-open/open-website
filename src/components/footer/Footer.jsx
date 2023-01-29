@@ -18,10 +18,10 @@ function Footer() {
                     <p>OPEN is an open source community under the University of Petroleum and Energy Studies, Dehradun, working with the aim of educating young minds about open source development practises and increasing their contributions in the world of open source.</p>
                     <div className="fw-social">
                       <ul>
-                        <li><a href="/#"><i className="fab fa-facebook-f" /></a></li>
-                        <li><a href="/#"><i className="fab fa-twitter" /></a></li>
-                        <li><a href="/#"><i className="fab fa-pinterest-p" /></a></li>
-                        <li><a href="/#"><i className="fab fa-linkedin-in" /></a></li>
+                        <li><a href="https://twitter.com/UpesOpen"><span className="fab fa-twitter" /></a></li>
+                        <li><a href="https://www.instagram.com/upesopen_/"><span className="fab fa-instagram" /></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCxdpyRSNdAKQ6R6Jpv_-nKQ"><span className="fab fa-youtube" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/open-community/mycompany/"><span className="fab fa-linkedin" /></a></li>
                       </ul>
                     </div>
                   </div>
@@ -34,10 +34,11 @@ function Footer() {
                   </div>
                   <div className="fw-quick-link">
                     <ul>
-                      <li><a href="/#">About Us</a></li>
-                      <li><a href="/#">Our Projects</a></li>
-                      <li><a href="/#">Our Events</a></li>
-                      <li><a href="/#">Contact Us</a></li>
+                    <li><a href="/learning">Learning Program</a></li>
+                      <li><a href="/about">About Us</a></li>
+                      <li><a href="/project">Our Projects</a></li>
+                      <li><a href="/event">Our Events</a></li>
+                      <li><a href="/contact">Contact Us</a></li>
                     </ul>
                   </div>
                 </div>
