@@ -1774,9 +1774,11 @@ ul.minicart .cart-price .new {
 }
 .about-content p:first-child {
 	margin-bottom: 20px;
+	color: #002d2b;
 }
 .about-content p:nth-child(2) {
 	margin-bottom: 55px;
+	color: #002d2b;
 }
 .inner-about-area .title-style-three {
 	padding-bottom: 30px;
