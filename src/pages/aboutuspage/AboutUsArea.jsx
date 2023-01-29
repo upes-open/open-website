@@ -4,23 +4,11 @@ import $ from 'jquery';
 import {Link} from 'react-router-dom';
 
 function AboutUsArea() {
-	useEffect(()=>{
-
-		$('.popup-video').magnificPopup({
-			type: 'iframe'
-		});
-	},[])
-
   return (
 	  <section className="about-us-area pt-90 pb-120">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 order-0 order-lg-2">
-                <div className="about-img">
-                  {/* <img src="assets/img/images/about_us_img.jpg" alt="" /> */}
-                  <iframe src="https://gusindia01-my.sharepoint.com/personal/opencommunity_ddn_upes_ac_in/_layouts/15/embed.aspx?UniqueId=96afd701-1864-40b3-b4e2-ee42b6b644f1&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22af%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="550" height="360" frameborder="0" scrolling="no" allowfullscreen title="Documentary .mp4"></iframe>
-                  <Link to="/https://gusindia01-my.sharepoint.com/personal/opencommunity_ddn_upes_ac_in/_layouts/15/embed.aspx?UniqueId=96afd701-1864-40b3-b4e2-ee42b6b644f1&nav=%7B%22playbackOptions%22%3A%7B%22startTimeInSeconds%22%3A0%7D%7D&embed=%7B%22af%22%3Atrue%2C%22hvm%22%3Atrue%2C%22ust%22%3Atrue%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" className="popup-video"></Link>
-                </div>
               </div>
               <div className="col-lg-6">
                 <div className="section-title title-style-two mb-45">
