@@ -14,7 +14,7 @@ function OurVerticals() {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-4 col-md-6">
+            <div className="col-xl-6 col-md-6">
               <div className="features-item mb-30">
                 <div className="features-head mb-35">
                   <div className="product-tag"><a href="/#">Collaboration</a></div>
@@ -23,12 +23,12 @@ function OurVerticals() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6">
+            <div className="col-xl-6 col-md-6">
               <div className="features-item mb-30">
                 <div className="features-head mb-35">
                   <div className="product-tag"><a href="/#">Engagment</a></div>
                   <h4>Heart of our community</h4>
-                  <p>Under the engagement vertical, we organise various workshops, seminars, competitions, hands-on sessions, and fun activities to increase the participation of students in open source and generate interest among open source enthusiasts to work more and more in this field. This vertical consists of various teams, including Design, Editorial, Social Media and PR. Students from all schools can contribute to this vertical based on their skill set and area of interest.</p>
+                  <p>Under the engagement vertical, we organise various workshops, seminars, competitions, hands-on sessions, and fun activities to increase the participation of students in open source and spark interest among open source enthusiasts. This vertical consists of various teams, including Design, Editorial, Social Media and PR. Students from all schools can contribute to this vertical based on their skill set and area of interest.</p>
                 </div>
               </div>
             </div>

@@ -492,7 +492,7 @@ ul.minicart .cart-content a:hover,
 	color: #1c1121;
 }
 .main-header {
-	background-image: url(../img/bg/header_bg.jpg);
+	background-image: url(../img/bg/header_bg.png);
 	background-position: right center;
 	background-size: cover;
 	position: relative;
@@ -716,7 +716,7 @@ ul.minicart .cart-price .new {
 .menu-style-two {
 	padding: 28px 30px!important;
 	border-radius: 0 0 14px 14px!important;
-	background-image: url(../img/bg/header_bg.jpg);
+	background-image: url(../img/bg/header_bg.png);
 	background-position: right center!important;
 	background-size: cover!important;
 	position: relative!important;
@@ -724,7 +724,7 @@ ul.minicart .cart-price .new {
 .transparent-header {
 	position: absolute;
 	left: 0;
-	top: 45px;
+	top: 25px;
 	width: 100%;
 	height: auto;
 	z-index: 9;
@@ -806,7 +806,7 @@ ul.minicart .cart-price .new {
     top: 0;
     width: 100%;
     z-index: 99;
-    background-image: url(../img/bg/header_bg.jpg);
+    background-image: url(../img/bg/header_bg.png);
     -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
@@ -892,7 +892,7 @@ ul.minicart .cart-price .new {
 	z-index: 9;
 }
 .third-header-bg .bg {
-    background-image: url(../img/bg/h3_header_bg.jpg);
+    background-image: url(../img/bg/h3_header_bg.png);
     position: absolute;
     left: 0;
     top: 0;
@@ -969,7 +969,7 @@ ul.minicart .cart-price .new {
 	top: 0;
 }
 .third-header-bg .sticky-menu {
-    background-image: url(../img/bg/h3_header_bg.jpg);
+    background-image: url(../img/bg/h3_header_bg.png);
 }
 .header-style-four .header-top-area {
     background-image: url(../img/bg/fourth_header_top_bg.jpg);
@@ -1669,6 +1669,9 @@ ul.minicart .cart-price .new {
 }
 
 /* 8. About-us */
+.about-us-area {
+	background: url(../img/bg/features_bg.png);
+}
 .about-img {
 	padding: 15px;
 	background-color: rgba(245, 58, 7, 0);
@@ -2870,7 +2873,7 @@ ul.minicart .cart-price .new {
 
 /* 15. Features */
 .features-bg {
-	background-image: url(../img/bg/features_bg.jpg);
+	background-image: url(../img/banners/11.png);
 	background-position: center;
 	background-size: cover;
 }

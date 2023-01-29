@@ -12,7 +12,7 @@ export default function Counter() {
               <div className="col-lg-3 col-md-4 col-sm-6">
                 <div className="fact-item">
                   <div className="fact-icon">
-                    <img src="assets/img/icon/fact_icon01.png" alt="" />
+                    <img src="assets/img/icon/icon-sponsors.png" alt="" />
                   </div>
                   <div className="counter-item">
                     <h2 className="counter"><span>< CountUp end={7} /></span></h2>
@@ -23,7 +23,7 @@ export default function Counter() {
               <div className="col-lg-3 col-md-4 col-sm-6">
                 <div className="fact-item">
                   <div className="fact-icon">
-                    <img src="assets/img/icon/fact_icon02.png" alt="" />
+                    <img src="assets/img/icon/icon-project.png" alt="" />
                   </div>
                   <div className="counter-item">
                     <h2 className="counter"><span> < CountUp end={35} /> </span></h2>
@@ -34,7 +34,7 @@ export default function Counter() {
               <div className="col-lg-3 col-md-4 col-sm-6">
                 <div className="fact-item">
                   <div className="fact-icon">
-                    <img src="assets/img/icon/fact_icon04.png" alt="" />
+                    <img src="assets/img/icon/icon-workshops.png" alt="" />
                   </div>
                   <div className="counter-item">
                     <h2 className="counter"><span >< CountUp end={45} /></span></h2>
@@ -45,7 +45,7 @@ export default function Counter() {
               <div className="col-lg-3 col-md-4 col-sm-6">
                 <div className="fact-item">
                   <div className="fact-icon">
-                    <img src="assets/img/icon/fact_icon03.png" alt="" />
+                    <img src="assets/img/icon/icon-team.png" alt="" />
                   </div>
                   <div className="counter-item">
                     <h2 className="counter"><span>< CountUp end={150} /></span></h2>

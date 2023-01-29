@@ -6,7 +6,7 @@ import flutter_img_3 from "../../assets/img/events/flutter/flutter_img_3.jpg";
 import flutter_img_4 from "../../assets/img/events/flutter/flutter_img_4.jpg";
 import flutter_img_5 from "../../assets/img/events/flutter/flutter_img_5.jpg";
 import flutter_img_6 from "../../assets/img/events/flutter/flutter_img_6.jpg";
-import flutter_img_7 from "../../assets/img/events/flutter/flutter_img_7.JPG";
+import flutter_img_7 from "../../assets/img/events/flutter/flutter_img_7.jpg";
 import flutter_img_8 from "../../assets/img/events/flutter/flutter_img_8.jpg";
 
 function SingleArea() {
