@@ -1,7 +1,5 @@
-import React,{ useEffect } from 'react';
+import React from 'react';
 import 'magnific-popup';
-import $ from 'jquery';
-import {Link} from 'react-router-dom';
 
 function AboutUsArea() {
   return (

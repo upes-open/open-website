@@ -1,5 +1,5 @@
 import React from 'react'
-import guy from '../../assets/img/9.png';
+// import guy from '../../assets/img/9.png';
 
 import aware from '../../assets/img/principals/icon_aware.png';
 import adopt from '../../assets/img/principals/icon_adopt.png';
