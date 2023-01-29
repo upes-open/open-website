@@ -49,7 +49,7 @@ function OurPrincipals() {
                 </div>
                 <div className="col-xl-7 col-lg-6 d-none d-lg-block">
                   <div className="just-openrs-img">
-                    <img src={guy} alt="" className="just-openrs-character" />
+                    {/* <img src={guy} alt="" className="just-openrs-character" /> */}
                     <div className="just-openrs-circle-shape">
                       {/* <img src="assets/img/images/openrs_circle_line.png" alt="" /> */}
                       {/* <img src="assets/img/images/openrs_circle_shape.png" alt="" className="rotateme" /> */}
