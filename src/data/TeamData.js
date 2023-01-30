@@ -1,4 +1,10 @@
 export const TeamData = [
+  {
+    name: "Dr. Gourav Bathla",
+    designation: "Faculty Convener",
+    imageURL: "https://i.postimg.cc/Xv4SNK27/gaurav-sir.png",
+    LinkedIn: "https://www.linkedin.com/in/dr-gourav-bathla-b2155913/",
+  },
     {
         name: "Raghav Agarwal",
         designation: "President",
@@ -7,7 +13,7 @@ export const TeamData = [
         LinkedIn: "https://www.linkedin.com/in/ragharwal/",
     },
     {
-        name: "Snigdha Parasar",
+        name: "Snigdha Parashar",
         designation: "Vice-President",
         imageURL:
       "https://i.postimg.cc/G284TTYV/snigdha.png",

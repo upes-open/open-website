@@ -75,7 +75,7 @@ function SliderTwo() {
                         </Fade >
                        
                         <Fade up delay={.8000}>
-                        <a href="/#" className="btn btn-style-two">READ MORE</a>
+                        <a href="/about" className="btn btn-style-two">READ MORE</a>
                         </Fade>
                       </div>
                     </div>

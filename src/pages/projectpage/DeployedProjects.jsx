@@ -48,7 +48,10 @@ function DeployedProjects() {
                           <h4>OPEN <span>{data.name}</span></h4>
                           <p>{data.description}</p>
                           <p>Technologies Used: {data.keywords}</p>
-                          <Link to={data.link} className="btn btn-style-two">Know now</Link>
+                          <a href={data.link}  className="btn btn-style-two">
+                                    Know More
+                                </a>
+                          {/* <Link to={data.link} className="btn btn-style-two">Know now</Link> */}
                         </div>
                       </div>
                     </div>

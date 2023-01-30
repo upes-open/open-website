@@ -23,10 +23,5 @@ export const MentorData = [
     imageURL: "https://i.postimg.cc/wxy6GVZS/sunil-sir.png",
     LinkedIn: "https://www.linkedin.com/in/dr-sunil-gupta-940690114",
   },
-  {
-    name: "Dr. Gourav Bathla",
-    designation: "Professor",
-    imageURL: "https://i.postimg.cc/Xv4SNK27/gaurav-sir.png",
-    LinkedIn: "https://www.linkedin.com/in/dr-gourav-bathla-b2155913/",
-  },
+
 ];
