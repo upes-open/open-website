@@ -7,7 +7,7 @@ import team_img_3 from "../../assets/img/team/team_img_3.png";
 import team_img_4 from "../../assets/img/team/team_img_4.png";
 import team_img_5 from "../../assets/img/team/team_img_5.png";
 import team_img_6 from "../../assets/img/team/team_img_6.png";
-import team_img_7 from "../../assets/img/team/team_img_7.png";
+// import team_img_7 from "../../assets/img/team/team_img_7.png";
 
 function TeamGallery() {
 	const settings = {
@@ -17,8 +17,8 @@ function TeamGallery() {
 		speed: 100,
 		autoplay: true,
 		arrows: false,
-		prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+		// prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+		// nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		responsive: [
@@ -42,7 +42,7 @@ function TeamGallery() {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					arrows: true,
+					arrows: false,
 				}
 			},
 			{
@@ -50,7 +50,7 @@ function TeamGallery() {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					arrows: true,
+					arrows: false,
 				}
 			},
 			{
@@ -63,11 +63,11 @@ function TeamGallery() {
 			<div className="open-gallery-bg" />
 			<div className="container-fluid p-0 fix">
 				<Slider className="row open-gallery-active" {...settings}>
-					<div className="col-12">
+					{/* <div className="col-12">
 						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px', width: '1100px', height: '550px' }} src={team_img_7} alt="" />
 						</div>
-					</div>
+					</div> */}
 					<div className="col-12">
 						<div className="open-gallery-item">
 							<img style={{ borderRadius: '35px' }} src={team_img_1} alt="" />

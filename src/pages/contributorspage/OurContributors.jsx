@@ -46,8 +46,8 @@ const OurContributors = () => {
   speed: 10000,
   autoplay: true,
   arrows: false,
-  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+  // prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+  // nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
   slidesToShow: 6,
   slidesToScroll: 1,
   responsive: [
@@ -71,7 +71,7 @@ const OurContributors = () => {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
       }
     },
     {
@@ -79,7 +79,7 @@ const OurContributors = () => {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
       }
     },
 	{
@@ -105,7 +105,7 @@ const OurContributors = () => {
         <div className="col-xl">
           <div className="shop-item">
             <div className="product-thumb">
-              <a href="/#"><img src={result.avatar_url} alt="" /></a>
+              <a href={result.html_url}><img src={result.avatar_url} alt="" /></a>
             </div>
             <div className="product-content">
               <div className="product-tag"><a href={result.html_url}>{result.login}</a></div>
