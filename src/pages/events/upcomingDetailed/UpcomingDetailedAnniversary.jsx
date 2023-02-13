@@ -104,64 +104,6 @@ function SingleArea() {
                   </div>
                 </div>
               </div>
-
-              {/* <div className="game-single-title mb-30">
-                <h4>
-                  Read <span>More ...</span>
-                </h4>
-              </div>
-              <p>
-                Dehashed workshop endured monumental success in bringing over
-                550 registrations and more than 100 attendees who learned with
-                zeal and made this workshop a fruitful success. All the 4
-                speakers did an outstanding job narrating their expertise that
-                made learning a fun ground. This workshop introduced blockchain
-                to everyone, reducing the entry barrier by practically helping
-                the participants in creating their own web 3.0 wallet , over 78
-                web 3.0 wallets were made till the end. Introducing the
-                attendees to cryptocurrencies and development networks by giving
-                them tokens to perform transactions helped them endure real
-                world implementation of blockchain. NFTs and metaverse were also
-                instigated by explaining about their utilities and also helping
-                them in buying their own NFTs from the collection that was made
-                for the event. The attendees were also taught how to mint them
-                and list them on the global NFT marketplace. Over 200 NFTs were
-                minted in the process and the expenditure on crypto was worth
-                more than 4000. All the credit for making this workshop a
-                success goes out to all the people who contributed their best
-                and also to those who brought an open and welcoming learning
-                mind. This workshop surely enlightened the learning journey of
-                all and also paved a way for being open to learn more about the
-                newest technologies.
-              </p>
-              <div className="game-single-title mt-30 mb-10">
-                <h4>Glimpses</h4>
-              </div>
-              <div className="game-single-gallery">
-                <div className="row">
-                  <div className="col-lg-4 col-sm-6 mb-30">
-                    <img src={dehashed_img_1} className="h-100" alt="" />
-                  </div>
-                  <div className="col-lg-4 col-sm-6 mb-30">
-                    <img src={dehashed_img_2} className="h-100" alt="" />
-                  </div>
-                  <div className="col-lg-4 col-sm-6 mb-30">
-                    <img src={dehashed_img_3} className="h-100" alt="" />
-                  </div>
-                  <div className="col-lg-4 col-sm-6 mb-30">
-                    <img src={dehashed_img_4} className="h-100" alt="" />
-                  </div>
-                  <div className="col-lg-4 col-sm-6 mb-30">
-                    <img src={dehashed_img_5} className="h-100" alt="" />
-                  </div>
-                  <div className="col-lg-4 col-sm-6 mb-30">
-                    <img src={dehashed_img_6} className="h-100" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="game-single-shape">
-                <img src="assets/img/images/game_section_shape.png" alt="" />
-              </div> */}
             </div>
           </div>
         </div>
