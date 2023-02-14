@@ -18,7 +18,7 @@ import Dehashed from "./pages/events/Dehashed";
 import Flutter from "./pages/events/Flutter";
 import SummerOfCode from "./pages/events/SummerOfCode";
 import Learning from "./pages/events/Learning";
-
+import Register from "./pages/register/Register";
 
 // import Loader from "react-js-loader";
 
@@ -93,6 +93,9 @@ function App() {
             <SingleEvent>
               <SummerOfCode />
             </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/register">
+            <Register />
           </ScrollToTopRoute>
         </Switch>
       </Router>
