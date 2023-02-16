@@ -1,10 +1,14 @@
 import React from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function RegisterArea() {
+  function onChange(props) {
+    console.log("Captcha value:", props);
+  }
   return (
     <section className="contact-area pt-120 pb-120">
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="col-lg-6 pl-45">
             <div className="section-title text-center title-style-three mb-20">
               <h2>Register</h2>
@@ -24,10 +28,15 @@ function RegisterArea() {
             <div className="contact-form">
               <form>
                 <div className="row">
-                  <input type="text" placeholder="Your Name" />
+                  <input type="text" placeholder="Your Name" required />
                 </div>
                 <div className="row">
-                  <input type="email" placeholder="Your Mail" />
+                  <input
+                    type="email"
+                    pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+                    placeholder="Your Mail"
+                    required
+                  />
                 </div>
                 <div className="row">
                   <input
@@ -40,11 +49,27 @@ function RegisterArea() {
                   />
                 </div>
                 <div className="row">
-                  <a href="/#" className="register btn btn-style-two">
+                  <input type="number" placeholder="Your SAP ID" required />
+                </div>
+                <div className="row">
+                  <input type="text" placeholder="Your Branch" required />
+                </div>
+                <div className="row">
+                  <input type="text" placeholder="Your Course" required />
+                </div>
+                <div className="row justify-content-center">
+                  <ReCAPTCHA
+                    sitekey="6LeL030kAAAAAM7htliL3__El0Gm1-J22HbQOqqM"
+                    onChange={onChange}
+                  />
+                </div>
+                <br />
+                <br />
+                <div className="row justify-content-center">
+                  <a href="#" className="register btn btn-style-two">
                     Register
                   </a>
                 </div>
-                {/* <button className="">Register</button> */}
               </form>
             </div>
           </div>
