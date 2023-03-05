@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react'
 import WOW from "wowjs";
 
-import event from '../../assets/img/upcoming-event.png';
+import event from '../../assets/img/API Session.png';
 
 function UpcomingEvent() {
   useEffect(()=>{
@@ -31,9 +31,9 @@ function UpcomingEvent() {
                 <h2>Upcoming <span>Event</span></h2>
               </div>
               <div className="inner-about-content">
-                <h5>OPEN's 4th Anniversary</h5>
-                <p>We are proud to announce that OPEN Community is celebrating its 4th anniversary on 1st February, 2023! Over the past four years, we have worked hard to create a close-knit community that fosters meaningful connections and provides opportunities for personal and professional growth. This anniversary marks a time for us to reflect on our journey, celebrate our achievements, and look forward to what the future holds for our community.</p>
-                <p> We would like to extend a heartfelt gratitude to all our members, alumni, and mentors for helping us reach this milestone. Here’s to many more years of growth and success!</p>
+                <h5>API Essentials - Hands on Workshop</h5>
+                <p>Unleash Your Potential with APIs. Join us for the 'API Essentials' Workshop on 22nd February, 2023! Discover the power of APIs and unlock the doors to endless opportunities in the tech world. With expert guidance and hands-on experience, you'll learn how to harness the full potential of APIs and bring your innovative ideas to life. Get ready to take the leap and advance your knowledge in the most exciting and dynamic field of our time. Don't miss out on this chance to be at the forefront of technology. Register now and let the journey begin!</p>
+        
                 {/* <p>This celebration will be all about looking back at accomplishments of the community and replenishing the memories. This walk down the memory lane will help to embrace all the valuable connections made along the way. But the celebration won’t be all about reminiscing - It will also be an unforgettable eve,full of games & activities that will make this bond even more sturdy.</p> */}
                 {/* <a href="/" className="btn btn-style-two">Know More</a> */}
               </div>
