@@ -27,4 +27,25 @@ export const EventsGlimpse=[
         imageURL:"https://i.postimg.cc/tJhDRk4T/2.png",
         link : "/rpa"
     },
+    {
+        name: "Open's 4th anniversary",
+        Date: "01-02-2023",
+        Type:"Offline",
+        imageURL:"https://i.postimg.cc/pdpx3wTh/anniversary.png",
+        link : "/anniversary"
+    },
+    {
+        name: "Technova",
+        Date: "06-02-2023 - 08-02-2023",
+        Type:"Offline",
+        imageURL:"https://i.postimg.cc/k4RJR0P3/technova.png",
+        link : "/technova"
+    },
+    {
+        name: "Code for future",
+        Date: "23-02-2023",
+        Type:"Offline",
+        imageURL:"https://i.postimg.cc/Pr7vcNBb/code-for-future.png",
+        link : "/code-for-future"
+    },
 ]
