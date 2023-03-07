@@ -38,7 +38,7 @@ export const EventsGlimpse=[
         name: "Technova",
         Date: "06-02-2023 - 08-02-2023",
         Type:"Offline",
-        imageURL:"https://i.postimg.cc/k4RJR0P3/technova.png",
+        imageURL:"https://i.postimg.cc/fbfhfb3s/technova.png",
         link : "/technova"
     },
     {
@@ -46,6 +46,6 @@ export const EventsGlimpse=[
         Date: "23-02-2023",
         Type:"Offline",
         imageURL:"https://i.postimg.cc/Pr7vcNBb/code-for-future.png",
-        link : "/code-for-future"
+        link : "/codeforfuture"
     },
 ]
