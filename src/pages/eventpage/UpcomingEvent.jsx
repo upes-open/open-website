@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react'
 import WOW from "wowjs";
 
-import event from '../../assets/img/API Session.png';
+import event from '../../assets/img/API Session updated.png';
 
 function UpcomingEvent() {
   useEffect(()=>{
@@ -32,10 +32,10 @@ function UpcomingEvent() {
               </div>
               <div className="inner-about-content">
                 <h5>API Essentials - Hands on Workshop</h5>
-                <p>Unleash Your Potential with APIs. Join us for the 'API Essentials' Workshop on 22nd February, 2023! Discover the power of APIs and unlock the doors to endless opportunities in the tech world. With expert guidance and hands-on experience, you'll learn how to harness the full potential of APIs and bring your innovative ideas to life. Get ready to take the leap and advance your knowledge in the most exciting and dynamic field of our time. Don't miss out on this chance to be at the forefront of technology. Register now and let the journey begin!</p>
+                <p>Unleash Your Potential with APIs. Join us for the 'API Essentials' Workshop on 22nd March, 2023! Discover the power of APIs and unlock the doors to endless opportunities in the tech world. With expert guidance and hands-on experience, you'll learn how to harness the full potential of APIs and bring your innovative ideas to life. Get ready to take the leap and advance your knowledge in the most exciting and dynamic field of our time. Don't miss out on this chance to be at the forefront of technology. Register now and let the journey begin!</p>
         
                 {/* <p>This celebration will be all about looking back at accomplishments of the community and replenishing the memories. This walk down the memory lane will help to embrace all the valuable connections made along the way. But the celebration won’t be all about reminiscing - It will also be an unforgettable eve,full of games & activities that will make this bond even more sturdy.</p> */}
-                {/* <a href="/" className="btn btn-style-two">Know More</a> */}
+                 <a href="/api" className="btn btn-style-two">Know More</a> 
               </div>
             </div>
           </div>

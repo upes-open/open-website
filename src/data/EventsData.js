@@ -1,12 +1,26 @@
 export const EventsData = [
 
+  {
+    name: "Code For Future",
+    description: "We conducted an exclusive interactive session for the community members titled CODE YOUR FUTURE with the community’s president, Mr. Raghav Agarwal. The session was aimed at helping the members gear up for the approaching internship and placement season by sharing valuable insights on how to excel in placements, DSA, and projects.The interactive session proved to be an unparalleled opportunity for the members to learn, grow and excel in the journey towards building their careers. The event was a fantastic learning experience for the members and a testament to the thriving community of tech enthusiasts at OPEN.",
+    imageURL: "https://i.postimg.cc/4NJkj1S4/poster-update.png",
+    date: "23-02-2023",
+    registeration: "/codeyourfuture",
+    },
     {
     name: "Technova",
     description: "UPES GDSC in collaboration with OPEN Community brings to you “Technova”, for all the young tech enthusiasts of UPES, to add a touch of tech into your mundane lives and help you spice up your everyday daily schedule with exciting, entertaining, and enjoyable experiences over three days. The sessions will not only help you gain knowledge on essential tech topics but will also give you a chance to develop a few basic hands-on projects and win exciting goodies. This is an opportunity you wouldn’t like to miss.   So, UPESITES are you excited? Then what are you waiting for?",
     imageURL: "https://i.postimg.cc/zBQ9zDfB/Whats-App-Image-2023-02-18-at-23-35-11.jpg",
     date: "06-02-2023--08-02-2023",
-    registeration: "/#",
+    registeration: "/technova",
     },
+    {
+      name: "4th Anniversary",
+      description: "We are thrilled to announce that OPEN Community recently celebrated its 4th anniversary with great enthusiasm and joy. We had a fantastic time during the event, with games and activities that brought everyone together and created lasting memories. The 4th anniversary celebration was an unforgettable experience, and we are grateful to all our members who made it a grand success. We look forward to continuing our journey with our community members and achieving even greater success in the years to come.",
+      imageURL: "https://i.postimg.cc/hvbpfSwk/15106-C4-D-0225-40-F9-8-E7-E-C126630-D6-DAC.png",
+      date: "04-02-2023",
+      registeration: "/anniversary",
+      },
     {
       name: "Uncovering RPA",
       description: "Uncovering RPA and UiPath is a one-day workshop with the ambition of introducing one of the trendiest technologies in the tech gala. Robotic Process Automation is a technology that helps in furnishing the businesses with “bots” or software robots that pluck out the mundane tasks from the system and mimic the actions of a human worker to finish them. This event will start from the basic introduction of RPA, including details of its functioning, its benefits and applications. Learning about the various fields where RPA functions as a blooming industry will help one understand the importance automation carries in the future.",
