@@ -13,6 +13,8 @@ import ScrollToTopRoute from "./components/scrolltotop/ScrollToTopRoute";
 
 import SingleEvent from "./pages/events/SingleEvent";
 
+import UpcomingDetailedProjectExpo from "./pages/events/upcomingDetailed/UpcomingDetailedProjectExpo";
+import CodeYourFuture from "./pages/events/CodeYourFuture";
 import RPA from "./pages/events/RPA";
 import Dehashed from "./pages/events/Dehashed";
 import Flutter from "./pages/events/Flutter";
@@ -96,6 +98,16 @@ function App() {
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/register">
             <Register />
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/codeyourfuture">
+            <SingleEvent> 
+            <CodeYourFuture />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/UpcomingDetailedProjectExpo">
+          <SingleEvent> 
+          <UpcomingDetailedProjectExpo />
+          </SingleEvent>
           </ScrollToTopRoute>
         </Switch>
       </Router>

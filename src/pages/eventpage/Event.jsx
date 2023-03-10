@@ -4,6 +4,7 @@ import Footer from '../../components/footer/Footer';
 import UpcomingEvent from './UpcomingEvent';
 import PastEvents from './PastEvents';
 
+
 function Event() {
   return (
 	<>
