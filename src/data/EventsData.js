@@ -1,5 +1,11 @@
 export const EventsData = [
-
+  {
+    name: "API Workshop",
+    description: "**An API (Application Programming Interface)** is a set of rules and protocols that define how two software applications can interact with each other. APIs allow for communication between different systems, which enables them to share data and functionality.This event covered what an API is, what their use cases are and how these APIs can be accessed using Postman. This workshop provided hands-on experience on making basic APIs using python fastapi. Our expert speaker **Manan Gupta** answered all your queries and offered insightful information about this fascinating technology.",
+    imageURL: "https://i.postimg.cc/ncWPV2Nh/3-CB4-C9-AA-277-D-4696-92-A4-75055-E2092-FC.png",
+    date: "22-03-2023",
+    registeration: "/api",
+    },
   {
     name: "Code For Future",
     description: "We conducted an exclusive interactive session for the community members titled CODE YOUR FUTURE with the community’s president, Mr. Raghav Agarwal. The session was aimed at helping the members gear up for the approaching internship and placement season by sharing valuable insights on how to excel in placements, DSA, and projects.The interactive session proved to be an unparalleled opportunity for the members to learn, grow and excel in the journey towards building their careers. The event was a fantastic learning experience for the members and a testament to the thriving community of tech enthusiasts at OPEN.",

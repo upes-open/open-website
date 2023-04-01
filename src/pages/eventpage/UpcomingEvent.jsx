@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react'
 import WOW from "wowjs";
 
-import event from '../../assets/img/API Session updated.png';
+import event from '../../assets/img/Projectexpo.png';
 
 function UpcomingEvent() {
   useEffect(()=>{
@@ -31,11 +31,11 @@ function UpcomingEvent() {
                 <h2>Upcoming <span>Event</span></h2>
               </div>
               <div className="inner-about-content">
-                <h5>API Essentials - Hands on Workshop</h5>
-                <p>Unleash Your Potential with APIs. Join us for the 'API Essentials' Workshop on 22nd March, 2023! Discover the power of APIs and unlock the doors to endless opportunities in the tech world. With expert guidance and hands-on experience, you'll learn how to harness the full potential of APIs and bring your innovative ideas to life. Get ready to take the leap and advance your knowledge in the most exciting and dynamic field of our time. Don't miss out on this chance to be at the forefront of technology. Register now and let the journey begin!</p>
+                <h5>ProjectExpo</h5>
+                <p>OPEN Community brings to you a project expo that will enchant your intellect. The event will be held on 12th April, 2023 from 8am to 6pm. This expo will showcase all the projects that the members of the community have been working on.You will be able to hear from the contributors how they were able to come up with the ideas of the projects, how they were able to execute those ideas and the difficulties they faced while working on them. You will also get a chance to witness how the projects created here help in solving real world problems.This expo will also offer you a chance to showcase your own projects. You will get a chance to get recognized and attract valuable interest towards your project. It’s an incredible opportunity that will help you stand out from the crowd.</p>
         
                 {/* <p>This celebration will be all about looking back at accomplishments of the community and replenishing the memories. This walk down the memory lane will help to embrace all the valuable connections made along the way. But the celebration won’t be all about reminiscing - It will also be an unforgettable eve,full of games & activities that will make this bond even more sturdy.</p> */}
-                 <a href="/api" className="btn btn-style-two">Know More</a> 
+                 <a href="/projectexpo" className="btn btn-style-two">Know More</a> 
               </div>
             </div>
           </div>
