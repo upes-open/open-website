@@ -8,6 +8,8 @@ import Mentor from "./pages/mentorpage/Mentor";
 import Alumnus from "./pages/aluminipage/Alumini";
 import Contributor from "./pages/contributorspage/Contributors";
 import Contact from "./pages/contact/Contact";
+import Api from "./pages/events/Api";
+import Anniversary from "./pages/events/Anniversary";
 
 import ScrollToTopRoute from "./components/scrolltotop/ScrollToTopRoute";
 
@@ -108,6 +110,16 @@ function App() {
           <SingleEvent> 
           <UpcomingDetailedProjectExpo />
           </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/api">
+          <SingleEvent>
+            <Api />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/anniversary">
+          <SingleEvent>
+            <Anniversary />
+            </SingleEvent>
           </ScrollToTopRoute>
         </Switch>
       </Router>
