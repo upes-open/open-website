@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react'
 import WOW from "wowjs";
 
-import event from '../../assets/img/Projectexpo.png';
+import event from '../../assets/img/rpa3.jpg';
 
 function UpcomingEvent() {
   useEffect(()=>{
@@ -31,8 +31,8 @@ function UpcomingEvent() {
                 <h2>Upcoming <span>Event</span></h2>
               </div>
               <div className="inner-about-content">
-                <h5>ProjectExpo</h5>
-                <p>OPEN Community brings to you a project expo that will enchant your intellect. The event will be held on 12th April, 2023 from 8am to 6pm. This expo will showcase all the projects that the members of the community have been working on.You will be able to hear from the contributors how they were able to come up with the ideas of the projects, how they were able to execute those ideas and the difficulties they faced while working on them. You will also get a chance to witness how the projects created here help in solving real world problems.This expo will also offer you a chance to showcase your own projects. You will get a chance to get recognized and attract valuable interest towards your project. It’s an incredible opportunity that will help you stand out from the crowd.</p>
+                <h5>RPA 3.0</h5>
+                <p>Buckle up everyone as OPEN is back again with another spectacular event, RPA 3.0. This event is an extension to our previous event “Uncovering RPA”, which set the foundation for discovering the prospects of RPA in these modern times. The speaker for the event is Mukesh Kala, who is a UiPath MVP, RPA Developer.  He will guide you towards learning the prospects of RPA and how it is so crucial in the current era. Learning about the technology that mimics the actions of a human worker and automates them will be more beneficial than you can ever imagine.</p>
         
                 {/* <p>This celebration will be all about looking back at accomplishments of the community and replenishing the memories. This walk down the memory lane will help to embrace all the valuable connections made along the way. But the celebration won’t be all about reminiscing - It will also be an unforgettable eve,full of games & activities that will make this bond even more sturdy.</p> */}
                  <a href="/projectexpo" className="btn btn-style-two">Know More</a> 
