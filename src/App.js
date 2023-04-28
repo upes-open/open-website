@@ -22,6 +22,7 @@ import SummerOfCode from "./pages/events/SummerOfCode";
 import Learning from "./pages/events/Learning";
 import Register from "./pages/register/Register";
 
+import Timeline from './pages/timelinepage/timelinePage'
 // import Loader from "react-js-loader";
 
 function App() {
@@ -100,14 +101,20 @@ function App() {
             <Register />
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/codeyourfuture">
-            <SingleEvent> 
-            <CodeYourFuture />
+            <SingleEvent>
+              <CodeYourFuture />
             </SingleEvent>
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/UpcomingDetailedProjectExpo">
-          <SingleEvent> 
-          <UpcomingDetailedProjectExpo />
-          </SingleEvent>
+            <SingleEvent>
+              <UpcomingDetailedProjectExpo />
+            </SingleEvent>
+          </ScrollToTopRoute>
+
+          <ScrollToTopRoute exact={true} path="/timeline">
+            <SingleEvent>
+              <Timeline />
+            </SingleEvent>
           </ScrollToTopRoute>
         </Switch>
       </Router>
