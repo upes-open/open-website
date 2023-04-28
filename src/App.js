@@ -8,6 +8,8 @@ import Mentor from "./pages/mentorpage/Mentor";
 import Alumnus from "./pages/aluminipage/Alumini";
 import Contributor from "./pages/contributorspage/Contributors";
 import Contact from "./pages/contact/Contact";
+import Api from "./pages/events/Api";
+import Anniversary from "./pages/events/Anniversary";
 
 import ScrollToTopRoute from "./components/scrolltotop/ScrollToTopRoute";
 
@@ -21,6 +23,7 @@ import Flutter from "./pages/events/Flutter";
 import SummerOfCode from "./pages/events/SummerOfCode";
 import Learning from "./pages/events/Learning";
 import Register from "./pages/register/Register";
+import Technova from "./pages/events/Technova";
 
 import Timeline from './pages/timelinepage/timelinePage'
 // import Loader from "react-js-loader";
@@ -105,6 +108,11 @@ function App() {
               <CodeYourFuture />
             </SingleEvent>
           </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/Technova">
+            <SingleEvent> 
+            <Technova />
+            </SingleEvent>
+          </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/UpcomingDetailedProjectExpo">
             <SingleEvent>
               <UpcomingDetailedProjectExpo />
@@ -114,6 +122,16 @@ function App() {
           <ScrollToTopRoute exact={true} path="/timeline">
             <SingleEvent>
               <Timeline />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/api">
+          <SingleEvent>
+            <Api />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/anniversary">
+          <SingleEvent>
+            <Anniversary />
             </SingleEvent>
           </ScrollToTopRoute>
         </Switch>
