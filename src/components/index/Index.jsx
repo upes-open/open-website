@@ -17,7 +17,7 @@ function Index() {
       <Header />
       <main>
         <Slider />
-        <UpcomingEvent />
+        {/* <UpcomingEvent /> */}
         <OpenLearning />
         <DeployedProjects />
         <Gallery />

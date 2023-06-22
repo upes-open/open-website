@@ -1,7 +1,21 @@
 export const EventsData = [
   {
+    name: "Closing Ceremony",
+    description: "The Closing Ceremony promised to be a fitting finale to our awe-inspiring session. This was a bittersweet moment for us all, as we celebrated the triumph of our achievements and bid a fond farewell to some of our most valuable and cherished members.",
+    imageURL:"https://i.postimg.cc/fykwVnQP/Frame-1.png",
+    date: "03-05-2023",
+    // registeration: "/api",
+    },
+    {
+      name: "RPA 3.0",
+      description: "This event extended our previous 'Uncovering RPA' session, establishing RPA's prospects in modern times. Speaker Mukesh Kala, a UiPath MVP and RPA Developer, emphasized its significance in the current era. Participants delved into this technology, automating human tasks and realizing its immense benefits. They gained valuable insights into RPA's applications, leaving with newfound knowledge and inspiration. We hope attendees had a fantastic time exploring RPA 3.0.",
+      imageURL: "https://i.postimg.cc/15Fm4xg0/rpa3.jpg",
+      date: "19-03-2023",
+      // registeration: "",
+      },
+  {
     name: "API Workshop",
-    description: "**An API (Application Programming Interface)** is a set of rules and protocols that define how two software applications can interact with each other. APIs allow for communication between different systems, which enables them to share data and functionality.This event covered what an API is, what their use cases are and how these APIs can be accessed using Postman. This workshop provided hands-on experience on making basic APIs using python fastapi. Our expert speaker **Manan Gupta** answered all your queries and offered insightful information about this fascinating technology.",
+    description: "An API (Application Programming Interface) is a set of rules and protocols that define how two software applications can interact with each other. APIs allow for communication between different systems, which enables them to share data and functionality.This event covered what an API is, what their use cases are and how these APIs can be accessed using Postman. This workshop provided hands-on experience on making basic APIs using python fastapi. Our expert speaker **Manan Gupta** answered all your queries and offered insightful information about this fascinating technology.",
     imageURL: "https://i.postimg.cc/ncWPV2Nh/3-CB4-C9-AA-277-D-4696-92-A4-75055-E2092-FC.png",
     date: "22-03-2023",
     registeration: "/api",
