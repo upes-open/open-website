@@ -2,8 +2,8 @@ export const TeamData = [
   {
     name: "Dr. Ambika Aggarwal",
     designation: "Faculty Convener",
-    imageURL: 0,
-    LinkedIn: 0,
+    imageURL: "https://i.postimg.cc/bvwqYnvx/ambika-jpeg-removebg-preview.png",
+    LinkedIn:"https://www.linkedin.com/in/dr-ambika-aggarwal-790458136",
   },
   {
     name: "Medhavi Singh",
