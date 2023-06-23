@@ -164,7 +164,7 @@ GitHub: "https://github.com/bhavika2502",
     GitHub: "https://github.com/Archisha-Dhyani",
   },
   {
-    name: "Akshita Singh",
+    name: "Aakshita Singh",
     designation: "Lead Student Developer",
     imageURL: "https://i.postimg.cc/pd0FzRtN/Clipped-image-20230619-202039.png",
     LinkedIn: "https://www.linkedin.com/in/aakshita-singh-44794b227",
