@@ -18,7 +18,7 @@ function ContactArea() {
               <div className="contact-info-list mb-40">
                 <ul>
                   <li><i className="fas fa-map-marker-alt" />Bidholi Campus, UPES, Dehradun, India</li>
-                  <li><i className="fas fa-envelope" />opencommunity@ddn.upes.ac.in</li>
+                  <li><i className="fas fa-envelope" />upesopen@gmail.com</li>
                 </ul>
               </div>
               <div className="contact-form">
