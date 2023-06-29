@@ -8,6 +8,8 @@ import Mentor from "./pages/mentorpage/Mentor";
 import Alumnus from "./pages/aluminipage/Alumini";
 import Contributor from "./pages/contributorspage/Contributors";
 import Contact from "./pages/contact/Contact";
+import Api from "./pages/events/Api";
+import Anniversary from "./pages/events/Anniversary";
 
 import ScrollToTopRoute from "./components/scrolltotop/ScrollToTopRoute";
 
@@ -25,6 +27,7 @@ import Technova from "./pages/events/Technova";
 import Osoc_register from './pages/register/Osoc_register';
 import Osoc23 from './pages/events/Osoc23';
 
+import Timeline from './pages/timelinepage/timelinePage'
 // import Loader from "react-js-loader";
 
 function App() {
@@ -103,8 +106,8 @@ function App() {
             <Register />
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/codeyourfuture">
-            <SingleEvent> 
-            <CodeYourFuture />
+            <SingleEvent>
+              <CodeYourFuture />
             </SingleEvent>
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/Technova">
@@ -113,9 +116,25 @@ function App() {
             </SingleEvent>
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/UpcomingDetailedProjectExpo">
-          <SingleEvent> 
-          <UpcomingDetailedProjectExpo />
-          </SingleEvent>
+            <SingleEvent>
+              <UpcomingDetailedProjectExpo />
+            </SingleEvent>
+          </ScrollToTopRoute>
+
+          <ScrollToTopRoute exact={true} path="/timeline">
+            <SingleEvent>
+              <Timeline />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/api">
+          <SingleEvent>
+            <Api />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/anniversary">
+          <SingleEvent>
+            <Anniversary />
+            </SingleEvent>
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/Osoc_register">
             <SingleEvent> 

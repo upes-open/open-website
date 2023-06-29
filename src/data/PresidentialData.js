@@ -6,19 +6,20 @@ export const PresidentialData = [
     //     LinkedIn: "https://www.linkedin.com/in/dr-gourav-bathla-b2155913/?originalSubdomain=in",
     // },
     {
-        name: "Raghav Agarwal",
+        name: "Medhavi Singh",
         designation: "President",
-        imageURL: "https://i.postimg.cc/hj2wt1bp/raghav.png",
-        GitHub: "https://github.com/ragharwal",
-        LinkedIn: "https://www.linkedin.com/in/ragharwal/",
+        imageURL:
+        "https://i.postimg.cc/P5DJCDQZ/Medhavi-removebg-preview.png",
+      LinkedIn: "https://www.linkedin.com/in/medhavi-singh-8752091ba/",
+      GitHub: "https://github.com/Med16-11",
     },
     {
-        name: "Snigdha Parasar",
+        name: "Vedant Saraf",
         designation: "Vice-President",
         imageURL:
-      "https://i.postimg.cc/G284TTYV/snigdha.png",
-    LinkedIn: "https://www.linkedin.com/in/snigdha-parashar-022aaa23b/",
-    GitHub: "https://github.com/snigdha510",
+        "https://i.postimg.cc/vTC3QDG7/vedant.png",
+      LinkedIn: "https://www.linkedin.com/in/vedant-saraf-8a71b31b4/",
+      GitHub: "https://github.com/vedantsaraf2002",
     },
     {
         name: "Ayushmaan Jha",
