@@ -86,7 +86,7 @@ export default function Header() {
                       <ul>
                         <li>
                           <div className="header-top-mail">
-                            <p><span>|</span><i className="far fa-envelope" /><Link to="/mailto:info@gmail.com">opencommunity@ddn.upes.ac.in</Link></p>
+                            <p><span>|</span><i className="far fa-envelope" /><Link to="/mailto:info@gmail.com">upesopen@gmail.com</Link></p>
                           </div>
                         </li>
                       </ul>
