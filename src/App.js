@@ -24,6 +24,8 @@ import SummerOfCode from "./pages/events/SummerOfCode";
 import Learning from "./pages/events/Learning";
 import Register from "./pages/register/Register";
 import Technova from "./pages/events/Technova";
+import Osoc_register from './pages/register/Osoc_register';
+import Osoc23 from './pages/events/Osoc23';
 
 import Timeline from './pages/timelinepage/timelinePage'
 // import Loader from "react-js-loader";
@@ -132,6 +134,16 @@ function App() {
           <ScrollToTopRoute exact={true} path="/anniversary">
           <SingleEvent>
             <Anniversary />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/Osoc_register">
+            <SingleEvent> 
+            <Osoc_register />
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/Osoc23">
+            <SingleEvent> 
+            <Osoc23/>
             </SingleEvent>
           </ScrollToTopRoute>
         </Switch>
