@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react'
 import WOW from "wowjs";
 
-import event from '../../assets/img/rpa3.jpg';
+import event from '../../assets/img/OSOC .png';
 
 function UpcomingEvent() {
   useEffect(()=>{
@@ -22,7 +22,7 @@ function UpcomingEvent() {
             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
               <div className="inner-about-img">
 
-                <img width="600px" height="450px" src={event} className="wow fadeInRight" data-wow-delay=".3s" alt="" />
+                <img width="550px" height="600px" src={event} className="wow fadeInRight" data-wow-delay=".3s" alt="" />
 
               </div>
             </div>
