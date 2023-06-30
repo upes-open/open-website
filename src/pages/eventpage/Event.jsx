@@ -11,9 +11,7 @@ function Event() {
 	<Header/>
 	<main>
 		<br /><br /><br /><br />
-		<br /><br /><br /><br />
-		
-	{/* <UpcomingEvent/> */}
+	<UpcomingEvent/>
 	<PastEvents/>
 	</main>
 	<Footer/>
