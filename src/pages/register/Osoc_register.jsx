@@ -1,5 +1,5 @@
 import React from "react";
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import axios from 'axios';
 
 function RegisterArea() {
@@ -22,17 +22,36 @@ function RegisterArea() {
         "University":university,
         "Year":year
       }
-      axios.post(process.env.REACT_APP_KEY,data).then((response)=>{
+    //   axios.post(process.env.REACT_APP_KEY,data).then((response)=>{
+    //     console.log(response);
+    //     setSuccessMessage("Registration successful!");
+    //     setName('');
+    //     setEmail('');
+    //     setContact('');
+    //     setGithub('');
+    //     setUniversity('');
+    //     setYear('');
+    //   })
+    // }
+    axios.post(process.env.REACT_APP_KEY, data)
+      .then((response) => {
         console.log(response);
-        setSuccessMessage("Registration successful!");
-        setName('');
-        setEmail('');
-        setContact('');
-        setGithub('');
-        setUniversity('');
-        setYear('');
+        setSuccessMessage('Registration successful!');
       })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+  useEffect(() => {
+    if (successMessage) {
+      setName('');
+      setEmail('');
+      setContact('');
+      setGithub('');
+      setUniversity('');
+      setYear('');
     }
+  }, [successMessage]);
 
 return (
     <section className="contact-area pt-120 pb-120">
