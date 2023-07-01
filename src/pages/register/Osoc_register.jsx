@@ -64,7 +64,7 @@ return (
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-6 pl-45 pt-50">
-            <div className="section-title text-center title-style-three mb-20">
+              <div className="section-title text-center title-style-three mb-20">
               <h2>Register for OSOC'23</h2>
             </div>
             <div className="contact-info-list text-center mb-40">
