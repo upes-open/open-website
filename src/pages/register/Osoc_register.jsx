@@ -11,8 +11,11 @@ function RegisterArea() {
     const[year,setYear]=useState('');
     const [successMessage, setSuccessMessage] = useState('');
   
+    const [isLoading, setIsLoading] = useState(false); // New loading state
+
     const handleSubmit=(e)=>{
       e.preventDefault();
+      setIsLoading(true); // Set loading to true before making the request
       console.log(name,email,contact,github,university,year);
       const data={
         "Name":name,
@@ -40,6 +43,9 @@ function RegisterArea() {
       })
       .catch((error) => {
         console.error(error);
+      })
+      .finally(() => {
+        setIsLoading(false); // Set loading to false after the request is complete
       });
   };
   useEffect(() => {
@@ -74,6 +80,9 @@ return (
               </ul>
             </div>
             <div className="contact-form">
+            {isLoading ? (
+                <div style={{color: 'black',fontSize:'large'}}>Loading...</div> // Render the loading sign while isLoading is true
+              ) : (
               <form onSubmit={handleSubmit} method="POST">
                 <div className="row">
                   <input type="text" placeholder="Your Name" required onChange={(e)=>setName(e.target.value)} value={name}/>
@@ -122,6 +131,7 @@ return (
           </div>
         )}
               </form>
+              )}
               <span id="msg"></span>
             </div>
           </div>
