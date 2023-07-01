@@ -363,6 +363,8 @@
 }
 .contact-area .row [class*="col-"]:last-child.pl-45 {
 	padding-left: 15px;
+	width: 88%;
+	
 }
 .header-four-wrap .menu-style-two .navbar-wrap > ul > li > a {
     padding: 13px 20px;
@@ -1943,7 +1945,4 @@ form.third-contact-form {
 }
 
 }
-
-
-
 
