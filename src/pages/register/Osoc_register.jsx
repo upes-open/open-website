@@ -80,9 +80,6 @@ return (
               </ul>
             </div>
             <div className="contact-form">
-            {isLoading ? (
-                <div style={{color: 'black',fontSize:'large'}}>Loading...</div> // Render the loading sign while isLoading is true
-              ) : (
               <form onSubmit={handleSubmit} method="POST">
                 <div className="row">
                   <input type="text" placeholder="Your Name" required onChange={(e)=>setName(e.target.value)} value={name}/>
@@ -121,7 +118,14 @@ return (
                 <br />
                 <br />
                 <div className="row justify-content-center">
+                {isLoading ? (
+                  <button type="submit" className="register btn btn-style-two" disabled>
+                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+                ) : (
                   <button type="submit" className="register btn btn-style-two">Register</button>
+                )}
                 </div>
                 <br />
                 {successMessage && (
@@ -131,7 +135,6 @@ return (
           </div>
         )}
               </form>
-              )}
               <span id="msg"></span>
             </div>
           </div>
