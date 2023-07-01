@@ -9,7 +9,7 @@ function SingleArea() {
             <div className="open-single-content">
               <div className="upcoming-open-head">
                 <div className="uc-open-head-title">
-                  <span>07-07-203 to 07-08-2023</span>
+                  <span>07-07-2023 to 07-08-2023</span>
                   <h4>OPEN Summer Of Code 2023</h4>
                 </div>
                 <div className="uc-open-price">
@@ -27,11 +27,11 @@ function SingleArea() {
                 <h4>
                   How to <span>Participate?</span>
                 </h4>
-                <br /><br />
+                <br />
                 <p>To participate in OSoC, simply follow these steps:</p>
               </div>
               <p>
-              <span>Join our Discord community:</span> Visit our website and navigate to the Discord section. Click on the provided link to join our active Discord server, where you will find a vibrant community of mentors and participants.
+              <span>Join our Discord community:</span> After registering with the provided link below, join our active Discord server, where you will find a vibrant community of mentors and participants.
               </p>
               <p>
                 <span>Interact with our mentors:</span> Engage with our experienced mentors on Discord. They are there to guide and support you throughout your journey in OSoC. Feel free to ask questions, seek advice, and discuss project ideas with them.

@@ -88,7 +88,7 @@ return (
                   <input type="text" placeholder="Your University" required value={university} onChange={(e)=>setUniversity(e.target.value)} />
                 </div>
                 <div className="row">
-                  <input type="number" placeholder="Year of graduation" required value={year} onChange={(e)=>setYear(e.target.value)}/>
+                  <input type="number" placeholder="Year of Graduation" required value={year} onChange={(e)=>setYear(e.target.value)}/>
                 </div>
                 <br />
                 <br />
