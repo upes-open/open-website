@@ -120,7 +120,7 @@ return (
                 <div className="row justify-content-center">
                 {isLoading ? (
                   <button type="submit" className="register btn btn-style-two" disabled>
-                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{color:'black'}}></span>
                     Loading...
                   </button>
                 ) : (
