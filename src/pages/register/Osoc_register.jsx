@@ -131,7 +131,7 @@ return (
                 {successMessage && (
           <div>
             <span id="msg" style={{ color: 'black' }}>{successMessage}</span> {/* Display the success message */}
-            <p style={{ color: 'black', fontSize:'25px'}}>Click <a style={{ color: 'red' }} href="http://discord.gg/2rnWsvkX">here</a> to join the discord server.</p> {/* Display the join link */}
+            <p style={{ color: 'black', fontSize:'25px'}}>Click <a style={{ color: 'red' }} href="https://discord.gg/FyFgtY27Wf">here</a> to join the discord server.</p> {/* Display the join link */}
           </div>
         )}
               </form>
