@@ -1,8 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
+import { Col, Modal, ModalBody, ModalHeader, Row } from "reactstrap";
+import axios from 'axios';
 
-function SingleArea() {
+function SingleArea() 
+{
+  const [modal,setmodal]=useState(false)
+  const[name,setName]=useState('');
+  const[email,setEmail]=useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    console.log(name,email);
+    const data={
+      "Name":name,
+      "Email":email,
+    }
+    
+    setIsSubmitting(true);
+
+    axios.post(process.env.REACT_APP_KEY2,data).then((response)=>{
+      console.log(response);
+      setName('');
+      setEmail('');
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+    .finally(() => {
+      setIsSubmitting(false); 
+    });
+  }
   return (
     <section className="open-single-area pt-120 pb-120">
+
+      <Modal
+      size="lg"
+      isOpen={modal}
+      toggle={()=>setmodal(!modal)}
+      >
+        <ModalHeader toggle={()=>setmodal(!modal)} className="modal-heading">
+          <h6 style={{color:'black'}}>Enter your mail id for future updates and newsletter.</h6>
+        </ModalHeader>
+        <ModalBody>
+          <form onSubmit={handleSubmit} method="POST">
+            <Row>
+            <Col lg={12}>
+                <div>
+                  <label htmlFor="name" style={{color:'black'}}>
+                    Name
+                  </label>
+                  <input type="text" className="form-control" placeholder="Enter your name" value={name}
+                    onChange={(e)=>setName(e.target.value)}/>
+                </div>
+              </Col>
+              <Col lg={12}>
+                <div>
+                  <label htmlFor="email" style={{marginTop:'20px',color:'black'}}>
+                    Email
+                  </label>
+                  <input type="email" className="form-control" placeholder="Enter your email" value={email}
+                    onChange={(e)=>setEmail(e.target.value)}/>
+                </div>
+              </Col>
+            </Row>
+            <button type="submit" style={{margin:'10px',height:'40px',backgroundColor:'#a1cd3a',color:'black',border:'none',borderRadius:'5px',width:'100px',cursor:'pointer',marginLeft:'2px'}}>{isSubmitting ? "Submitting..." : "Submit"}</button> 
+          </form>
+        </ModalBody>
+      </Modal>
+
+
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -57,7 +124,7 @@ function SingleArea() {
                Join OSoC today and embark on a journey of learning, collaboration, and impact in the world of open source.
               </p>
               
-              <a href="/Osoc_register" className="btn btn-style-two">Register Now</a> 
+              <button className="btn btn-style-two" onClick={()=>setmodal(true)}>Registration Closed!!</button> 
             </div>
           </div>
         </div>
@@ -65,5 +132,4 @@ function SingleArea() {
     </section>
   );
 }
-
 export default SingleArea;

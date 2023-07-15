@@ -136,11 +136,11 @@ function App() {
             <Anniversary />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/Osoc_register">
+          {/* <ScrollToTopRoute exact={true} path="/Osoc_register">
             <SingleEvent> 
             <Osoc_register />
             </SingleEvent>
-          </ScrollToTopRoute>
+          </ScrollToTopRoute> */}
           <ScrollToTopRoute exact={true} path="/Osoc23">
             <SingleEvent> 
             <Osoc23/>
