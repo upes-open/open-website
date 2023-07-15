@@ -26,6 +26,7 @@ import Register from "./pages/register/Register";
 import Technova from "./pages/events/Technova";
 import Osoc_register from './pages/register/Osoc_register';
 import Osoc23 from './pages/events/Osoc23';
+import Leader from './pages/events/Leader';
 
 import Timeline from './pages/timelinepage/timelinePage'
 // import Loader from "react-js-loader";
@@ -136,16 +137,17 @@ function App() {
             <Anniversary />
             </SingleEvent>
           </ScrollToTopRoute>
-          {/* <ScrollToTopRoute exact={true} path="/Osoc_register">
+          <ScrollToTopRoute exact={true} path="/leaderboard">
             <SingleEvent> 
-            <Osoc_register />
+            <Leader/>
             </SingleEvent>
-          </ScrollToTopRoute> */}
+          </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/Osoc23">
             <SingleEvent> 
             <Osoc23/>
             </SingleEvent>
           </ScrollToTopRoute>
+    
         </Switch>
       </Router>
     </div>

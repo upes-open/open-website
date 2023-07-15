@@ -124,7 +124,9 @@ function SingleArea()
                Join OSoC today and embark on a journey of learning, collaboration, and impact in the world of open source.
               </p>
               
-              <button className="btn btn-style-two" onClick={()=>setmodal(true)}>Registration Closed!!</button> 
+              <button className="btn btn-style-two" onClick={()=>setmodal(true)}>Registration Closed</button> 
+              <a href="/leaderboard" className="btn btn-style-two">View Leaderboard</a>
+ 
             </div>
           </div>
         </div>
