@@ -28,7 +28,7 @@ function UpcomingEvent() {
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="section-title title-style-three black-title text-center mb-70"> 
-               <h2>Upcoming<span> Event</span></h2>
+               <h2>Ongoing<span>  Event</span></h2>
                </div>
               <div className="inner-about-content">
                 <h5>Open Summer of Code 2023</h5>
