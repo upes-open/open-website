@@ -6,13 +6,13 @@ const data = [
   { rank:3,name: " Shivansh Goel", username: "Shivansh175", points: 85},
   { rank:4,name: " Akash Mishra", username: "helloakash1701", points: 75 },
   { rank:5,name: " Yash Khattar", username: "Yash-Khattar", points: 65 },
-  { rank:6,name: " Gagan Chaudhary", username: "GaganChaudhary6378", points: 65 },
-  { rank:7,name: " Ananya Mathur", username: "Anabot12", points: 55 },
-  { rank:8,name: " Omar Hammoud", username: "Mumbzi96", points: 45 },
-  { rank:9,name: " Charu", username: "Charu-2718", points: 20 },
-  { rank:10,name: " Kruthardh Tirunahari", username: "Kruthardh11", points: 20 },
-  { rank:11,name: " Shreyas", username: "shreyas2711", points: 20 },
-
+  { rank:5,name: " Gagan Chaudhary", username: "GaganChaudhary6378", points: 65 },
+  { rank:6,name: " Ananya Mathur", username: "Anabot12", points: 55 },
+  { rank:7,name: " Omar Hammoud", username: "Mumbzi96", points: 45 },
+  { rank:8,name: " Charu", username: "Charu-2718", points: 20 },
+  { rank:8,name: " Kruthardh Tirunahari", username: "Kruthardh11", points: 20 },
+  { rank:8,name: " Shreyas", username: "shreyas2711", points: 20 },
+  { rank:8,name: " Jackson", username: "jason2000-cpu", points: 20 },
 ]
 
 function SingleArea() {
