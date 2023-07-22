@@ -92,14 +92,6 @@ export const TeamData = [
     LinkedIn: "https://www.linkedin.com/in/anushka-srivastava-92a0ba242",
     GitHub: "https://github.com/nushk28",
   },
-
-  {
-    name: "Navinya Savarkar",
-    designation: "Design Lead",
-    imageURL: "https://i.postimg.cc/9M69ppXJ/Clipped-image-20230619-203537.png",
-    LinkedIn: "https://www.linkedin.com/in/navinya-sawarkar/",
-    GitHub: "https://github.com/NavySaw23",
-  },
   
 
   {
@@ -186,5 +178,14 @@ GitHub: "https://github.com/bhavika2502",
     LinkedIn: "https://in.linkedin.com/in/akshitgandotra",
     GitHub: "https://github.com/akshit-g", 
   },
+
+  {
+    name: "Navinya Sawarkar",
+    designation: "Lead Student Developer",
+    imageURL: "https://i.postimg.cc/9M69ppXJ/Clipped-image-20230619-203537.png",
+    LinkedIn: "https://www.linkedin.com/in/navinya-sawarkar/",
+    GitHub: "https://github.com/NavySaw23",
+  },
+
 
 ];

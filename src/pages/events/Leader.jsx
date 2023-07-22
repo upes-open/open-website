@@ -1,18 +1,24 @@
 import React from "react";
 
 const data = [
-  { rank:1,name: " Rohin Mehrotra", username: "rohin079", points: 300 },
-  { rank:2,name: " Vinay Thapa", username: "ThapaVinay", points: 205 },
-  { rank:3,name: " Shivansh Goel", username: "Shivansh175", points: 85},
-  { rank:4,name: " Akash Mishra", username: "helloakash1701", points: 75 },
-  { rank:5,name: " Yash Khattar", username: "Yash-Khattar", points: 65 },
-  { rank:5,name: " Gagan Chaudhary", username: "GaganChaudhary6378", points: 65 },
-  { rank:6,name: " Ananya Mathur", username: "Anabot12", points: 55 },
-  { rank:7,name: " Omar Hammoud", username: "Mumbzi96", points: 45 },
-  { rank:8,name: " Charu", username: "Charu-2718", points: 20 },
-  { rank:8,name: " Kruthardh Tirunahari", username: "Kruthardh11", points: 20 },
-  { rank:8,name: " Shreyas", username: "shreyas2711", points: 20 },
-  { rank:8,name: " Jackson", username: "jason2000-cpu", points: 20 },
+  { rank:1,name: " Vinay Thapa", username: "ThapaVinay", points: 405 },
+  { rank:2,name: " Rohin Mehrotra", username: "rohin079", points: 400 },
+  { rank:3,name: " Viraj Patel", username: "virajp4", points: 125 },
+  { rank:4,name: " Charu", username: "Charu-2718", points: 100 },
+  { rank:5,name: " Ananya Mathur", username: "Anabot12", points: 95 },
+  { rank:5,name: " Shivansh Goel", username: "Shivansh175", points: 95},
+  { rank:5,name: " Akash Mishra", username: "helloakash1701", points: 95 },
+  { rank:6,name: " Yash Khattar", username: "Yash-Khattar", points: 65 },
+  { rank:6,name: " Gagan Chaudhary", username: "GaganChaudhary6378", points: 65 },
+  { rank:7,name: " Avni Goyal", username: "avnigoyal25", points: 50 },
+  { rank:8,name: " Omar Hammoud", username: "Mumbzi96", points: 45 },
+  { rank:8,name: " Harman Singh", username: "H-SM", points: 45 },
+  { rank:9,name: " Kruthardh Tirunahari", username: "Kruthardh11", points: 20 },
+  { rank:9,name: " Shreyas", username: "shreyas2711", points: 20 },
+  { rank:9,name: " Jackson", username: "jason2000-cpu", points: 20 },
+  { rank:9,name: " Anisha", username: "Anisha", points: 20 },
+  { rank:10,name: " Yash Nagar", username: "@yashh1711", points: 10 },
+  { rank:10,name: " K Charan Kumar", username: "charan1409", points: 10 },
 ]
 
 function SingleArea() {
