@@ -1,13 +1,14 @@
 import React from "react";
 
 const data = [
-  { rank:1,name: "Rohin Mehrotra ", username: "rohin079", points: 730 },
-  { rank:2,name: "Vinay Thapa", username: "ThapaVinay", points: 545 },
-  { rank:3,name: "Viraj Patel", username: "virajp4", points: 210 },
-  { rank:4,name: "Akash Mishra", username: "helloakash1701", points: 195 },
-  { rank:5,name: "Charu", username: "Charu-2718", points: 170 },
-  { rank:5,name: " Avni Goyal", username: "avni goyal", points: 130},
+  { rank:1,name: "Rohin Mehrotra ", username: "rohin079", points: 737 },
+  { rank:2,name: "Vinay Thapa", username: "ThapaVinay", points: 615 },
+  { rank:3,name: "Charu", username: "Charu-2718", points: 245 },
+  { rank:4,name: "Akash Mishra", username: "helloakash1701", points: 214 },
+  { rank:5,name: "Viraj Patel", username: "virajp4", points: 210 },
+  { rank:5,name: " Avni Goyal", username: "avni goyal", points: 177},
   { rank:5,name: "Yash Khattar", username: "Yash-Khattar", points: 105 },
+  { rank:5,name: "Shraddha", username: "shradiphylleia", points: 100 },
   { rank:6,name: "Ananya", username: "Anabot12", points:95 },
   { rank:6,name: "Shivansh", username: "Shivansh175", points: 95 },
   { rank:7,name: "Harman Singh", username: "H-SM", points: 75 },
@@ -16,7 +17,6 @@ const data = [
   { rank:9,name: "Jackson", username: "jason2000-cpu", points: 50 },
   { rank:9,name: "Omar Hammoud", username: "Mumbzi96", points: 45 },
   { rank:9,name: "Shweta Singh", username: "shwetasng", points: 30 },
-  { rank:9,name: "Shraddha", username: "shradiphylleia", points: 30 },
   { rank:10,name: " Kruthardh Tirunahari", username: "Kruthardh11", points: 20 },
   { rank:10,name: "Shreyas", username: "shreyas2711", points: 20 },
   { rank:10,name: "Anisha", username: "Anisha", points: 20 },
