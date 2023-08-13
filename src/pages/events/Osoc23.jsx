@@ -126,8 +126,8 @@ function SingleArea()
               
               <button className="btn btn-style-two" onClick={()=>setmodal(true)}>Registration Closed</button> 
               <a href="/leaderboard" className="btn btn-style-two">View Leaderboard</a>
-                {/*Commented out feedback form button*/}
-              {/*<a href="/Feedback" className="btn btn-style-two">Feedback</a>*/}
+{/*                 Commented out feedback form button */}
+              <a href="/Feedback" className="btn btn-style-two">Feedback</a>
             </div>
           </div>
         </div>
