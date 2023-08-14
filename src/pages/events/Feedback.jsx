@@ -75,10 +75,19 @@ function FeedbackForm() {
         name="name"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        style={{ width: "100%", padding: "10px" }}
-        className="input-long"
+        style={{width:"150%",padding:"10px"}}
         required
       /><br />
+     <style>
+        {`@media (max-width: 480px) {
+          /* Apply styles for screens with width 480px or smaller */
+          #name {
+            width: 80%;          /* Set width to 100% for smaller screens */
+            padding:10px;
+            margin-bottom:10px;
+          }
+        }`}
+      </style>
 
       <label htmlFor="college"className="single-line-label">College/University<span className="red"> *</span></label>
       <input
@@ -87,11 +96,22 @@ function FeedbackForm() {
         name="college"
         value={college}
         onChange={(e) => setCollege(e.target.value)}
-        style={{ width: "100%", padding: "10px" }}
-        className="input-long"
+        style={{width:"150%",padding:"10px"}}
         required
       /><br />
-
+        <style>
+        {`@media (max-width: 480px) {
+          /* Apply styles for screens with width 480px or smaller */
+          #college {
+            width: 80%;          /* Set width to 100% for smaller screens */
+            padding:10px;
+            margin-bottom:10px;
+          }
+          #label{
+            margin-left:30px;
+          }
+        }`}
+      </style>
       <label htmlFor="email"className="single-line-label">Email<span className="red"> *</span></label>
       <input
         type="email"
@@ -99,10 +119,22 @@ function FeedbackForm() {
         name="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        style={{ width: "100%", padding: "10px" }}
-        className="input-long"
+        style={{width:"150%",padding:"10px"}}
         required
       /><br />
+       <style>
+        {`@media (max-width: 480px) {
+          /* Apply styles for screens with width 480px or smaller */
+          #email {
+            width: 80%;          /* Set width to 100% for smaller screens */
+            padding:10px;
+            margin-bottom:10px;
+          }
+          #label{
+            margin-left:30px;
+          }
+        }`}
+      </style>
       <br/>
       <label htmlFor="rating" className="single-line-label">How would you rate OPEN Summer of Code?<span className="red">*</span></label>
       <br/>
@@ -365,9 +397,9 @@ function FeedbackForm() {
         name="suggestions"
         value={suggestions}
         onChange={(e) => setSuggestions(e.target.value)}
-        rows="4"
+        rows="6"
         cols="50"
-        style={{ width: "100%", padding: "10px"}}
+        style={{ width: "150%", padding: "10px"}}
         required
       ></textarea><br />
       <br/>
