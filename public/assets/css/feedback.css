@@ -1,6 +1,7 @@
 /* Style for labels */
 label {
-    display: block;
+    display:flex;
+    margin-left:-70px;
     margin-bottom: 10px; /* Increase margin-bottom to add space between labels */
     font-weight: bold;
   }
@@ -47,23 +48,19 @@ label {
   input[type="email"],
   select,
   textarea {
-    width: 100%;
     padding: 10px;
+    margin-left:-70px;
     margin-bottom: 15px; /* Increase margin-bottom to add space between input fields */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
   }
-  .input-long {
-    width: 80%; /* You can adjust this value to make the input fields longer */
-  }
-  
-  
+
   /* Styles for the five-star rating system */
   .rating-stars {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 50px;
   }
   
   .rating-stars label {
@@ -255,14 +252,39 @@ input[type="checkbox"]:checked + .checkmark::after {
     margin-right: 5px;
   }
 
-  .input-long,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  label {
+    display:block;
+    margin-left:20px;
+    margin-bottom: 10px; /* Increase margin-bottom to add space between labels */
+    font-weight: bold;
+  }
+
+  #name {
+    max-width:80%;
+    padding:10px;
+    margin-left:20px;
+    margin-bottom:10px;
+  }
+  
+  #college {
+    max-width:80%;
+    padding:10px;
+    margin-left:20px;
+    margin-bottom:10px;
+  }
+
+  #email{
+    max-width:80%;
+    padding:10px;
+    margin-left:20px;
+    margin-bottom:10px;
+  }
+
+  #suggestions{
+    max-width:80%;
+    padding:10px;
+    margin-left:20px;
+    margin-bottom:10px;
   }
 
   .rating-stars,
