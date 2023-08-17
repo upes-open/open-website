@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, push } from "firebase/database";
 
 
 function FeedbackForm() {
@@ -16,11 +16,19 @@ function FeedbackForm() {
   const [submissionstatus, setSubmissionStatus] = useState(false);
 
   const appSettings = {
-    databaseURL: process.env.REACT_APP_FIREBASE_URL
-  }
-  const app = initializeApp(appSettings)
-  const database = getDatabase(app)
-  const feedbacksDB = ref(database, "feedbacks")
+    apiKey: "AIzaSyCBRP_et_Sg44bXes0snM6O_S1AV2-uUsA",
+    authDomain: "upes-open.firebaseapp.com",
+    databaseURL: "https://upes-open-default-rtdb.firebaseio.com",
+    projectId: "upes-open",
+    storageBucket: "upes-open.appspot.com",
+    messagingSenderId: "924316504730",
+    appId: "1:924316504730:web:d4f5194765043273274523",
+    measurementId: "G-4WSLMC7LVR"
+  };
+
+  const app = initializeApp(appSettings);
+  const database = getDatabase(app);
+  const feedbacksDB = ref(database, "feedbacks");
   const handleSubmit = (e) => {
     e.preventDefault();
     //Form validation if required
