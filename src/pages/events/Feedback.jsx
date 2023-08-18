@@ -29,6 +29,20 @@ function FeedbackForm() {
   const app = initializeApp(appSettings);
   const database = getDatabase(app);
   const feedbacksDB = ref(database, "feedbacks");
+
+  const resetForm = () => {
+    setName("");
+    setCollege("");
+    setEmail("");
+    setRating("");
+    setExcitingProjects([]);
+    setOrganizeNextYear(false);
+    setSuggestions("");
+    setSelectedProjectsError(false);
+    setSubmissionStatus("");
+  };
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     //Form validation if required
@@ -50,8 +64,8 @@ function FeedbackForm() {
       push(feedbacksDB,data)
         .then((response) => {
           console.log(response);
-          setSubmissionStatus("success");
-          // Show success message or perform other actions upon successful submission.
+          setSubmissionStatus("success"); // Show success message or perform other actions upon successful submission.
+          resetForm();
         })
         .catch((error) => {
           console.error(error);
