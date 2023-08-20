@@ -10,7 +10,7 @@ export const DeployProjectsImages = [
         imageURL: "https://i.postimg.cc/ydV2V2sS/Untitled-design-1.png",
     },
     {
-        imageURL: "https://i.postimg.cc/5tH8Pvx3/Whats-App-Image-2023-08-20-at-17-14-35.jpg",
+        imageURL: "https://i.postimg.cc/D08ZFVZ3/Whats-App-Image-2023-08-20-at-17-14-35-Copy-1.jpg",
     },
     {
         imageURL: "",
