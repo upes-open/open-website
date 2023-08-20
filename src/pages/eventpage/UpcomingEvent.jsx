@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react'
 import WOW from "wowjs";
 
-import event from '../../assets/img/OSOC .png';
+import event from '../../assets/img/leaderboard.png';
 
 function UpcomingEvent() {
   useEffect(()=>{
