@@ -30,7 +30,7 @@ function Outreachy() {
             <div className="inner-about-content">
               <p>
               Open Community would like to congratulate its President Medhavi Singh on successfully completing 
-                internship at Outreachy. We are proud of you ma'am!
+                internship at Outreachy in the capacity of Outreachy'23 Intern at Ceph Organisation. We are proud of you ma'am!
               </p>
               <img
                 width="550px"
