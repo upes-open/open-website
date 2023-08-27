@@ -34,7 +34,7 @@ function Outreachy() {
               </p>
               <img 
                 width="400px"
-                height="190px"
+                height="150px"
                 src={logo}
                 className="wow fadeInRight"
                 data-wow-delay=".3s"
