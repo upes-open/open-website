@@ -23,7 +23,7 @@ function Barclays() {
           <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
             <div className="inner-about-img">
               <img
-                width="500px"
+                width="480px"
                 height="550px"
                 src={image}
                 className="wow fadeInRight"
