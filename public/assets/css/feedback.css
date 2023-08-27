@@ -1,0 +1,280 @@
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 10px; /* Increase margin-bottom to add space between labels */
+    font-weight: bold;
+  }
+
+  /*Style for error message*/
+  .project-error-message {
+    color: red;
+    margin-top: 5px; /* Add some spacing between the message and the checkboxes */
+  }
+  
+  .submission-status {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .submission-status.success {
+    color: red;
+  }
+  
+  
+  /* Styles for the single-line label */
+  .single-line-label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px; /* Increase margin-bottom to add space between labels */
+    font-weight: bold;
+  }
+
+  .single-line{
+    display:inline-block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  /*Style for required fields*/
+  .red{
+    color:red;
+    font-style:bold;
+  }
+  
+  /* Style for input fields */
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Increase margin-bottom to add space between input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .input-long {
+    width: 80%; /* You can adjust this value to make the input fields longer */
+  }
+  
+  
+  /* Styles for the five-star rating system */
+  .rating-stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .rating-stars label {
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .rating-stars label input[type="radio"] {
+    display: none;
+  }
+  
+  .rating-stars label i {
+    font-size: 24px;
+  }
+  
+  /* Styling for the selected stars */
+  .rating-stars label i.checked {
+    color: #f1c40f; /* Set the color for the selected stars */
+  }
+  
+  /* Style for radio button labels */
+  input[type="radio"] + label {
+    margin-right: 10px;
+  }
+  
+  /* Styles for radio options */
+  .radio-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Styles for radio button labels */
+  .radio-options label {
+    margin: 0;
+  }
+
+
+ /* Style the checkbox */
+.single-line input[type="checkbox"] {
+  /* Use the ::before pseudo-element to style the checkbox itself */
+  position: relative;
+  width: 15px;
+  height: 15px;
+  appearance: none; /* Remove default appearance */
+  border: 2px solid #333; /* Border color for the checkbox */
+  background-color: white; /* Background color of the checkbox */
+  cursor: pointer;
+}
+
+/* Style the checkbox when checked */
+.single-line input[type="checkbox"]:checked{
+  background-color:#a1cd3a; /* Change background color when checked */
+  border-color: #a1cd3a; /* Change border color when checked */
+}
+
+.radio-options input[type="radio"] {
+  /* Use the ::before pseudo-element to style the checkbox itself */
+  position: relative;
+  width: 15px;
+  height: 15px;
+  top:50%;
+  right:-6%;
+  appearance: none; /* Remove default appearance */
+  border: 2px solid #333; /* Border color for the checkbox */
+  background-color: white; /* Background color of the checkbox */
+  cursor: pointer;
+}
+
+.radio-options input[type="radio"]:checked{
+  background-color:#a1cd3a; /* Change background color when checked */
+  border-color: #a1cd3a; /* Change border color when checked */
+}
+
+
+.radio-options input[type="radio"]:checked+label .icheckmark::after {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Additional styles to ensure proper alignment */
+.radio-options label {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px; /* Add some space for the checkbox icon */
+  cursor: pointer;
+}
+
+.radio-options label .icheckmark {
+  position: absolute;
+  top: 50%;
+  left:0;
+  transform: translateY(-50%);
+}
+
+
+
+
+input[type="checkbox"]:checked + .checkmark::after {
+  content: '\2713'; /* Unicode character for checkmark */
+  position:relative;
+  top: 50%;
+  left:-4%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: black; /* Black color for the checkmark */
+  font-weight:bold;
+}
+
+
+/* Style the label */
+.single-line label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+  
+  /* Center the submit button */
+  input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #a1cd3a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:bolder;
+    cursor: pointer;
+  }
+
+  
+  
+  /* Adjust form elements for larger screens */
+  @media screen and (min-width: 768px) {
+    .contact-area {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  
+    label {
+      width: 30%; /* Increase width to have more space for labels on larger screens */
+      display: inline-block;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 68%; /* Decrease width to allow more space for input fields on larger screens */
+    }
+  
+    input[type="radio"] + label {
+      margin-right: 20px;
+    }
+  }
+  
+  /* Adjust form elements for smaller screens */
+  /* Styles for small screens */
+@media screen and (max-width: 480px) {
+  .col-lg-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  .feedback-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact-item {
+    margin-bottom: 5px;
+  }
+
+  .contact-item i {
+    margin-right: 5px;
+  }
+
+  .input-long,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .rating-stars,
+  .radio-options {
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+  }
+
+  .submit-button {
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
