@@ -32,21 +32,20 @@ function Outreachy() {
               OPEN Community would like to congratulate its <b>President</b> Medhavi Singh on successfully completing 
                 internship at Outreachy in the capacity of <b>Outreachy'23 Intern at Ceph Organisation</b>. We are proud of you ma'am!
               </p>
-              <img
-                width="550px"
+              <img 
+                width="400px"
                 height="190px"
                 src={logo}
                 className="wow fadeInRight"
                 data-wow-delay=".3s"
                 alt=""
-                align="center"
               />
             </div>
             </div>
           </div>
           <div className="col-xl-5 col-lg-6">
               <img
-                width="450px"
+                width="380px"
                 height="550px"
                 src={image}
                 className="wow fadeInRight"

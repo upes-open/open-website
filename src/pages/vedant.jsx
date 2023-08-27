@@ -46,7 +46,7 @@ function Barclays() {
                 internship at Barclays in the capacity of <b>BA3 intern</b>. We are proud of you sir!
               </p>
               <img
-                width="400px"
+                width="380px"
                 height="230px"
                 src={logo}
                 className="wow fadeInRight"
