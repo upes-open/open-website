@@ -42,8 +42,8 @@ function Barclays() {
             <div className="inner-about-content">
               {/* <h5>              </h5> */}
               <p>
-              Open Community would like to congratulate its Vice President Vedant Saraf on successfully completing 
-                internship at Barclays in the capacity of BA3 intern. We are proud of you sir!
+              OPEN Community would like to congratulate its <b>Vice President</b> Vedant Saraf on successfully completing 
+                internship at Barclays in the capacity of <b>BA3 intern</b>. We are proud of you sir!
               </p>
               <img
                 width="400px"
