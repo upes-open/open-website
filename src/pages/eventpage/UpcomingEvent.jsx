@@ -1,7 +1,7 @@
 import React,{ useEffect } from 'react'
 import WOW from "wowjs";
 
-import event from '../../assets/img/leaderboard.png';
+import event from '../../assets/img/images/the_box.jpg';
 
 function UpcomingEvent() {
   useEffect(()=>{
@@ -22,20 +22,26 @@ function UpcomingEvent() {
             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
               <div className="inner-about-img">
 
-                <img width="550px" height="600px" src={event} className="wow fadeInRight" data-wow-delay=".3s" alt="" />
+                <img width="550px" height="600px" src={event} className="wow fadeInRight" data-wow-delay=".3s" alt="" style={{ maxWidth: '100%', height: 'auto' }}  />
 
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="section-title title-style-three black-title text-center mb-70"> 
-                 <h2>IT'S A<span>  WRAP</span></h2>
+                 <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
-                <h5>Open Summer of Code 2023</h5>
-                <p>OPEN Summer of Code, a yearly event, occurred from July 7 to August 13, 2023. Drawing participation from 300+ students across 100+ colleges globally, including prestigious institutions like IIT and NIT, this event offered diverse tech projects. Repositories were publicly available on OPEN's GitHub, fostering collaborative development. The program featured interactive Saturday events for fun and learning, with weekly leaderboards announced. Top participants earned Amazon Vouchers, with prizes of 3500 INR for the winner, 2000 INR for the runner-up, and 1500 INR for the second runner-up. Project stacks spanned React.js, Node.js, Flutter, Machine Learning, Django, and cloud/devOps tools.
+                <h5>The Box</h5>
+                <p>Join us for 'The Box' workshop on October 27th, 2023, hosted by OPEN Community, and unleash your creative potential in the world of design, innovation, and tech. This event is not just for designers but for all tech enthusiasts looking to expand their horizons.
+
+Discover the power of design and its applicability in any field. Learn how practice enhances creativity, a fundamental element of exceptional design. Master the principles of design thinking to create standout tech solutions. 
+
+In today's fast-paced world, thinking outside the box is crucial. 'The Box' workshop encourages you to let your creative ideas flow and equips you to create innovative solutions. Led by the talented Navinya Sawarkar, this workshop is a must-attend for anyone looking to push their boundaries and redefine their approach to design and tech.
+
+Don't miss out on this opportunity to revitalize your tech creativity. 
                 </p>
-                 <a href="/Osoc23" className="btn btn-style-two">Know More</a> 
-                 <a href="/Feedback" className="btn btn-style-two">Feedback</a>
+                 <a href="https://forms.gle/19yqZo5aMPrfHFE1A" className="btn btn-style-two">Register Now!</a>
+                 {/*<a href="/Feedback" className="btn btn-style-two">Feedback</a>*/}
                  </div>
               </div>
             </div>
