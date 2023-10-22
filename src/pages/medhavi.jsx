@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 
 import image from '../assets/img/medhavi.png';
-import logo from '../assets/img//outreachy.png'
+import logo from '../assets/img//Cradlepoint_logo.png'
 
 function Outreachy() {
   useEffect(() => {
@@ -29,8 +29,8 @@ function Outreachy() {
             </div>
             <div className="inner-about-content">
               <p>
-              OPEN Community would like to congratulate its <b>President</b> Medhavi Singh on successfully completing 
-                internship at Outreachy in the capacity of <b>Outreachy'23 Intern at Ceph Organisation</b>. We are proud of you ma'am!
+              OPEN Community would like to congratulate its <b>President</b> Medhavi Singh on successfully getting placed 
+              at <b>Cradlepoint</b>. We are proud of you ma'am!
               </p>
               <img 
                 width="400px"
