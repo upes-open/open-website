@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-import Privacypolicy from './Privacypolicy';
+import Mediamorph from '../MediaMorph/MediaMorph';
 function privacy() {
     return (
       <>
@@ -9,7 +9,7 @@ function privacy() {
       <main>
           <br /><br /><br /><br />
       
-    <Privacypolicy/>
+    <Mediamorph/>
       </main>
       <Footer/>
       </>
