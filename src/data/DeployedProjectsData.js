@@ -32,7 +32,7 @@ export const DeployedProjectsData = [
         description: " Introducing MediaMorph , the ultimate Chrome extension for transforming your video - watching adventures . This powerful tool enhances video player functionalities , allowing you to take control of your content like never before . Elevate your video - watching experience today with MediaMorph .\n Key Features: Video Speed Mastery, Sound Amplifier, Text Extraction Made Easy, Clickable Video Links, Picture-in-Picture, YouTube Shorts Control       ",
         keywords : "Html, CSS, JavaScript",        
         imageURL: "https://i.postimg.cc/fykNtYT9/Whats-App-Image-2023-11-02-at-10-12-04-473a5282.jpg",
-        link: "https://github.com/upes-open/MediaMorph",
+        link: "/MediaMorph",
     },
 
 ];
