@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
-import Privacypolicy from '../PrivacyPolicy/Privacypolicy';
+import Privacypolicy from '../MediaMorph/Privacypolicy';
+
 function privacy() {
     return (
       <>

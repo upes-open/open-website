@@ -28,8 +28,11 @@ import Osoc_register from './pages/register/Osoc_register';
 import Osoc23 from './pages/events/Osoc23';
 import Feedback from './pages/events/Feedback';
 import Leader from './pages/events/Leader';
+import MediaMorph from './pages/MediaMorph/project';
+import Privacy from './pages/MediaMorph/privacy';
 
 import Timeline from './pages/timelinepage/timelinePage'
+
 // import Loader from "react-js-loader";
 
 function App() {
@@ -151,6 +154,16 @@ function App() {
           <ScrollToTopRoute exact={true} path="/Feedback">
             <SingleEvent> 
             <Feedback/>
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/MediaMorph">
+            <SingleEvent> 
+            <MediaMorph/>
+            </SingleEvent>
+          </ScrollToTopRoute>
+          <ScrollToTopRoute exact={true} path="/privacy">
+            <SingleEvent> 
+            <Privacy/>
             </SingleEvent>
           </ScrollToTopRoute>
         </Switch>

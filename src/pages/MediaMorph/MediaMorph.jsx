@@ -28,6 +28,9 @@ function MediaMorph() {
           </div>
           <div className="col-xl-5 col-lg-6">
             <div className="section-title title-style-three black-title text-center mb-70">
+              <br></br>
+              <br></br>
+              <br></br>
               <h2>PROJECT<span>  DESCRIPTION</span></h2>
             </div>
             <div className="inner-about-content">
@@ -50,8 +53,9 @@ function MediaMorph() {
               </p>
 
               <p>Elevate your video-watching experience today with MediaMorph</p>
-
-              <Link to="../PrivacyPolicy/privacy.jsx" className="btn btn-style-two">Privacy Policy</Link>
+              <br></br>
+              <br></br>
+              <Link to="/privacy" className="btn btn-style-two">Privacy Policy</Link><tab></tab>
               <a href="https://github.com/upes-open/MediaMorph" className="btn btn-style-two">Know More</a>
               
             </div>
