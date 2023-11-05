@@ -1,0 +1,31 @@
+
+.inner-about-area {
+    padding: 40px 0;
+  }
+
+  
+  
+  
+  .section-title {
+    margin-bottom: 20px;
+  }
+  
+  
+  .inner-about-content {
+    text-align: left;
+  }
+  
+  
+  @media (max-width: 768px) {
+
+    .col-xl-6 {
+      width: 100%;
+    }
+
+    .inner-about-area h5{
+     text-align: center;
+    }
+  }
+  
+  
+  
