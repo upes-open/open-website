@@ -63,7 +63,7 @@ function Privacypolicy() {
   <br /><br />
   <strong>8. Contact Us</strong>
   <br /><br />
-  If you have any questions or concerns about this Privacy Policy or the MediaMorph Chrome Extension, please contact us through our GitHub repository or at <a href="https://www.instagram.com/upesopen_/" target="_blank"></a>.
+  If you have any questions or concerns about this Privacy Policy or the MediaMorph Chrome Extension, please contact us through our GitHub repository or at <a href="https://www.instagram.com/upesopen_/" target="_blank">https://www.instagram.com/upesopen_/</a>.
 </p>
 
 </div>

@@ -56,6 +56,7 @@ function MediaMorph() {
               <br></br>
               <br></br>
               <Link to="/privacy" className="btn btn-style-two">Privacy Policy</Link><tab></tab>
+              
               <a href="https://github.com/upes-open/MediaMorph" className="btn btn-style-two">Know More</a>
               
             </div>
