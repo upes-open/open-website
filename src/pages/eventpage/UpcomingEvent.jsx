@@ -31,16 +31,11 @@ function UpcomingEvent() {
                  <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
-                <h5>The Box</h5>
-                <p>Join us for 'The Box' workshop on October 27th, 2023, hosted by OPEN Community, and unleash your creative potential in the world of design, innovation, and tech. This event is not just for designers but for all tech enthusiasts looking to expand their horizons.
-
-Discover the power of design and its applicability in any field. Learn how practice enhances creativity, a fundamental element of exceptional design. Master the principles of design thinking to create standout tech solutions. 
-
-In today's fast-paced world, thinking outside the box is crucial. 'The Box' workshop encourages you to let your creative ideas flow and equips you to create innovative solutions. Led by the talented Navinya Sawarkar, this workshop is a must-attend for anyone looking to push their boundaries and redefine their approach to design and tech.
-
-Don't miss out on this opportunity to revitalize your tech creativity. 
+                <h5>ContainerCraft: Unleashing the power of Docker and linux</h5>
+                <p> The workshop is on 24th jan ad 31st jan from 2pm to 5pm.Venue will be shared soon.
+                  Bring your laptops charged for smooth hands on experience. 
                 </p>
-                 <a href="https://forms.gle/19yqZo5aMPrfHFE1A" className="btn btn-style-two">Register Now!</a>
+                 <a href="register" className="btn btn-style-two">Register Now!</a>
                  {/*<a href="/Feedback" className="btn btn-style-two">Feedback</a>*/}
                  </div>
               </div>

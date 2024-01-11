@@ -4,11 +4,14 @@ import axios from 'axios';
 
 function RegisterArea() {
     const[name,setName]=useState('');
-    const[email,setEmail]=useState('');
-    const[contact,setContact]=useState('');
-    const[github,setGithub]=useState('');
-    const[university,setUniversity]=useState('');
+    const[sapid,setSapid]=useState('');
+    // const[email,setEmail]=useState('');
+    // const[contact,setContact]=useState('');
+    // const[github,setGithub]=useState('');
+    // const[university,setUniversity]=useState('');
     const[year,setYear]=useState('');
+    const[branch,setBranch]=useState('');
+    const[roll,setRoll]=useState('');
     const [successMessage, setSuccessMessage] = useState('');
   
     const [isLoading, setIsLoading] = useState(false); // New loading state
@@ -16,14 +19,13 @@ function RegisterArea() {
     const handleSubmit=(e)=>{
       e.preventDefault();
       setIsLoading(true); // Set loading to true before making the request
-      console.log(name,email,contact,github,university,year);
+      console.log(name,sapid,roll,year,branch);
       const data={
         "Name":name,
-        "Email":email,
-        "Contact":contact,
-        "Github":github,
-        "University":university,
-        "Year":year
+         "SapId":sapid,
+         "Roll":roll,
+        "Year":year,
+        "Branch":branch,
       }
     //   axios.post(process.env.REACT_APP_KEY,data).then((response)=>{
     //     console.log(response);
@@ -51,10 +53,9 @@ function RegisterArea() {
   useEffect(() => {
     if (successMessage) {
       setName('');
-      setEmail('');
-      setContact('');
-      setGithub('');
-      setUniversity('');
+      setSapid('');
+      setRoll('');
+      setBranch('');
       setYear('');
     }
   }, [successMessage]);
@@ -62,10 +63,12 @@ function RegisterArea() {
 return (
     <section className="contact-area pt-120 pb-120">
       <div className="container">
+        
         <div className="row justify-content-center">
           <div className="col-lg-6 pl-45 pt-50">
               <div className="section-title text-center title-style-three mb-20">
-              <h2>Register for OSOC'23</h2>
+                
+              <h2>Register</h2>
             </div>
             <div className="contact-info-list text-center mb-40">
               <ul>
@@ -86,15 +89,16 @@ return (
                 </div>
                 <div className="row">
                   <input
-                    type="email"
-                    pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
-                    placeholder="Your Mail"
+                    type="text"
+                    inputMode="numeric"
+                    // pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+                    placeholder="Your Sapid"
                     required
-                    value={email}
-                    onChange={(e)=>setEmail(e.target.value)}
+                    value={sapid}
+                    onChange={(e)=>setSapid(e.target.value)}
                   />
                 </div>
-                <div className="row">
+                {/* <div className="row">
                   <input
                     type="tel"
                     //pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
@@ -105,15 +109,21 @@ return (
                     value={contact}
                     onChange={(e)=>setContact(e.target.value)}
                   />
-                </div>
-                <div className="row">
+                </div> */}
+                {/* <div className="row">
                   <input type="url" placeholder="Github Link" required value={github} onChange={(e)=>setGithub(e.target.value)}/>
                 </div>
                 <div className="row">
                   <input type="text" placeholder="Your University" required value={university} onChange={(e)=>setUniversity(e.target.value)} />
+                </div> */}
+                  <div className="row">
+                  <input type="text" placeholder="Your Rollno." required value={roll} onChange={(e)=>setRoll(e.target.value)}/>
                 </div>
                 <div className="row">
-                  <input type="number" placeholder="Year of Graduation" required value={year} onChange={(e)=>setYear(e.target.value)}/>
+                  <input type="text" placeholder="Your Branch" required value={branch} onChange={(e)=>setBranch(e.target.value)}/>
+                </div>
+                <div className="row">
+                  <input type="text" inputMode="numeric" placeholder="Year of Graduation" required value={year} onChange={(e)=>setYear(e.target.value)}/>
                 </div>
                 <br />
                 <br />
