@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
-const RegisterForm = ({ onSuccess }) => {
+const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
   const [formData, setFormData] = useState({
     name: '',
     sapid: '',
@@ -25,7 +25,7 @@ const RegisterForm = ({ onSuccess }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-  
+
     try {
       const response = await axios.post(
         process.env.REACT_APP_KEY,
@@ -36,16 +36,16 @@ const RegisterForm = ({ onSuccess }) => {
           },
         }
       );
-  
+
       console.log(response);
       setSuccessMessage('Registration successful!');
+      setShowWhatsAppLink(true); // Set to true after successful submission
     } catch (error) {
       console.error(error);
     } finally {
       setIsLoading(false);
     }
   };
-  
 
   useEffect(() => {
     if (successMessage) {
@@ -150,8 +150,9 @@ const RegisterForm = ({ onSuccess }) => {
 };
 
 function RegisterArea() {
+  const [showWhatsAppLink, setShowWhatsAppLink] = useState(false);
+
   const handleRegistrationSuccess = () => {
-    // You can add any additional logic to perform on successful registration
     console.log('Registration successful!');
   };
 
@@ -176,7 +177,22 @@ function RegisterArea() {
               </ul>
             </div>
             <div className="contact-form">
-              <RegisterForm onSuccess={handleRegistrationSuccess} />
+              <RegisterForm
+                onSuccess={handleRegistrationSuccess}
+                setShowWhatsAppLink={setShowWhatsAppLink}
+              />
+              {showWhatsAppLink && (
+                <div>
+                  <p style={{color:"black"}}>Join our WhatsApp group:</p>
+                  <a
+                    href="https://your-whatsapp-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Join here
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
