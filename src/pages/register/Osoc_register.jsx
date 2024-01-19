@@ -185,7 +185,7 @@ function RegisterArea() {
                 <div>
                   <p style={{color:"black"}}>Join our WhatsApp group:</p>
                   <a
-                    href="https://your-whatsapp-link"
+                    href="https://chat.whatsapp.com/BS5gPjoblS9GA513rcLycZ"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
