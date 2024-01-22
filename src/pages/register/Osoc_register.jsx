@@ -6,6 +6,8 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
     name: '',
     sapid: '',
     roll: '',
+    email:'',
+    phone:'',
     branch: '',
     year: '',
   });
@@ -53,6 +55,8 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
         name: '',
         sapid: '',
         roll: '',
+        email:'',
+        phone:'',
         branch: '',
         year: '',
       });
@@ -95,6 +99,26 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
       <div className="row">
         <input
           type="text"
+          name="email"
+          placeholder="Your email"
+          required
+          onChange={handleChange}
+          value={formData.email}
+        />
+      </div>
+      <div className="row">
+        <input
+          type="text"
+          name="phone"
+          placeholder="Your Phone no.(Whatsapp)"
+          required
+          onChange={handleChange}
+          value={formData.phone}
+        />
+      </div>
+      <div className="row">
+        <input
+          type="text"
           name="branch"
           placeholder="Your Branch"
           required
@@ -107,7 +131,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           type="text"
           name="year"
           inputMode="numeric"
-          placeholder="Year"
+          placeholder="Academic Year"
           required
           onChange={handleChange}
           value={formData.year}
