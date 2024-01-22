@@ -32,7 +32,7 @@ function UpcomingEvent() {
                </div>
               <div className="inner-about-content">
                 <h5>ContainerCraft: Unleashing the power of Docker and linux</h5>
-                <p> The workshop is on 24th jan ad 31st jan from 2pm to 5pm.Venue will be shared soon.
+                <p> The workshop is on 24th jan and 31st jan from 2pm to 5pm.Venue will be shared soon.
                   Bring your laptops charged for smooth hands on experience. 
                 </p>
                  <a href="register" className="btn btn-style-two">Register Now!</a>
