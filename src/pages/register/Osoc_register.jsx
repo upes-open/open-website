@@ -25,6 +25,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
   };
 
   const handleSubmit = async (e) => {
+    console.log("got")
     e.preventDefault();
     setIsLoading(true);
 
@@ -44,6 +45,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
       setShowWhatsAppLink(true); // Set to true after successful submission
     } catch (error) {
       console.error(error);
+      setError('Registration failed. Please try again.');
     } finally {
       setIsLoading(false);
     }
