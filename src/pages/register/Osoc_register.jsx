@@ -221,9 +221,9 @@ function RegisterArea() {
               />
               {showWhatsAppLink && (
                 <div>
-                  <p style={{color:"black"}}>Join our WhatsApp group:</p>
+                  <p style={{color:"black"}}>Join our discord channel:</p>
                   <a
-                    href="https://chat.whatsapp.com/BS5gPjoblS9GA513rcLycZ"
+                    href="https://discord.gg/N2gtGFpA"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
