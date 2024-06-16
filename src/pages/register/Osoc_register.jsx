@@ -4,6 +4,7 @@ import axios from 'axios';
 const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
   const [formData, setFormData] = useState({
     name: '',
+    college:'',
     sapid: '',
     roll: '',
     email:'',
@@ -55,6 +56,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
     if (successMessage) {
       setFormData({
         name: '',
+        college:'',
         sapid: '',
         roll: '',
         email:'',
@@ -80,9 +82,19 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
       <div className="row">
         <input
           type="text"
+          name="college"
+          placeholder="College"
+          required
+          onChange={handleChange}
+          value={formData.college}
+        />
+      </div>
+      <div className="row">
+        <input
+          type="text"
           name="sapid"
           inputMode="numeric"
-          placeholder="Your Sapid"
+          placeholder="Your Sapid (for UPES students)"
           required
           onChange={handleChange}
           value={formData.sapid}
@@ -92,7 +104,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
         <input
           type="text"
           name="roll"
-          placeholder="Your Rollno."
+          placeholder="Your Rollno. (for UPES students)"
           required
           onChange={handleChange}
           value={formData.roll}
