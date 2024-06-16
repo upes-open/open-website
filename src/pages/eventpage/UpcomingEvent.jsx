@@ -22,7 +22,7 @@ function UpcomingEvent() {
             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
               <div className="inner-about-img">
 
-                <img width="510px" height="530px" src={event} className="wow fadeInRight" data-wow-delay=".3s" alt="" style={{ maxWidth: '100%', height: 'auto' }}  />
+                <img width="510px" height="530px" src="https://i.postimg.cc/PJMSwGFn/IMG-3173.png" className="wow fadeInRight" data-wow-delay=".3s" alt="" style={{ maxWidth: '100%', height: '460px' }}  />
 
               </div>
             </div>
@@ -31,11 +31,10 @@ function UpcomingEvent() {
                  <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
-                <h5>ContainerCraft: Unleashing the power of Docker and linux</h5>
-                <p> The workshop is on 24th jan ad 31st jan from 2pm to 5pm.Venue will be shared soon.
-                  Bring your laptops charged for smooth hands on experience. 
+                <h5>OSOC'2024: Open Summer Of Code 2024</h5>
+                <p> By tackling thrilling issues on GitHub repositories, you’ll join an elite league of coding warriors united by a common purpose. Prepare for the ultimate coding showdown as OSoC challenges your skills with meticulously crafted issues of varying difficulty levels
                 </p>
-                 <a href="register" className="btn btn-style-two">Register Now!</a>
+                 <a href="Osoc_register" className="btn btn-style-two">Register Now!</a>
                  {/*<a href="/Feedback" className="btn btn-style-two">Feedback</a>*/}
                  </div>
               </div>
