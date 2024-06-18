@@ -94,7 +94,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           type="text"
           name="sapid"
           inputMode="numeric"
-          placeholder="Your Sapid (for UPES students)"
+          placeholder="Your Sapid (write NA if not applicable)"
           required
           onChange={handleChange}
           value={formData.sapid}
@@ -104,7 +104,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
         <input
           type="text"
           name="roll"
-          placeholder="Your Rollno. (for UPES students)"
+          placeholder="Your Rollno. (write NA if not applicable)"
           required
           onChange={handleChange}
           value={formData.roll}
