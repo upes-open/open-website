@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
 import Home from "./pages/homes/Home";
 import AboutUs from "./pages/aboutuspage/AboutUs";
 import Project from "./pages/projectpage/Project";
@@ -31,7 +31,8 @@ import Leader from './pages/events/Leader';
 import MediaMorph from './pages/MediaMorph/project';
 import Privacy from './pages/MediaMorph/privacy';
 
-import Timeline from './pages/timelinepage/timelinePage'
+import Timeline from './pages/timelinepage/timelinePage';
+import Discord from "./pages/discord/Discord";
 
 // import Loader from "react-js-loader";
 
@@ -171,6 +172,9 @@ function App() {
             <Privacy/>
             </SingleEvent>
           </ScrollToTopRoute>
+          <Route exact={true} path="/discord">
+            <Discord />
+          </Route>
         </Switch>
       </Router>
     </div>
