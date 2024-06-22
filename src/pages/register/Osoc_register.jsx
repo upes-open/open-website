@@ -8,6 +8,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
     sapid: '',
     roll: '',
     email:'',
+    reference:'',
     phone:'',
     branch: '',
     year: '',
@@ -60,6 +61,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
         sapid: '',
         roll: '',
         email:'',
+        reference:'',
         phone:'',
         branch: '',
         year: '',
@@ -118,6 +120,16 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           required
           onChange={handleChange}
           value={formData.email}
+        />
+      </div>
+      <div className="row">
+        <input
+          type="text"
+          name="reference"
+          placeholder="Reference email id"
+          required
+          onChange={handleChange}
+          value={formData.reference}
         />
       </div>
       <div className="row">
