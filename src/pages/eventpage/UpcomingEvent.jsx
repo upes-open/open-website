@@ -35,7 +35,11 @@ function UpcomingEvent() {
                 <p> By tackling thrilling issues on GitHub repositories, you’ll join an elite league of coding warriors united by a common purpose. Prepare for the ultimate coding showdown as OSoC challenges your skills with meticulously crafted issues of varying difficulty levels
                 </p>
                  <a href="Osoc_register" className="btn btn-style-two">Register Now!</a>
-                 {/*<a href="/Feedback" className="btn btn-style-two">Feedback</a>*/}
+                 <a href="https://github.com/upes-open" className="btn btn-style-two" target="_blank">GitHub</a>
+                 <br />
+                 <br />
+                 <a href="" className="btn btn-style-two">Leaderboard</a>
+                 <a href="/discord" className="btn btn-style-two" target="_blank">Discord</a>
                  </div>
               </div>
             </div>
