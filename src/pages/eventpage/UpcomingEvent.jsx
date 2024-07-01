@@ -31,8 +31,9 @@ function UpcomingEvent() {
                  <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
-                <h5>OSOC'2024: Open Summer Of Code 2024</h5>
-                <p> By tackling thrilling issues on GitHub repositories, you’ll join an elite league of coding warriors united by a common purpose. Prepare for the ultimate coding showdown as OSoC challenges your skills with meticulously crafted issues of varying difficulty levels
+                <a href="/osoc23"><h5>OSOC'2024: Open Summer Of Code 2024</h5></a>
+                <p> By tackling thrilling issues on GitHub repositories, you’ll join an elite league of coding warriors united by a common purpose. Prepare for the ultimate coding showdown as OSoC challenges your skills with meticulously crafted issues of varying difficulty levels.   
+                &nbsp;<a href="/Osoc23">Read More!</a>
                 </p>
                  <a href="Osoc_register" className="btn btn-style-two">Register Now!</a>
                  <a href="https://github.com/upes-open" className="btn btn-style-two" target="_blank">GitHub</a>
