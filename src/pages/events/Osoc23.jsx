@@ -1,74 +1,9 @@
-import React, { useState } from "react";
-import { Col, Modal, ModalBody, ModalHeader, Row } from "reactstrap";
-import axios from 'axios';
+import React from "react";
+import {OsocProjects} from '../../data/OsocProjects';
 
-function SingleArea() 
-{
-  const [modal,setmodal]=useState(false)
-  const[name,setName]=useState('');
-  const[email,setEmail]=useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    console.log(name,email);
-    const data={
-      "Name":name,
-      "Email":email,
-    }
-    
-    setIsSubmitting(true);
-
-    axios.post(process.env.REACT_APP_KEY2,data).then((response)=>{
-      console.log(response);
-      setName('');
-      setEmail('');
-    })
-    .catch((error) => {
-      console.log(error);
-    })
-    .finally(() => {
-      setIsSubmitting(false); 
-    });
-  }
+function SingleArea() {
   return (
     <section className="open-single-area pt-120 pb-120">
-
-      <Modal
-      size="lg"
-      isOpen={modal}
-      toggle={()=>setmodal(!modal)}
-      >
-        <ModalHeader toggle={()=>setmodal(!modal)} className="modal-heading">
-          <h6 style={{color:'black'}}>Enter your mail id for future updates and newsletter.</h6>
-        </ModalHeader>
-        <ModalBody>
-          <form onSubmit={handleSubmit} method="POST">
-            <Row>
-            <Col lg={12}>
-                <div>
-                  <label htmlFor="name" style={{color:'black'}}>
-                    Name
-                  </label>
-                  <input type="text" className="form-control" placeholder="Enter your name" value={name}
-                    onChange={(e)=>setName(e.target.value)}/>
-                </div>
-              </Col>
-              <Col lg={12}>
-                <div>
-                  <label htmlFor="email" style={{marginTop:'20px',color:'black'}}>
-                    Email
-                  </label>
-                  <input type="email" className="form-control" placeholder="Enter your email" value={email}
-                    onChange={(e)=>setEmail(e.target.value)}/>
-                </div>
-              </Col>
-            </Row>
-            <button type="submit" style={{margin:'10px',height:'40px',backgroundColor:'#a1cd3a',color:'black',border:'none',borderRadius:'5px',width:'100px',cursor:'pointer',marginLeft:'2px'}}>{isSubmitting ? "Submitting..." : "Submit"}</button> 
-          </form>
-        </ModalBody>
-      </Modal>
-
 
       <div className="container">
         <div className="row">
@@ -76,8 +11,8 @@ function SingleArea()
             <div className="open-single-content">
               <div className="upcoming-open-head">
                 <div className="uc-open-head-title">
-                  <span>07-07-2023 to 07-08-2023</span>
-                  <h4>OPEN Summer Of Code 2023</h4>
+                  <span>01-07-2024 to 31-07-2024</span>
+                  <h4>OPEN Summer Of Code 2024</h4>
                 </div>
                 <div className="uc-open-price">
                   <h5>Online</h5>
@@ -87,7 +22,7 @@ function SingleArea()
                 <span>OPEN Summer Of Code</span> is a unique initiative that provides open source enthusiasts with the opportunity to gain practical experience by working on real-world problem statements. It serves as a platform where individuals, regardless of their level of expertise, can contribute to open source projects and collaborate with a community of like-minded individuals.{" "}
               </p>
               <p>
-              OSoC is open to everyone, without any restrictions on participation. Whether you are a beginner or an experienced professional, if you have a passion for open source and a desire to make a difference, you are welcome to join OSoC. We believe that diversity and inclusivity are vital for the success of open source projects, and we encourage individuals from all backgrounds to participate.
+                OSoC is open to everyone, without any restrictions on participation. Whether you are a beginner or an experienced professional, if you have a passion for open source and a desire to make a difference, you are welcome to join OSoC. We believe that diversity and inclusivity are vital for the success of open source projects, and we encourage individuals from all backgrounds to participate.
               </p>
 
               <div className="open-single-title mb-30">
@@ -98,7 +33,7 @@ function SingleArea()
                 <p>To participate in OSoC, simply follow these steps:</p>
               </div>
               <p>
-              <span>Join our Discord community:</span> After registering with the provided link below, join our active Discord server, where you will find a vibrant community of mentors and participants.
+                <span>Join our Discord community:</span> After registering with the provided link below, join our active Discord server, where you will find a vibrant community of mentors and participants.
               </p>
               <p>
                 <span>Interact with our mentors:</span> Engage with our experienced mentors on Discord. They are there to guide and support you throughout your journey in OSoC. Feel free to ask questions, seek advice, and discuss project ideas with them.
@@ -119,15 +54,44 @@ function SingleArea()
                 <span>Complete and submit your contribution:</span> Once you have resolved the assigned issue, ensure that your code is clean, well-documented, and tested. Submit your contribution to the project's GitHub repository through a pull request. Our mentors will review your work and provide valuable feedback to help you improve.
               </p>
               <p>
-              By following these steps, you can actively participate in OSoC, gain hands-on experience, and contribute to the open source community.
-              <br />
-               Join OSoC today and embark on a journey of learning, collaboration, and impact in the world of open source.
+                By following these steps, you can actively participate in OSoC, gain hands-on experience, and contribute to the open source community.
+                <br />
+                Join OSoC today and embark on a journey of learning, collaboration, and impact in the world of open source.
               </p>
-              
-              <button className="btn btn-style-two" onClick={()=>setmodal(true)}>Registration Closed</button> 
-              <a href="/leaderboard" className="btn btn-style-two">View Leaderboard</a>
-{/*                 Commented out feedback form button */}
-              <a href="/Feedback" className="btn btn-style-two">Feedback</a>
+              <div className="open-single-title mb-30">
+                <h4>
+                  OSoC <span>Projects</span>
+                </h4>
+                <section className="upcoming-opens-area upcoming-opens-bg pt-40 pb-80">
+                  <div className="container">
+                    <div className="row">
+                      {OsocProjects.map((data) => (
+                        <div className="col-lg-4 col-md-6">
+                          <div className="upcoming-open-item mb-40">
+                            <div className="upcoming-open-head">
+                              <div className="uc-open-head-title">
+                                <span>{data.date}</span>
+                                <h4><a href="/#">{data.name}</a></h4>
+                              </div>
+                              <div className="uc-open-price">
+                                <h5>{data.type}</h5>
+                              </div>
+                            </div>
+                            <div className="upcoming-open-thumb">
+                              <img src={data.imageURL} alt="" />
+                              <div className="upcoming-open-cart">
+                                <a href={data.GitHub} target="_blank" className="btn transparent-btn">GitHub</a>
+                              </div>
+                            </div>
+                            <br />
+                            <p>{data.description}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </section>
+              </div>
             </div>
           </div>
         </div>
