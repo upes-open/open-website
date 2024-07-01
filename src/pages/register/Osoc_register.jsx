@@ -235,7 +235,7 @@ function RegisterArea() {
                 <div>
                   <p style={{color:"black"}}>Join our discord channel:</p>
                   <a
-                    href="https://discord.gg/N2gtGFpA"
+                    href="/discord"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
