@@ -39,7 +39,7 @@ function UpcomingEvent() {
                  <a href="https://github.com/upes-open" className="btn btn-style-two" target="_blank">GitHub</a>
                  <br />
                  <br />
-                 <a href="" className="btn btn-style-two">Leaderboard</a>
+                 <a href="/leaderboard" className="btn btn-style-two">Leaderboard</a>
                  <a href="/discord" className="btn btn-style-two" target="_blank">Discord</a>
                  </div>
               </div>
