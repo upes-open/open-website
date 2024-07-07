@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
-
-  var headers = new Headers();
-  headers.append("Authorization", "Basic YXZuaToxMjM0NQ==");
   const [formData, setFormData] = useState({
     name: '',
     college: '',
@@ -34,28 +31,16 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
     setIsLoading(true);
 
     try {
-      let body = {
-        sheet1: formData // Corrected: formData is already an object, no need for {...formData}
-      };
-      console.log(body)
-      const response = await fetch(
-        "https://api.sheety.co/005e5fff96a6208b89ea22f90b211abb/oSoC'24Registration/sheet1",
+      const response = await axios.post(
+        process.env.REACT_APP_FORM_URL,
+        { sheet1: { ...formData } },
         {
-          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 5ab53pd0lexn1eh2zruyxiyyi8sy99d5gduuvm61'
           },
-          body: JSON.stringify(body)
         }
       );
       console.log(response)
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const json = await response.json();
-      console.log(json.sheet1); // Logging the response
 
       setSuccessMessage('Registration successful!');
       setShowWhatsAppLink(true); // Set to true after successful submission
