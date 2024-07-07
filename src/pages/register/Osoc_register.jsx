@@ -2,14 +2,17 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
+
+  var headers = new Headers();
+  headers.append("Authorization", "Basic YXZuaToxMjM0NQ==");
   const [formData, setFormData] = useState({
     name: '',
-    college:'',
+    college: '',
     sapid: '',
     roll: '',
-    email:'',
-    reference:'',
-    phone:'',
+    email: '',
+    reference: '',
+    phone: '',
     branch: '',
     year: '',
   });
@@ -27,26 +30,37 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
   };
 
   const handleSubmit = async (e) => {
-    console.log("got")
     e.preventDefault();
     setIsLoading(true);
 
     try {
-      const response = await axios.post(
-        process.env.REACT_APP_KEY,
-        { sheet1: { ...formData } },
+      let body = {
+        sheet1: formData // Corrected: formData is already an object, no need for {...formData}
+      };
+      console.log(body)
+      const response = await fetch(
+        "https://api.sheety.co/005e5fff96a6208b89ea22f90b211abb/oSoC'24Registration/sheet1",
         {
+          method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'Authorization': 'Bearer 5ab53pd0lexn1eh2zruyxiyyi8sy99d5gduuvm61'
           },
+          body: JSON.stringify(body)
         }
       );
+      console.log(response)
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
 
-      console.log(response);
+      const json = await response.json();
+      console.log(json.sheet1); // Logging the response
+
       setSuccessMessage('Registration successful!');
       setShowWhatsAppLink(true); // Set to true after successful submission
     } catch (error) {
-      console.error(error);
+      console.error('Error:', error);
       setError('Registration failed. Please try again.');
     } finally {
       setIsLoading(false);
@@ -57,12 +71,12 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
     if (successMessage) {
       setFormData({
         name: '',
-        college:'',
+        college: '',
         sapid: '',
         roll: '',
-        email:'',
-        reference:'',
-        phone:'',
+        email: '',
+        reference: '',
+        phone: '',
         branch: '',
         year: '',
       });
@@ -233,7 +247,7 @@ function RegisterArea() {
               />
               {showWhatsAppLink && (
                 <div>
-                  <p style={{color:"black"}}>Join our discord channel:</p>
+                  <p style={{ color: "black" }}>Join our discord channel:</p>
                   <a
                     href="/discord"
                     target="_blank"

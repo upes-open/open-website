@@ -1,31 +1,30 @@
 import React from "react";
-
-const data = [
-  { rank:1,name: "Rohin Mehrotra ", username: "rohin079", points: 737 },
-  { rank:2,name: "Vinay Thapa", username: "ThapaVinay", points: 615 },
-  { rank:3,name: "Charu", username: "Charu-2718", points: 245 },
-  { rank:4,name: "Akash Mishra", username: "helloakash1701", points: 214 },
-  { rank:5,name: "Viraj Patel", username: "virajp4", points: 210 },
-  { rank:5,name: " Avni Goyal", username: "avni goyal", points: 177},
-  { rank:5,name: "Yash Khattar", username: "Yash-Khattar", points: 105 },
-  { rank:5,name: "Shraddha", username: "shradiphylleia", points: 100 },
-  { rank:6,name: "Ananya", username: "Anabot12", points:95 },
-  { rank:6,name: "Shivansh", username: "Shivansh175", points: 95 },
-  { rank:7,name: "Harman Singh", username: "H-SM", points: 75 },
-  { rank:8,name: "Gagan Chaudhary", username: "GaganChaudhary\n6378", points:65 },
-  { rank:8,name: "Basava Chari Boppudi", username: "Baisavachari", points:60 },
-  { rank:9,name: "Jackson", username: "jason2000-cpu", points: 50 },
-  { rank:9,name: "Omar Hammoud", username: "Mumbzi96", points: 45 },
-  { rank:9,name: "Shweta Singh", username: "shwetasng", points: 30 },
-  { rank:10,name: " Kruthardh Tirunahari", username: "Kruthardh11", points: 20 },
-  { rank:10,name: "Shreyas", username: "shreyas2711", points: 20 },
-  { rank:10,name: "Anisha", username: "Anisha", points: 20 },
-  { rank:10,name: "Sachin Aggarwal", username: "sachinaggarwal18", points: 20 },
-  { rank:10,name: "Yash Nagar", username: "yashh1711", points: 10 },
-  { rank:10,name: "Aman Kumar", username: "AmanKumarVlgs", points: 10 }
-]
+import { osocData } from "../../data/Osoc24Data";
 
 function SingleArea() {
+  const rankStyle={
+    rankOne:{
+      backgroundColor:"gold"
+    },
+    rankTwo:{
+      backgroundColor:"silver"
+    },
+    rankThree:{
+      backgroundColor:"black",
+      color:"white",
+    }
+  }
+  function getRankStyle(rank) {
+    if (rank === 1) {
+      return rankStyle.rankOne;
+    } else if (rank === 2) {
+      return rankStyle.rankTwo;
+    } else if (rank === 3) {
+      return rankStyle.rankThree;
+    } else {
+      return {};
+    }
+  }
   return (
     <section className="open-single-area pt-120 pb-120">
       <div className="container">
@@ -34,69 +33,39 @@ function SingleArea() {
             <div className="open-single-content">
               <div className="upcoming-open-head">
                 <div className="uc-open-head-title">
-                  <span>07-07-2023 to 07-08-2023</span>
-                  <h4>OPEN Summer Of Code 2023</h4>
+                  <span>01-07-2024 to 31-07-2024</span>
+                  <h4>OPEN Summer Of Code 2024</h4>
                 </div>
                 <div className="uc-open-price">
                   <h5>Leaderboard</h5>
                 </div>
-        </div>
-                <table>
+              </div>
+              <table class="table table-striped">
                 <thead>
-                  <tr>
-                    <th>Current Rank</th>
-                    <th>Name</th>
-                    <th>Github Username</th>
-                    <th>OsoC'23 Points</th>
+                  <tr >
+                    <th style={{fontSize:'20px'}} scope="col">Rank</th>
+                    <th style={{fontSize:'20px'}}  scope="col">Name</th>
+                    <th style={{fontSize:'20px'}}  scope="col">Github</th>
+                    <th style={{fontSize:'20px'}}  scope="col">Points</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {data.map((val, key) => (
-                    <tr key={key}>
-                      <td className={getRankClass(val.rank)}>{val.rank}</td>
-                      <td>{val.name}</td>
-                      <td>
-                        <a
-                          href={`https://github.com/${val.username}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="github-link"
-                        >
-                          {val.username}
-                        </a>
-                      </td>
-                      <td>{val.points}{" "}
-                      <img
-                          src="/assets/img/logo.png"
-                          alt="Logo"
-                          className="logo-image"
-                        /></td>
-                    </tr>
+                  {osocData.map((data,index)=>(
+                    <tr key={data["Github ID"]}>
+                    <th scope="row" style={getRankStyle(index+1)}>{index+1}</th>
+                    <td>{data.Name}</td>
+                    <td>{data["Github ID"]}</td>
+                    <td>{data.Points}</td>
+                  </tr>
                   ))}
                 </tbody>
               </table>
-      {/* </div>  */}
-
-      </div>
             </div>
           </div>
-        
-        </div> 
-
-      
+        </div>
+      </div>
     </section>
   );
 }
 
-function getRankClass(rank) {
-  if (rank === 1) {
-    return "rank-one";
-  } else if (rank === 2) {
-    return "rank-two";
-  } else if (rank === 3) {
-    return "rank-three";
-  } else {
-    return "";
-  }
-}
 export default SingleArea;
