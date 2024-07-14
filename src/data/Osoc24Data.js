@@ -2,32 +2,32 @@ export const osocData = [
     {
         "Name": "Parth Dhavan",
         "Github ID": "ParthDhavan04",
-        "Points": 440
+        "Points": 870
     },
     {
         "Name": "Ayush Dangwal",
         "Github ID": "Saga690",
-        "Points": 350
+        "Points": 640
     },
     {
         "Name": "Priyanshu",
         "Github ID": "rampantvoid",
-        "Points": 130
-    },
-    {
-        "Name": "Ayush Dey",
-        "Github ID": "adx04",
-        "Points": 90
-    },
-    {
-        "Name": "Siddhartha Arora",
-        "Github ID": "Siddharthaaa21",
-        "Points": 80
+        "Points": 570
     },
     {
         "Name": "Shraddha Sharma",
         "Github ID": "shradiphylleia",
-        "Points": 70
+        "Points": 180
+    },
+    {
+        "Name": "Ayush Dey",
+        "Github ID": "adx04",
+        "Points": 150
+    },
+    {
+        "Name": "Siddhartha Arora",
+        "Github ID": "Siddharthaaa21",
+        "Points": 100
     },
     {
         "Name": "Mann Rana",
