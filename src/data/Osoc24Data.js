@@ -58,5 +58,10 @@ export const osocData = [
         "Name": "Sanskar Rathore",
         "Github ID": "sanskarrathore15",
         "Points": 10
+    },
+    {
+        "Name": "Pulkit",
+        "Github ID": "-",
+        "Points": 10
     }
 ]
