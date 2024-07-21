@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 
 import TimelineObserver from "react-timeline-animation";
 
@@ -20,7 +20,6 @@ const Timeline = ({ setObserver, callback }) => {
 };
 
 export default function App() {
-  const [message, setMessage] = useState("");
 
   const onCallback = () => {
     console.log("awesome");

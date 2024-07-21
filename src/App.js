@@ -22,7 +22,6 @@ import Dehashed from "./pages/events/Dehashed";
 import Flutter from "./pages/events/Flutter";
 import SummerOfCode from "./pages/events/SummerOfCode";
 import Learning from "./pages/events/Learning";
-import Register from "./pages/register/Register";
 import Technova from "./pages/events/Technova";
 import OsocRegister from './pages/register/Osoc_register';
 import Osoc23 from './pages/events/Osoc23';
@@ -33,6 +32,7 @@ import Privacy from './pages/MediaMorph/privacy';
 
 import Timeline from './pages/timelinepage/timelinePage';
 import Discord from "./pages/discord/Discord";
+import OpenRegister from "./pages/register/OpenRegister";
 
 // import Loader from "react-js-loader";
 
@@ -109,7 +109,9 @@ function App() {
             </SingleEvent>
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/register">
-            <Register />
+            <SingleEvent>
+              <OpenRegister />
+            </SingleEvent>
           </ScrollToTopRoute>
           <ScrollToTopRoute exact={true} path="/codeyourfuture">
             <SingleEvent>
