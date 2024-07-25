@@ -40,6 +40,7 @@ function OpenRegister() {
     if (data["student-developer"]) teams.push("Student Developer");
     if (data.photography) teams.push("Photography");
     if (data.design) teams.push("Design");
+    if (data.editorial) teams.push("Editorial");
     if (data.PR) teams.push("PR Team");
     if (data["social-media"]) teams.push("Social Media Team");
 
@@ -50,6 +51,7 @@ function OpenRegister() {
     delete processedData["student-developer"];
     delete processedData.photography;
     delete processedData.design;
+    delete processedData.editorial;
     delete processedData.PR;
     delete processedData["social-media"];
 
@@ -147,6 +149,8 @@ function OpenRegister() {
                   <input id="input2" type="checkbox" {...register("photography")} /> <label style={{width:'250px'}}>Photography (Engagement vertical)</label>
                   <br />
                   <input id="input2" type="checkbox" {...register("design")} /> <label style={{width:'250px'}}>Design (Engagement vertical)</label>
+                  <br />
+                  <input id="input2" type="checkbox" {...register("editorial")} /> <label style={{width:'250px'}}>Editorial (Engagement vertical)</label>
                   <br />
                   <input id="input2" type="checkbox" {...register("PR")} /> <label style={{width:'250px'}}>PR Team (Marketing vertical)</label>
                   <br />
