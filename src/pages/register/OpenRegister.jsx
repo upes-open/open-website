@@ -175,6 +175,8 @@ function OpenRegister() {
                 <button type="submit" className="register btn btn-style-two" disabled={isSubmitting} style={{color:'black'}}>
                     {isSubmitting ? 'Submitting...' : 'Register'}
                   </button>
+                  <br />
+                  <p style={{'color':'black'}}>Incase you are unable to register here, kindly fill the google form: <a href="https://forms.gle/nxaCkP71ExrDM8ELA" target="blank">Form</a></p>
                 </div>
               </form>
               <span id="msg"></span>
