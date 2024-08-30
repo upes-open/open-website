@@ -108,11 +108,14 @@ function App() {
               <SummerOfCode />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/register">
-            <SingleEvent>
-              <OpenRegister />
-            </SingleEvent>
-          </ScrollToTopRoute>
+          //<ScrollToTopRoute exact={true} path="/register">
+            //<SingleEvent>
+              //<OpenRegister />
+            //</SingleEvent>
+          //</ScrollToTopRoute>
+          <Route exact={true} path="/register">
+            <Redirect to="https://forms.gle/FFPpAgqFPMkjyqvK9" />
+          </Route>
           <ScrollToTopRoute exact={true} path="/codeyourfuture">
             <SingleEvent>
               <CodeYourFuture />
