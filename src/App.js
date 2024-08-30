@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Home from "./pages/homes/Home";
 import AboutUs from "./pages/aboutuspage/AboutUs";
 import Project from "./pages/projectpage/Project";
@@ -37,21 +37,6 @@ import OpenRegister from "./pages/register/OpenRegister";
 // import Loader from "react-js-loader";
 
 function App() {
-  //  const [loading,setLoading] = useState(false);
-
-  //  useEffect(()=>{
-  //   setLoading(true)
-  //   setTimeout(()=>{
-  //     setLoading(false)
-  //   },8000)
-  //  },[])
-  //  {
-  //   loading ?(
-  //     <MoonLoader color={color} loading={loading} css={override} size={150} />
-  //   )
-
-  // }
-
   return (
     <div className="App">
       <Router>
@@ -108,11 +93,12 @@ function App() {
               <SummerOfCode />
             </SingleEvent>
           </ScrollToTopRoute>
-          //<ScrollToTopRoute exact={true} path="/register">
-            //<SingleEvent>
-              //<OpenRegister />
-            //</SingleEvent>
-          //</ScrollToTopRoute>
+          {/* Commented out the previous register route */}
+          {/* <ScrollToTopRoute exact={true} path="/register">
+            <SingleEvent>
+              <OpenRegister />
+            </SingleEvent>
+          </ScrollToTopRoute> */}
           <Route exact={true} path="/register">
             <Redirect to="https://forms.gle/FFPpAgqFPMkjyqvK9" />
           </Route>
