@@ -32,8 +32,6 @@ import Privacy from './pages/MediaMorph/privacy';
 
 import Timeline from './pages/timelinepage/timelinePage';
 import Discord from "./pages/discord/Discord";
-import OpenRegister from "./pages/register/OpenRegister";
-
 // import Loader from "react-js-loader";
 
 function App() {
