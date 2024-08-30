@@ -98,7 +98,7 @@ function App() {
             </SingleEvent>
           </ScrollToTopRoute> */}
           <Route exact={true} path="/register">
-            <Redirect to="https://forms.gle/FFPpAgqFPMkjyqvK9" />
+            <Redirect to={{ pathname: "https://forms.gle/FFPpAgqFPMkjyqvK9" }} />
           </Route>
           <ScrollToTopRoute exact={true} path="/codeyourfuture">
             <SingleEvent>
