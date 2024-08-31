@@ -39,129 +39,129 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <ScrollToTopRoute exact={true} path="/">
+          <ScrollToTopRoute exact path="/">
             <Home />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/about">
+          <ScrollToTopRoute exact path="/about">
             <AboutUs />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/project">
+          <ScrollToTopRoute exact path="/project">
             <Project />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/event">
+          <ScrollToTopRoute exact path="/event">
             <Event />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/team">
+          <ScrollToTopRoute exact path="/team">
             <Team />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/mentor">
+          <ScrollToTopRoute exact path="/mentor">
             <Mentor />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/alumnus">
+          <ScrollToTopRoute exact path="/alumnus">
             <Alumnus />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/contributor">
+          <ScrollToTopRoute exact path="/contributor">
             <Contributor />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/contact">
+          <ScrollToTopRoute exact path="/contact">
             <Contact />
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/rpa">
+          <ScrollToTopRoute exact path="/rpa">
             <SingleEvent>
               <RPA />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/dehashed">
+          <ScrollToTopRoute exact path="/dehashed">
             <SingleEvent>
               <Dehashed />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/flutter">
+          <ScrollToTopRoute exact path="/flutter">
             <SingleEvent>
               <Flutter />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/learning">
+          <ScrollToTopRoute exact path="/learning">
             <SingleEvent>
               <Learning />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/osoc">
+          <ScrollToTopRoute exact path="/osoc">
             <SingleEvent>
               <SummerOfCode />
             </SingleEvent>
           </ScrollToTopRoute>
           {/* Commented out the previous register route */}
-          {/* <ScrollToTopRoute exact={true} path="/register">
+          {/* <ScrollToTopRoute exact path="/register">
             <SingleEvent>
               <OpenRegister />
             </SingleEvent>
           </ScrollToTopRoute> */}
-          <Route exact={true} path="/register">
-            {window.location.href = "https://forms.gle/FFPpAgqFPMkjyqvK9"}
+          <Route exact path="/register">
+            <Redirect to={{ pathname: "https://forms.gle/FFPpAgqFPMkjyqvK9" }} />
           </Route>
-          <ScrollToTopRoute exact={true} path="/codeyourfuture">
+          <ScrollToTopRoute exact path="/codeyourfuture">
             <SingleEvent>
               <CodeYourFuture />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/Technova">
-            <SingleEvent> 
-            <Technova />
+          <ScrollToTopRoute exact path="/Technova">
+            <SingleEvent>
+              <Technova />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/Osoc_register">
-            <SingleEvent> 
-            <OsocRegister/>
+          <ScrollToTopRoute exact path="/Osoc_register">
+            <SingleEvent>
+              <OsocRegister />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/UpcomingDetailedProjectExpo">
+          <ScrollToTopRoute exact path="/UpcomingDetailedProjectExpo">
             <SingleEvent>
               <UpcomingDetailedProjectExpo />
             </SingleEvent>
           </ScrollToTopRoute>
 
-          <ScrollToTopRoute exact={true} path="/timeline">
+          <ScrollToTopRoute exact path="/timeline">
             <SingleEvent>
               <Timeline />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/api">
-          <SingleEvent>
-            <Api />
+          <ScrollToTopRoute exact path="/api">
+            <SingleEvent>
+              <Api />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/anniversary">
-          <SingleEvent>
-            <Anniversary />
+          <ScrollToTopRoute exact path="/anniversary">
+            <SingleEvent>
+              <Anniversary />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/leaderboard">
-            <SingleEvent> 
-            <Leader/>
+          <ScrollToTopRoute exact path="/leaderboard">
+            <SingleEvent>
+              <Leader />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/Osoc23">
-            <SingleEvent> 
-            <Osoc23/>
+          <ScrollToTopRoute exact path="/Osoc23">
+            <SingleEvent>
+              <Osoc23 />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/Feedback">
-            <SingleEvent> 
-            <Feedback/>
+          <ScrollToTopRoute exact path="/Feedback">
+            <SingleEvent>
+              <Feedback />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/MediaMorph">
-            <SingleEvent> 
-            <MediaMorph/>
+          <ScrollToTopRoute exact path="/MediaMorph">
+            <SingleEvent>
+              <MediaMorph />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact={true} path="/privacy">
-            <SingleEvent> 
-            <Privacy/>
+          <ScrollToTopRoute exact path="/privacy">
+            <SingleEvent>
+              <Privacy />
             </SingleEvent>
           </ScrollToTopRoute>
-          <Route exact={true} path="/discord">
+          <Route exact path="/discord">
             <Discord />
           </Route>
         </Switch>
