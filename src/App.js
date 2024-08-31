@@ -91,14 +91,8 @@ function App() {
               <SummerOfCode />
             </SingleEvent>
           </ScrollToTopRoute>
-          {/* Commented out the previous register route */}
-          {/* <ScrollToTopRoute exact path="/register">
-            <SingleEvent>
-              <OpenRegister />
-            </SingleEvent>
-          </ScrollToTopRoute> */}
           <Route exact path="/register">
-            <Redirect to={{ pathname: "https://forms.gle/FFPpAgqFPMkjyqvK9" }} />
+            <Redirect to="https://forms.gle/FFPpAgqFPMkjyqvK9" />
           </Route>
           <ScrollToTopRoute exact path="/codeyourfuture">
             <SingleEvent>
