@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/homes/Home";
 import AboutUs from "./pages/aboutuspage/AboutUs";
 import Project from "./pages/projectpage/Project";
@@ -32,7 +32,8 @@ import Privacy from './pages/MediaMorph/privacy';
 
 import Timeline from './pages/timelinepage/timelinePage';
 import Discord from "./pages/discord/Discord";
-// import Loader from "react-js-loader";
+
+import RegisterRedirect from "./components/RegisterRedirect";
 
 function App() {
   return (
@@ -92,7 +93,7 @@ function App() {
             </SingleEvent>
           </ScrollToTopRoute>
           <Route exact path="/register">
-            <Redirect to="https://forms.gle/FFPpAgqFPMkjyqvK9" />
+            <RegisterRedirect />
           </Route>
           <ScrollToTopRoute exact path="/codeyourfuture">
             <SingleEvent>
