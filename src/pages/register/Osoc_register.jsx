@@ -1,200 +1,389 @@
-import React, { useState, useEffect } from "react";
-import axios from 'axios';
+import React, { useState } from "react";
+import { useForm } from "react-hook-form"
+import { database } from "../firebase/firebase";
+import { ref as dbref,set} from "firebase/database";
+import { uploadBytes, getDownloadURL, ref as storageRef} from "firebase/storage";
+import { imgDB } from "../firebase/firebase";
+import { v4 } from "uuid"
+import toast, { Toaster } from 'react-hot-toast';
 
 const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    college: '',
-    sapid: '',
-    roll: '',
-    email: '',
-    reference: '',
-    phone: '',
-    branch: '',
-    year: '',
-  });
+  // const storage = GetStorage();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm()
+  const [showIndividualForm, setShowIndividualForm] = useState(false);
+  const [showTeamForm, setShowTeamForm] = useState(false);
+  const [showButtons, setShowButtons] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const [isLoading, setIsLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
-  const [error, setError] = useState('');
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  const handleRegisterIndividually = () => {
+    setShowIndividualForm(true);
+    setShowButtons(false);
+  };
+  const handleRegisterTeam = () => {
+    setShowTeamForm(true);
+    setShowButtons(false);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
+  const handleUpload = async (file) => {
+    const imgs = storageRef(imgDB, `Imgs/${v4()}`)
+    const snapshot = await uploadBytes(imgs, file);
+    const url = await getDownloadURL(snapshot.ref);
+    return url;
+  }
 
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
     try {
-      const response = await axios.post(
-        process.env.REACT_APP_FORM_URL,
-        { sheet1: { ...formData } },
-        {
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
-      console.log(response)
-
-      setSuccessMessage('Registration successful!');
-      setShowWhatsAppLink(true); // Set to true after successful submission
+      let paymentScreenshotUrl = '';
+  
+      if (data.paymentScreenshot && data.paymentScreenshot.length > 0) {
+        const file = data.paymentScreenshot[0];
+        paymentScreenshotUrl = await handleUpload(file);
+      }
+  
+      if (!database) {
+        throw new Error("Firebase database not initialized");
+      }
+      console.log(data.name)
+      const reference = dbref(database, `gamingRegistrations/${data.teamName || data.name}`);
+      const registrationData = { ...data, paymentScreenshot: paymentScreenshotUrl };
+  
+      await set(reference, registrationData).then(() => {
+        reset();
+        toast.success('Registration successful!');
+        setShowButtons(true);
+        setShowIndividualForm(false);
+        setShowTeamForm(false);
+      });
     } catch (error) {
-      console.error('Error:', error);
-      setError('Registration failed. Please try again.');
+      console.error("Error sending data to Firebase", error);
     } finally {
-      setIsLoading(false);
+      setIsSubmitting(false);
     }
   };
-
-  useEffect(() => {
-    if (successMessage) {
-      setFormData({
-        name: '',
-        college: '',
-        sapid: '',
-        roll: '',
-        email: '',
-        reference: '',
-        phone: '',
-        branch: '',
-        year: '',
-      });
-    }
-  }, [successMessage]);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="row">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-          onChange={handleChange}
-          value={formData.name}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="college"
-          placeholder="College"
-          required
-          onChange={handleChange}
-          value={formData.college}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="sapid"
-          inputMode="numeric"
-          placeholder="Your Sapid (write NA if not applicable)"
-          required
-          onChange={handleChange}
-          value={formData.sapid}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="roll"
-          placeholder="Your Rollno. (write NA if not applicable)"
-          required
-          onChange={handleChange}
-          value={formData.roll}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="email"
-          placeholder="Your email"
-          required
-          onChange={handleChange}
-          value={formData.email}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="reference"
-          placeholder="Reference email id"
-          required
-          onChange={handleChange}
-          value={formData.reference}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="phone"
-          placeholder="Your Phone no.(Whatsapp)"
-          required
-          onChange={handleChange}
-          value={formData.phone}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="branch"
-          placeholder="Your Branch"
-          required
-          onChange={handleChange}
-          value={formData.branch}
-        />
-      </div>
-      <div className="row">
-        <input
-          type="text"
-          name="year"
-          inputMode="numeric"
-          placeholder="Academic Year"
-          required
-          onChange={handleChange}
-          value={formData.year}
-        />
-      </div>
-      <br />
-      <br />
-      <div className="row justify-content-center">
-        {isLoading ? (
-          <button
-            type="submit"
-            className="register btn btn-style-two"
-            disabled
-          >
-            <span
-              className="spinner-border spinner-border-sm"
-              role="status"
-              aria-hidden="true"
-              style={{ color: 'black' }}
-            ></span>
-            Loading...
+    <>
+      <Toaster />
+      <br /><br />
+      {showButtons && (
+        <div style={{ display: 'flex', gap: '16px', marginLeft: '-110px' }}>
+          <button className="btn btn-style-two" onClick={handleRegisterTeam}>
+            Register in a Team
           </button>
-        ) : (
-          <button type="submit" className="register btn btn-style-two">
-            Register
+          <button className="btn btn-style-two" onClick={handleRegisterIndividually}>
+            Register Individually
           </button>
-        )}
-      </div>
-      <br />
-      {error && <span style={{ color: 'red' }}>{error}</span>}
-      {successMessage && (
-        <div>
-          <span id="msg" style={{ color: 'black' }}>
-            {successMessage}
-          </span>
         </div>
       )}
-    </form>
+
+
+      {showTeamForm && (
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="row">
+            <input
+              type="text"
+              placeholder="Team Name"
+              required
+              {...register("teamName")}
+            />
+          </div>
+          <h5 style={{ 'color': 'black', marginLeft: '-20px' }}>Student 1 Details</h5>
+          <br />
+          <div className="row">
+            <input
+              type="text"
+              placeholder="Student 1 Name"
+              required
+              {...register("student1Name")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 1 SAP ID"
+              required
+              {...register("student1Sap")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="email"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              placeholder="Student 1 College Mail"
+              required
+              {...register("student1Email")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="tel"
+              maxLength="12"
+              title="Ten digits code"
+              placeholder="Student 1 Contact"
+              required
+              {...register("student1Contact")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 1 Valorant ID"
+              required
+              {...register("student1ValorantID")}
+            />
+          </div>
+
+          <h5 style={{ 'color': 'black', marginLeft: '-20px' }}>Student 2 Details</h5>
+          <br />
+          <div className="row">
+            <input
+              type="text"
+              placeholder="Student 2 Name"
+              required
+              {...register("student2Name")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 2 SAP ID"
+              required
+              {...register("student2Sap")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="email"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              placeholder="Student 2 College Mail"
+              required
+              {...register("student2Email")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="tel"
+              maxLength="12"
+              title="Ten digits code"
+              placeholder="Student 2 Contact"
+              required
+              {...register("student2Contact")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 2 Valorant ID"
+              required
+              {...register("student2ValorantID")}
+            />
+          </div>
+
+          <h5 style={{ 'color': 'black', marginLeft: '-20px' }}>Student 3 Details</h5>
+          <br />
+          <div className="row">
+            <input
+              type="text"
+              placeholder="Student 3 Name"
+              required
+              {...register("student3Name")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 3 SAP ID"
+              required
+              {...register("student3Sap")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="email"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              placeholder="Student 3 College Mail"
+              required
+              {...register("student3Email")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="tel"
+              maxLength="12"
+              title="Ten digits code"
+              placeholder="Student 3 Contact"
+              required
+              {...register("student3Contact")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 3 Valorant ID"
+              required
+              {...register("student3ValorantID")}
+            />
+          </div>
+
+          <h5 style={{ 'color': 'black', marginLeft: '-20px' }}>Student 4 Details</h5>
+          <br />
+          <div className="row">
+            <input
+              type="text"
+              placeholder="Student 4 Name"
+              required
+              {...register("student4Name")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 4 SAP ID"
+              required
+              {...register("student4Sap")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="email"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              placeholder="Student 4 College Mail"
+              required
+              {...register("student4Email")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="tel"
+              maxLength="12"
+              title="Ten digits code"
+              placeholder="Student 4 Contact"
+              required
+              {...register("student4Contact")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 4 Valorant ID"
+              required
+              {...register("student4ValorantID")}
+            />
+          </div>
+
+          <h5 style={{ 'color': 'black', marginLeft: '-20px' }}>Student 5 Details</h5>
+          <br />
+          <div className="row">
+            <input
+              type="text"
+              placeholder="Student 5 Name"
+              required
+              {...register("student5Name")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 5 SAP ID"
+              required
+              {...register("student5Sap")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="email"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              placeholder="Student 5 College Mail"
+              required
+              {...register("student5Email")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="tel"
+              maxLength="12"
+              title="Ten digits code"
+              placeholder="Student 5 Contact"
+              required
+              {...register("student5Contact")}
+            />
+          </div>
+          <div className="row">
+            <input
+              placeholder="Student 5 Valorant ID"
+              required
+              {...register("student5ValorantID")}
+            />
+          </div>
+
+          <div>
+            <label>Registration Fee: 400</label>
+            <img style={{
+              width: '400px',
+              marginLeft: '-30px'
+            }} src="https://i.postimg.cc/3Jh6pQBh/Whats-App-Image-2024-10-30-at-17-53-58-d97be71f.jpg" alt="QR Code" />
+          </div>
+          <br /> <br />
+          <div>
+            <label style={{ width: '400px' }} htmlFor="">Upload Payment screenshot</label>
+            <input type="file" accept="image/*" {...register('paymentScreenshot')} />
+          </div>
+          <br />
+          <button type="submit" className="register btn btn-style-two" style={{ color: 'black' }}>
+            Register
+          </button>
+        </form>
+      )}
+
+      {showIndividualForm && (
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="row">
+            <input type="text" placeholder="Your Name" required {...register("name")} />
+          </div>
+          <div className="row">
+            <input placeholder="Your SAP ID" required {...register("sap")} />
+          </div>
+          <div className="row">
+            <input
+              type="email"
+              pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+              placeholder="Your College Mail"
+              required
+              {...register("email")}
+            />
+          </div>
+          <div className="row">
+            <input
+              type="tel"
+              //pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+              maxLength="12"
+              title="Ten digits code"
+              placeholder="Your contact"
+              required
+              {...register("contact")}
+            />
+          </div>
+          <div className="row">
+            <input placeholder="Your Valorant ID" required {...register("valorantID")} />
+          </div>
+          <div>
+            <label>Registration Fee: 100</label>
+            <img src="https://i.postimg.cc/3Jh6pQBh/Whats-App-Image-2024-10-30-at-17-53-58-d97be71f.jpg" alt="QR Code"
+              style={{
+                width: '400px',
+                marginLeft: '-30px'
+              }} />
+          </div>
+          <br />
+          <div>
+            <label style={{ width: '400px' }} htmlFor="">Upload Payment screenshot</label>
+            <input type="file" accept="image/*" {...register('paymentScreenshot')} />
+          </div>
+          <br />
+          <button type="submit" className="register btn btn-style-two" disabled={isSubmitting} style={{ color: 'black' }}>
+            {isSubmitting ? 'Submitting...' : 'Register'}
+          </button>
+        </form>
+
+      )}
+    </>
   );
 };
 

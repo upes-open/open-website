@@ -22,7 +22,7 @@ function UpcomingEvent() {
             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
               <div className="inner-about-img">
 
-                <img width="510px" height="530px" src="https://i.postimg.cc/PJMSwGFn/IMG-3173.png" className="wow fadeInRight" data-wow-delay=".3s" alt="" style={{ maxWidth: '100%', height: '460px' }}  />
+                <img width="510px" height="530px" src="https://i.postimg.cc/x8PYjMs4/val-1.png" className="wow fadeInRight" data-wow-delay=".3s" alt="" style={{ maxWidth: '100%', height: '460px' }}  />
 
               </div>
             </div>
@@ -31,16 +31,17 @@ function UpcomingEvent() {
                  <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
-                <a href="/osoc23"><h5>OSOC'2024: Open Summer Of Code 2024</h5></a>
-                <p> By tackling thrilling issues on GitHub repositories, you’ll join an elite league of coding warriors united by a common purpose. Prepare for the ultimate coding showdown as OSoC challenges your skills with meticulously crafted issues of varying difficulty levels.   
-                &nbsp;<a href="/Osoc23">Read More!</a>
+                <a href="/osoc23"><h5>Valorant Arena: Battle of the best 2024</h5></a>
+                <p> A game will be played amongst the college students in teams of 5. Each team needs to play against every team according to the leaderboard, which will be made.
+                &nbsp;<a href="">Read More!</a>
                 </p>
-                 <a href="Osoc_register" className="btn btn-style-two">Register Now!</a>
-                 <a href="https://github.com/upes-open" className="btn btn-style-two" target="_blank">GitHub</a>
+                <br />
+                 <a href="/valorant_register" className="btn btn-style-two">Register Now!</a>
+                 {/* <a href="https://github.com/upes-open" className="btn btn-style-two" target="_blank">GitHub</a> */}
                  <br />
                  <br />
-                 <a href="/leaderboard" className="btn btn-style-two">Leaderboard</a>
-                 <a href="/discord" className="btn btn-style-two" target="_blank">Discord</a>
+                 {/* <a href="/leaderboard" className="btn btn-style-two">Leaderboard</a>
+                 <a href="/discord" className="btn btn-style-two" target="_blank">Discord</a> */}
                  </div>
               </div>
             </div>
