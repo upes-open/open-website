@@ -105,7 +105,7 @@ function App() {
               <Technova />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact path="/Osoc_register">
+          <ScrollToTopRoute exact path="/valorant_register">
             <SingleEvent>
               <OsocRegister />
             </SingleEvent>
