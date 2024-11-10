@@ -105,8 +105,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           </div>
           <div className="row">
             <input
-              placeholder="Student 1 SAP ID"
-              required
+              placeholder="Student 1 SAP ID(for UPES students only)"
               {...register("student1Sap")}
             />
           </div>
@@ -149,8 +148,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           </div>
           <div className="row">
             <input
-              placeholder="Student 2 SAP ID"
-              required
+              placeholder="Student 2 SAP ID (for UPES students only)"
               {...register("student2Sap")}
             />
           </div>
@@ -193,8 +191,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           </div>
           <div className="row">
             <input
-              placeholder="Student 3 SAP ID"
-              required
+              placeholder="Student 3 SAP ID(for UPES students only)"
               {...register("student3Sap")}
             />
           </div>
@@ -237,8 +234,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           </div>
           <div className="row">
             <input
-              placeholder="Student 4 SAP ID"
-              required
+              placeholder="Student 4 SAP ID (for UPES students only)"
               {...register("student4Sap")}
             />
           </div>
@@ -281,8 +277,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
           </div>
           <div className="row">
             <input
-              placeholder="Student 5 SAP ID"
-              required
+              placeholder="Student 5 SAP ID (for UPES students only)"
               {...register("student5Sap")}
             />
           </div>
@@ -338,7 +333,7 @@ const RegisterForm = ({ onSuccess, setShowWhatsAppLink }) => {
             <input type="text" placeholder="Your Name" required {...register("name")} />
           </div>
           <div className="row">
-            <input placeholder="Your SAP ID" required {...register("sap")} />
+            <input placeholder="Your SAP ID (for UPES students only)" {...register("sap")} />
           </div>
           <div className="row">
             <input
