@@ -93,6 +93,7 @@ function App() {
             </SingleEvent>
           </ScrollToTopRoute>
           <Route exact path="/register">
+           <Redirect to="https://upes-open.org/valorant_register" />
             <RegisterRedirect />
           </Route>
           <ScrollToTopRoute exact path="/codeyourfuture">
