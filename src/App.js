@@ -93,7 +93,9 @@ function App() {
             </SingleEvent>
           </ScrollToTopRoute>
           <Route exact path="/register">
-            <RegisterRedirect />
+            <Route exact path="/register">
+  <a href="https://gdg.community.dev/events/details/google-gdg-on-campus-university-of-petroleum-and-energy-studies-dehradun-india-presents-spectrum-the-design-workshop/">Redirecting...</a>
+
           </Route>
           <ScrollToTopRoute exact path="/codeyourfuture">
             <SingleEvent>
