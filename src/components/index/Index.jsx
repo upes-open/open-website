@@ -20,7 +20,6 @@ function Index() {
         <Slider />
         <UpcomingEvent />
         <OutReachy/>
-        <Barclays/>
         <OpenLearning />
         <DeployedProjects />
         <Gallery />
