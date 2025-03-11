@@ -31,7 +31,7 @@ function UpcomingEvent() {
                  <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
-                <a href="/osoc23"><h5>Valorant Arena: Battle of the best 2024</h5></a>
+                <a href="/osoc23"><h5>Right on Dart: The Flutter Workshop</h5></a>
                 <p> A game will be played amongst the college students in teams of 5. Each team needs to play against every team according to the leaderboard, which will be made.
                 &nbsp;<a href="">Read More!</a>
                 </p>
