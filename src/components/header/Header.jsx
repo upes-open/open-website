@@ -22,7 +22,12 @@ export default function Header() {
         var mobileMenuContent = $('.menu-area .push-menu').html();
         $('.mobile-menu .menu-box .menu-outer').append(mobileMenuContent);
 
-
+	//Dropdown Button
+         $('.mobile-menu li.menu-item-has-children .dropdown-btn').on('click', function () {
+           $(this).toggleClass('open');
+           $(this).prev('ul').slideToggle(500);
+         });
+ 
 
         $('.menu-backdrop, .mobile-menu .close-btn').click (()=>{
           $('body').removeClass('mobile-menu-visible');
