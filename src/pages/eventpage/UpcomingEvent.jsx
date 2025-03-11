@@ -32,11 +32,10 @@ function UpcomingEvent() {
                </div>
               <div className="inner-about-content">
                 <a href="/osoc23"><h5>Right on Dart: The Flutter Workshop</h5></a>
-                <p> A game will be played amongst the college students in teams of 5. Each team needs to play against every team according to the leaderboard, which will be made.
-                &nbsp;<a href="">Read More!</a>
+                <p> "Great apps aren’t just built—they’re crafted, line by line, with curiosity and a bit of magic.<br>🚀 Join us for an exciting workshop!<br>Dates: 24th & 25th March</br>
                 </p>
                 <br />
-                 <a href="/valorant_register" className="btn btn-style-two">Register Now!</a>
+                 <a href="https://forms.gle/Zf1hgfkK2uPaN8re9" className="btn btn-style-two" target="_blank">Register Now!</a>
                  {/* <a href="https://github.com/upes-open" className="btn btn-style-two" target="_blank">GitHub</a> */}
                  <br />
                  <br />
