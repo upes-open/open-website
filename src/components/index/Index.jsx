@@ -18,6 +18,7 @@ function Index() {
       <Header />
       <main>
         <Slider />
+        <UpcomingEvent />
         <OutReachy/>
         <Barclays/>
         <OpenLearning />
