@@ -22,7 +22,7 @@ function UpcomingEvent() {
             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
               <div className="inner-about-img">
 
-                <img width="510px" height="530px" src="https://i.postimg.cc/x8PYjMs4/val-1.png" className="wow fadeInRight" data-wow-delay=".3s" alt="" style={{ maxWidth: '100%', height: '460px' }}  />
+                <img width="510px" height="530px" src="src/assets/img/flutter2025.png" className="wow fadeInRight" data-wow-delay=".3s" alt="" style={{ maxWidth: '100%', height: '460px' }}  />
 
               </div>
             </div>
