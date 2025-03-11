@@ -10,7 +10,7 @@ import Contributor from "./pages/contributorspage/Contributors";
 import Contact from "./pages/contact/Contact";
 import Api from "./pages/events/Api";
 import Anniversary from "./pages/events/Anniversary";
-
+//import UpcomingEvent from "./pages/eventpage/UpcomingEvent";
 import ScrollToTopRoute from "./components/scrolltotop/ScrollToTopRoute";
 
 import SingleEvent from "./pages/events/SingleEvent";
@@ -107,11 +107,8 @@ function App() {
               <Technova />
             </SingleEvent>
           </ScrollToTopRoute>
-          <ScrollToTopRoute exact path="/valorant_register">
-            <SingleEvent>
-              <OsocRegister />
-            </SingleEvent>
-          </ScrollToTopRoute>
+         
+    
           <ScrollToTopRoute exact path="/UpcomingDetailedProjectExpo">
             <SingleEvent>
               <UpcomingDetailedProjectExpo />
