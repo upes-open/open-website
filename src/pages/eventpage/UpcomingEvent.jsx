@@ -31,7 +31,7 @@ function UpcomingEvent() {
                  <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
-                <a href="/osoc23"><h5>Right on Dart: The Flutter Workshop</h5></a>
+                <a href="/osoc23">Right on Dart: The Flutter Workshop</a>
                 <p> "Great apps aren’t just built—they’re crafted, line by line, with curiosity and a bit of magic.<br>🚀 Join us for an exciting workshop!<br>Dates: 24th & 25th March</br>
                 </p>
                 <br />
