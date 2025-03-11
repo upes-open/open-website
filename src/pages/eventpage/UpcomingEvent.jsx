@@ -28,7 +28,6 @@ function UpcomingEvent() {
             </div>
             <div className="col-xl-5 col-lg-6">
               <div className="section-title title-style-three black-title text-center mb-70"> 
-                 <h2>UPCOMING<span>  EVENT</span></h2>
                </div>
               <div className="inner-about-content">
                 <a href="/osoc23">Right on Dart: The Flutter Workshop</a>
